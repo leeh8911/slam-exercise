@@ -4,8 +4,8 @@ add_executable(${PROJECT_TEST} ${SRC_FILES})
 
 target_include_directories(${PROJECT_TEST} PUBLIC
                             ${CONAN_INCLUDE_DIRS} 
-                            ${CMAKE_SOURCE_DIR}/bindings 
                             ${CMAKE_SOURCE_DIR}
+                            ${CMAKE_SOURCE_DIR}/bindings 
                         )
 
 target_link_libraries(${PROJECT_TEST} ${PROJECT_LIB} ${CONAN_LIBS})

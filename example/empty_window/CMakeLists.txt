@@ -1,7 +1,7 @@
 ﻿
-set(EXAMPLE2 ${PROJECT_NAME}_example2)
+set(EXAMPLE1 ${PROJECT_NAME}_example1)
 
-add_executable(${EXAMPLE2}
+add_executable(${EXAMPLE1}
     main.cpp
     ${CMAKE_SOURCE_DIR}/bindings/imgui_impl_glfw.cpp
     ${CMAKE_SOURCE_DIR}/bindings/imgui_impl_opengl2.cpp
@@ -9,10 +9,10 @@ add_executable(${EXAMPLE2}
     ${CMAKE_SOURCE_DIR}/bindings/imgui_impl_opengl2.h
 )
 
-target_include_directories(${EXAMPLE2} PUBLIC
+target_include_directories(${EXAMPLE1} PUBLIC
                             ${CONAN_INCLUDE_DIRS} 
+                            ${CMAKE_SOURCE_DIR}
                             ${CMAKE_SOURCE_DIR}/bindings 
-                            ${CMAKE_SOURCE_DIR}/src
                         )
 
-target_link_libraries(${EXAMPLE2} PUBLIC ${PROJECT_LIB} ${CONAN_LIBS})
+target_link_libraries(${EXAMPLE1} PUBLIC ${PROJECT_LIB} ${CONAN_LIBS})

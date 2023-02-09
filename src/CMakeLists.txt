@@ -10,8 +10,8 @@ add_library(${PROJECT_LIB} STATIC
 
 target_include_directories(${PROJECT_LIB} PUBLIC
                             ${CONAN_INCLUDE_DIRS}
-                            ${CMAKE_SOURCE_DIR}
                             ${CMAKE_SOURCE_DIR}/bindings 
+                            ${CMAKE_SOURCE_DIR}
                         )
 
 target_link_libraries(${PROJECT_LIB} PUBLIC
