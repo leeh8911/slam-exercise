@@ -12,12 +12,12 @@
 #define SRC_VIEWER_WINDOW_H_
 
 #include <GLFW/glfw3.h>
+#include <imgui.h>
 
 #include <memory>
 #include <string>
 #include <vector>
 
-#include "imgui.h"
 
 namespace ad_framework
 {

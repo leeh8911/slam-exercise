@@ -9,14 +9,21 @@
 ///
 
 #include <iostream>
-#include <thread>
 
 #include "src/viewer/window.h"
 
 int main()
 {
-    ::ad_framework::Window window("Empty window");
+    std::cout << "Start main function\n";
+
+    std::cout << "Create window\n";
+    ::ad_framework::Window window{};
+    std::cout << "Finish creating window\n";
+
     bool open = true;
+
+    std::cout << "Start rendering\n";
     window.Render(&open);
+    std::cout << "Finish rendering\n";
     return 0;
 }

@@ -11,8 +11,7 @@ add_executable(${EXAMPLE2}
 
 target_include_directories(${EXAMPLE2} PUBLIC
                             ${CONAN_INCLUDE_DIRS} 
-                            ${CMAKE_SOURCE_DIR}/bindings 
-                            ${CMAKE_SOURCE_DIR}/src
+                            ${CMAKE_SOURCE_DIR}
                         )
 
 target_link_libraries(${EXAMPLE2} PUBLIC ${PROJECT_LIB} ${CONAN_LIBS})
