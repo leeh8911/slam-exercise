@@ -10,7 +10,7 @@ set(PROJECT_TEST ${PROJECT_NAME}_test)
 set(CMAKE_CXX_STANDARD 20)
 
     
-option(BUILD_EXAMPLE "Build example" OFF)
+option(BUILD_APP "Build example" OFF)
 option(BUILD_TEST "Build example" OFF)
 option(BUILD_DOC "Build example" OFF)
 
@@ -31,6 +31,6 @@ if(${BUILD_TEST})
 add_subdirectory(test)
 endif()
 
-if(${BUILD_EXAMPLE})
-    add_subdirectory(example)
+if(${BUILD_APP})
+    add_subdirectory(app)
 endif()

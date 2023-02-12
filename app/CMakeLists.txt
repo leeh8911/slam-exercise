@@ -1,7 +1,7 @@
 ﻿
-set(EXAMPLE2 ${PROJECT_NAME}_example2)
+set(APPLICATION ${PROJECT_NAME}_app)
 
-add_executable(${EXAMPLE2}
+add_executable(${APPLICATION}
     main.cpp
     ${CMAKE_SOURCE_DIR}/bindings/imgui_impl_glfw.cpp
     ${CMAKE_SOURCE_DIR}/bindings/imgui_impl_opengl2.cpp
@@ -9,9 +9,9 @@ add_executable(${EXAMPLE2}
     ${CMAKE_SOURCE_DIR}/bindings/imgui_impl_opengl2.h
 )
 
-target_include_directories(${EXAMPLE2} PUBLIC
+target_include_directories(${APPLICATION} PUBLIC
                             ${CONAN_INCLUDE_DIRS} 
                             ${CMAKE_SOURCE_DIR}
                         )
 
-target_link_libraries(${EXAMPLE2} PUBLIC ${PROJECT_LIB} ${CONAN_LIBS})
+target_link_libraries(${APPLICATION} PUBLIC ${PROJECT_LIB} ${CONAN_LIBS})
