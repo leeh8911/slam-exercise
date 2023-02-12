@@ -27,12 +27,17 @@ class Pannel
     Pannel(std::string name, const ImVec2& position_, const ImVec2& size_);
     virtual ~Pannel() = default;
     void Render(bool& open, const ImVec2& window_size) const;
+
+ protected:
     virtual void RenderInterface(bool& open) const = 0;
 
  private:
+    void SetSize(const ImVec2& window_size) const;
+    void SetPosition(const ImVec2& window_size) const;
     std::string name_{};
     ImVec2 position_{};
     ImVec2 size_{};
+    ImGuiWindowFlags window_flags_{};
 };
 
 using PannelPtr = std::shared_ptr<Pannel>;
@@ -43,9 +48,8 @@ class ControlPannel : public Pannel
     ControlPannel(const ImVec2& position, const ImVec2& size);
     ~ControlPannel() = default;
 
-    void RenderInterface(bool& open) const override;
-
  private:
+    void RenderInterface(bool& open) const override;
 };
 
 class DialogPannel : public Pannel
@@ -54,20 +58,22 @@ class DialogPannel : public Pannel
     DialogPannel(const ImVec2& position, const ImVec2& size);
     ~DialogPannel() = default;
 
-    void RenderInterface(bool& open) const override;
-
  private:
+    void RenderInterface(bool& open) const override;
 };
 
+/// @brief This class is for rendering the top view of measurements (from lidar,
+/// camera, radar, and etc), and processed measurements for autonomous driving.
+/// Drawing measurements are kind of 3D points, bounding boxes, freespace, grid
+/// map, and etc.
 class TopViewPannel : public Pannel
 {
  public:
     TopViewPannel(const ImVec2& position, const ImVec2& size);
     ~TopViewPannel() = default;
 
-    void RenderInterface(bool& open) const override;
-
  private:
+    void RenderInterface(bool& open) const override;
 };
 
 class CamViewPannel : public Pannel
@@ -76,9 +82,8 @@ class CamViewPannel : public Pannel
     CamViewPannel(const ImVec2& position, const ImVec2& size);
     ~CamViewPannel() = default;
 
-    void RenderInterface(bool& open) const override;
-
  private:
+    void RenderInterface(bool& open) const override;
 };
 
 class MediaPannel : public Pannel
@@ -87,9 +92,8 @@ class MediaPannel : public Pannel
     MediaPannel(const ImVec2& position, const ImVec2& size);
     ~MediaPannel() = default;
 
-    void RenderInterface(bool& open) const override;
-
  private:
+    void RenderInterface(bool& open) const override;
 };
 
 class Window

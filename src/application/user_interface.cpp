@@ -24,21 +24,35 @@ namespace ad_framework::application
 {
 
 Pannel::Pannel(std::string name, const ImVec2& position, const ImVec2& size)
-    : name_{name}, position_{position}, size_{size}
+    : name_{name}, position_{position}, size_{size}, window_flags_{0}
 {
+    // window_flags_ |= ImGuiWindowFlags_NoTitleBar;
+    // window_flags_ |= ImGuiWindowFlags_NoResize;
+    // window_flags_ |= ImGuiWindowFlags_NoMove;
 }
 
 void Pannel::Render(bool& open, const ImVec2& window_size) const
 {
-    ImVec2 position =
-        ImVec2(position_.x * window_size.x, position_.y * window_size.y);
+    SetSize(window_size);
+    SetPosition(window_size);
+
+    ImGui::Begin(name_.c_str(), &open, window_flags_);
+    RenderInterface(open);
+    ImGui::End();
+}
+
+void Pannel::SetSize(const ImVec2& window_size) const
+{
     ImVec2 size = ImVec2(size_.x * window_size.x, size_.y * window_size.y);
 
-    ImGui::SetNextWindowPos(position, 0);
-    ImGui::SetNextWindowSize(size, 0);
-    ImGui::Begin(name_.c_str(), &open, 0);
-    ImGui::Text("Hello, world!");
-    ImGui::End();
+    ImGui::SetNextWindowSize(size, ImGuiCond_FirstUseEver);
+}
+
+void Pannel::SetPosition(const ImVec2& window_size) const
+{
+    ImVec2 position =
+        ImVec2(position_.x * window_size.x, position_.y * window_size.y);
+    ImGui::SetNextWindowPos(position, ImGuiCond_FirstUseEver);
 }
 
 ControlPannel::ControlPannel(const ImVec2& position, const ImVec2& size)
@@ -48,7 +62,20 @@ ControlPannel::ControlPannel(const ImVec2& position, const ImVec2& size)
 
 void ControlPannel::RenderInterface(bool& open) const
 {
-    ImGui::Text("Hello, world!");
+    ImGui::Text("Control Pannel");
+    ImGui::Spacing();
+
+    ImGui::LabelText("Name", "Dataset");
+    {
+        const char* items[] = {"Kitti"};
+        static int item_current = 0;
+        ImGui::Combo("Select", &item_current, items, IM_ARRAYSIZE(items));
+    }
+
+    if (ImGui::Button("Load"))
+    {
+        std::cout << "Loading..." << std::endl;
+    }
 }
 
 TopViewPannel::TopViewPannel(const ImVec2& position, const ImVec2& size)
@@ -56,9 +83,28 @@ TopViewPannel::TopViewPannel(const ImVec2& position, const ImVec2& size)
 {
 }
 
+/// @brief Draw 3D plot for top view. Top view data is stored in the Frame
+/// object.
+/// @param open
 void TopViewPannel::RenderInterface(bool& open) const
 {
-    ImGui::Text("Hello, world!");
+    ImGui::Text("Top View");
+
+    // Get the size of the child (i.e. the whole draw size of the windows).
+    ImVec2 wsize = ImGui::GetWindowSize();
+    // Because I use the texture from OpenGL, I need to invert the V from
+    // the UV.
+    unsigned int tex;
+    glGenTextures(1, &tex);
+    glBindTexture(GL_TEXTURE_2D, tex);
+
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, 800, 600, 0, GL_RGB,
+                 GL_UNSIGNED_BYTE, nullptr);
+
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+    ImGui::Image((ImTextureID)tex, wsize, ImVec2(0, 1), ImVec2(1, 0));
 }
 
 void CamViewPannel::RenderInterface(bool& open) const
