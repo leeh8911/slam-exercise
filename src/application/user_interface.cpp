@@ -16,6 +16,7 @@
 #include <iostream>
 #include <stdexcept>
 #include <string>
+#include <vector>
 
 #include "bindings/imgui_impl_glfw.h"
 #include "bindings/imgui_impl_opengl2.h"
@@ -92,19 +93,46 @@ void TopViewPannel::RenderInterface(bool& open) const
 
     // Get the size of the child (i.e. the whole draw size of the windows).
     ImVec2 wsize = ImGui::GetWindowSize();
+    GLsizei width = static_cast<GLsizei>(wsize.x);
+    GLsizei height = static_cast<GLsizei>(wsize.y);
     // Because I use the texture from OpenGL, I need to invert the V from
     // the UV.
-    unsigned int tex;
-    glGenTextures(1, &tex);
-    glBindTexture(GL_TEXTURE_2D, tex);
+    GLuint tex;
+    // clang-format off
+    std::vector<float> points = {
+        // x, y, z
+        -1.0f, -1.0f, 0.0f,
+        1.0f, -1.0f, 0.0f,
+        0.0f,  1.0f, 0.0f,
+    };
+    // clang-format on
 
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, 800, 600, 0, GL_RGB,
-                 GL_UNSIGNED_BYTE, nullptr);
-
+    unsigned char* data = new unsigned char[width * height * 3];
+    for (int i = 0; i < width * height; ++i)
+    {
+        if (i % height == i / height)
+        {
+            data[i * 3 + 0] = 0;
+            data[i * 3 + 1] = 255;
+            data[i * 3 + 2] = 0;
+        }
+        else
+        {
+            data[i * 3 + 0] = 255;
+            data[i * 3 + 1] = 0;
+            data[i * 3 + 2] = 0;
+        }
+    }
+    unsigned int texture;
+    glGenTextures(1, &texture);
+    glBindTexture(GL_TEXTURE_2D, texture);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB,
+                 GL_UNSIGNED_BYTE, data);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-    ImGui::Image((ImTextureID)tex, wsize, ImVec2(0, 1), ImVec2(1, 0));
+    ImGui::Image((ImTextureID)texture, ImVec2(width, height), ImVec2(0, 1),
+                 ImVec2(1, 0));
 }
 
 void CamViewPannel::RenderInterface(bool& open) const
