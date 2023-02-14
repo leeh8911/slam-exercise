@@ -18,6 +18,7 @@
 #include <memory>
 #include <string>
 
+#include "src/application/top_view_drawer.h"
 namespace ad_framework::application
 {
 
@@ -74,6 +75,8 @@ class TopViewPannel : public Pannel
 
  private:
     void RenderInterface(bool& open) const override;
+
+    std::unique_ptr<TopViewDrawer> drawer_{nullptr};
 };
 
 class CamViewPannel : public Pannel

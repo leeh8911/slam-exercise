@@ -5,6 +5,7 @@ sophus/22.04.1
 gtest/1.8.1@bincrafters/stable
 glfw/3.3.6
 glew/2.2.0
+opencv/4.3.0@conan/stable
 
 [generators]
 cmake
@@ -12,5 +13,10 @@ cmake
 [options]
 gtest:shared=False
 glew:shared=False
+opencv:nonfree=False
+opencv:shared=False
+opencv:quirc=False
+opencv:protobuf=False
+opencv:openexr=False
 
 [imports]

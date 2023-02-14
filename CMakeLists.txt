@@ -10,6 +10,7 @@ set(PROJECT_APP ${PROJECT_NAME}_app)
 
 set(CMAKE_CXX_STANDARD 20)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "")
     
 option(BUILD_APP "Build example" OFF)
 option(BUILD_TEST "Build example" OFF)

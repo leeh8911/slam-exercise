@@ -11,15 +11,21 @@
 #include "src/application/user_interface.h"
 
 #include <GLFW/glfw3.h>
-#include <imgui.h>
 
+#include <array>
 #include <iostream>
+#include <opencv2/core.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/imgcodecs.hpp>
 #include <stdexcept>
 #include <string>
 #include <vector>
 
+#include "bindings/imgui.h"
 #include "bindings/imgui_impl_glfw.h"
 #include "bindings/imgui_impl_opengl2.h"
+#include "bindings/implot.h"
+#include "src/application/top_view_drawer.h"
 
 namespace ad_framework::application
 {
@@ -80,7 +86,8 @@ void ControlPannel::RenderInterface(bool& open) const
 }
 
 TopViewPannel::TopViewPannel(const ImVec2& position, const ImVec2& size)
-    : Pannel("Top View", position, size)
+    : Pannel("Top View", position, size),
+      drawer_{std::make_unique<TopViewDrawer>()}
 {
 }
 
@@ -91,54 +98,34 @@ void TopViewPannel::RenderInterface(bool& open) const
 {
     ImGui::Text("Top View");
 
-    // Get the size of the child (i.e. the whole draw size of the windows).
-    ImVec2 wsize = ImGui::GetWindowSize();
-    GLsizei width = static_cast<GLsizei>(wsize.x);
-    GLsizei height = static_cast<GLsizei>(wsize.y);
-    // Because I use the texture from OpenGL, I need to invert the V from
-    // the UV.
-    GLuint tex;
-    // clang-format off
-    std::vector<float> points = {
-        // x, y, z
-        -1.0f, -1.0f, 0.0f,
-        1.0f, -1.0f, 0.0f,
-        0.0f,  1.0f, 0.0f,
-    };
-    // clang-format on
-
-    unsigned char* data = new unsigned char[width * height * 3];
-    for (int i = 0; i < width * height; ++i)
-    {
-        if (i % height == i / height)
-        {
-            data[i * 3 + 0] = 0;
-            data[i * 3 + 1] = 255;
-            data[i * 3 + 2] = 0;
-        }
-        else
-        {
-            data[i * 3 + 0] = 255;
-            data[i * 3 + 1] = 0;
-            data[i * 3 + 2] = 0;
-        }
-    }
-
-    unsigned int texture;
-    glGenTextures(1, &texture);
-    glBindTexture(GL_TEXTURE_2D, texture);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB,
-                 GL_UNSIGNED_BYTE, data);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-
-    ImGui::Image((ImTextureID)texture, ImVec2(width, height), ImVec2(0, 1),
-                 ImVec2(1, 0));
+    drawer_->Draw();
 }
 
 void CamViewPannel::RenderInterface(bool& open) const
 {
     ImGui::Text("Hello, world!");
+
+    // clang-format off
+    std::string image_file = "D:\\sangwon\\dataset\\kitti\\odometry\\dataset\\sequences\\00\\image_2\\000000.png";
+    // clang-format on
+
+    cv::Mat img = cv::imread(image_file, cv::IMREAD_COLOR);
+
+    ImDrawList* draw_list = ImGui::GetWindowDrawList();
+    GLuint image_texture;
+
+    glGenTextures(1, &image_texture);
+    glBindTexture(GL_TEXTURE_2D, image_texture);
+
+    // Setup filtering parameters for display
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+    // Upload pixels into texture
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, img.rows, img.cols, 0, GL_RGBA,
+                 GL_UNSIGNED_BYTE, img.ptr());
+
+    // ImGui::Image((void*)(intptr_t)image_texture, ImGui::GetWindowSize());
 }
 
 CamViewPannel::CamViewPannel(const ImVec2& position, const ImVec2& size)
@@ -185,6 +172,7 @@ Window::Window()
     // Setup Dear ImGui context
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
+    ImPlot::CreateContext();
     ImGuiIO& io = ImGui::GetIO();
     io.ConfigFlags |=
         ImGuiConfigFlags_NavEnableKeyboard;  // Enable Keyboard Controls
