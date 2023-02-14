@@ -1,17 +1,10 @@
-﻿
-set(APPLICATION ${PROJECT_NAME}_app)
-
-add_executable(${APPLICATION}
+﻿add_executable(${PROJECT_APP}
     main.cpp
-    ${CMAKE_SOURCE_DIR}/bindings/imgui_impl_glfw.cpp
-    ${CMAKE_SOURCE_DIR}/bindings/imgui_impl_opengl2.cpp
-    ${CMAKE_SOURCE_DIR}/bindings/imgui_impl_glfw.h
-    ${CMAKE_SOURCE_DIR}/bindings/imgui_impl_opengl2.h
 )
 
-target_include_directories(${APPLICATION} PUBLIC
+target_include_directories(${PROJECT_APP} PUBLIC
                             ${CONAN_INCLUDE_DIRS} 
                             ${CMAKE_SOURCE_DIR}
                         )
 
-target_link_libraries(${APPLICATION} PUBLIC ${PROJECT_LIB} ${CONAN_LIBS})
+target_link_libraries(${PROJECT_APP} PUBLIC ${PROJECT_LIB} ${CONAN_LIBS})

@@ -3,7 +3,6 @@ protobuf/3.5.1@bincrafters/stable
 eigen/3.3.9@camposs/stable
 sophus/22.04.1
 gtest/1.8.1@bincrafters/stable
-imgui/1.74
 glfw/3.3.6
 glew/2.2.0
 
@@ -15,7 +14,3 @@ gtest:shared=False
 glew:shared=False
 
 [imports]
-./res/bindings, imgui_impl_glfw.cpp -> ../bindings
-./res/bindings, imgui_impl_opengl2.cpp -> ../bindings
-./res/bindings, imgui_impl_glfw.h -> ../bindings
-./res/bindings, imgui_impl_opengl2.h -> ../bindings

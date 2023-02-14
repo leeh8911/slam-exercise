@@ -123,6 +123,7 @@ void TopViewPannel::RenderInterface(bool& open) const
             data[i * 3 + 2] = 0;
         }
     }
+
     unsigned int texture;
     glGenTextures(1, &texture);
     glBindTexture(GL_TEXTURE_2D, texture);
