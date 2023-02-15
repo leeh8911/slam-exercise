@@ -25,133 +25,15 @@
 #include "bindings/imgui_impl_glfw.h"
 #include "bindings/imgui_impl_opengl2.h"
 #include "bindings/implot.h"
-#include "src/application/top_view_drawer.h"
+#include "src/application/pannel/cam_view_pannel.h"
+#include "src/application/pannel/control_pannel.h"
+#include "src/application/pannel/dialog_pannel.h"
+#include "src/application/pannel/file_selector_pannel.h"
+#include "src/application/pannel/media_pannel.h"
+#include "src/application/pannel/pannel.h"
 
 namespace ad_framework::application
 {
-
-Pannel::Pannel(std::string name, const ImVec2& position, const ImVec2& size)
-    : name_{name}, position_{position}, size_{size}, window_flags_{0}
-{
-    // window_flags_ |= ImGuiWindowFlags_NoTitleBar;
-    // window_flags_ |= ImGuiWindowFlags_NoResize;
-    // window_flags_ |= ImGuiWindowFlags_NoMove;
-}
-
-void Pannel::Render(bool& open, const ImVec2& window_size) const
-{
-    SetSize(window_size);
-    SetPosition(window_size);
-
-    ImGui::Begin(name_.c_str(), &open, window_flags_);
-    RenderInterface(open);
-    ImGui::End();
-}
-
-void Pannel::SetSize(const ImVec2& window_size) const
-{
-    ImVec2 size = ImVec2(size_.x * window_size.x, size_.y * window_size.y);
-
-    ImGui::SetNextWindowSize(size, ImGuiCond_FirstUseEver);
-}
-
-void Pannel::SetPosition(const ImVec2& window_size) const
-{
-    ImVec2 position =
-        ImVec2(position_.x * window_size.x, position_.y * window_size.y);
-    ImGui::SetNextWindowPos(position, ImGuiCond_FirstUseEver);
-}
-
-ControlPannel::ControlPannel(const ImVec2& position, const ImVec2& size)
-    : Pannel("Control", position, size)
-{
-}
-
-void ControlPannel::RenderInterface(bool& open) const
-{
-    ImGui::Text("Control Pannel");
-    ImGui::Spacing();
-
-    ImGui::LabelText("Name", "Dataset");
-    {
-        const char* items[] = {"Kitti"};
-        static int item_current = 0;
-        ImGui::Combo("Select", &item_current, items, IM_ARRAYSIZE(items));
-    }
-
-    if (ImGui::Button("Load"))
-    {
-        std::cout << "Loading..." << std::endl;
-    }
-}
-
-TopViewPannel::TopViewPannel(const ImVec2& position, const ImVec2& size)
-    : Pannel("Top View", position, size),
-      drawer_{std::make_unique<TopViewDrawer>()}
-{
-}
-
-/// @brief Draw 3D plot for top view. Top view data is stored in the Frame
-/// object.
-/// @param open
-void TopViewPannel::RenderInterface(bool& open) const
-{
-    ImGui::Text("Top View");
-
-    drawer_->Draw();
-}
-
-void CamViewPannel::RenderInterface(bool& open) const
-{
-    ImGui::Text("Hello, world!");
-
-    // clang-format off
-    std::string image_file = "D:\\sangwon\\dataset\\kitti\\odometry\\dataset\\sequences\\00\\image_3\\000000.png";
-    // clang-format on
-
-    cv::Mat img = cv::imread(image_file, cv::IMREAD_COLOR);
-
-    ImDrawList* draw_list = ImGui::GetWindowDrawList();
-    GLuint image_texture;
-
-    glGenTextures(1, &image_texture);
-    glBindTexture(GL_TEXTURE_2D, image_texture);
-
-    // Setup filtering parameters for display
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-
-    // Upload pixels into texture
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, img.cols, img.rows, 0, GL_RGB,
-                 GL_UNSIGNED_BYTE, img.ptr());
-
-    ImGui::Image((void*)(intptr_t)image_texture, ImGui::GetWindowSize());
-}
-
-CamViewPannel::CamViewPannel(const ImVec2& position, const ImVec2& size)
-    : Pannel("Cam View", position, size)
-{
-}
-
-DialogPannel::DialogPannel(const ImVec2& position, const ImVec2& size)
-    : Pannel("Dialog", position, size)
-{
-}
-
-void DialogPannel::RenderInterface(bool& open) const
-{
-    ImGui::Text("Hello, world!");
-}
-
-MediaPannel::MediaPannel(const ImVec2& position, const ImVec2& size)
-    : Pannel("Media", position, size)
-{
-}
-
-void MediaPannel::RenderInterface(bool& open) const
-{
-    ImGui::Text("Hello, world!");
-}
 
 Window::Window()
 {

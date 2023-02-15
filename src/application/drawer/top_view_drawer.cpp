@@ -8,7 +8,7 @@
 ///
 ///
 
-#include "src/application/top_view_drawer.h"
+#include "top_view_drawer.h"
 
 #include <array>
 #include <utility>
@@ -43,8 +43,11 @@ void TopViewDrawer::Draw() const
                               ImPlotFlags_NoBoxSelect))
     {
         ImPlot::SetupAxes("x", "y");
-        ImPlot::PlotBars("My Bar Plot", bar_data.data(), 11);
-        ImPlot::PlotLine("My Line Plot", x_data.data(), y_data.data(), 1000);
+        ImPlot::SetupAxesLimits(axes_range_x_.x, axes_range_x_.y,
+                                axes_range_y_.x, axes_range_y_.y,
+                                ImGuiCond_Always);
+        ImPlot::PlotScatter("y = x^2", x_data.data(), y_data.data(),
+                            x_data.size(), 0, 0, sizeof(float));
         ImPlot::EndPlot();
     }
 }

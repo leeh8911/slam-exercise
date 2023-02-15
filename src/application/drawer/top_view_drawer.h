@@ -11,6 +11,8 @@
 #ifndef SRC_APPLICATION_TOP_VIEW_DRAWER_H_
 #define SRC_APPLICATION_TOP_VIEW_DRAWER_H_
 
+#include "bindings/imgui.h"
+
 namespace ad_framework::application
 {
 class TopViewDrawer
@@ -20,6 +22,10 @@ class TopViewDrawer
     ~TopViewDrawer() = default;
 
     void Draw() const;
+
+ private:
+    ImVec2 axes_range_x_ = ImVec2(-10, 10);
+    ImVec2 axes_range_y_ = ImVec2(-10, 10);
 };
 }  // namespace ad_framework::application
 
