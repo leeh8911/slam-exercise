@@ -33,6 +33,13 @@ build-app: conan_install
 	cmake .. -DCMAKE_CONFIGURATION_TYPES=Debug;Release -DBUILD_APP=ON -DBUILD_TEST=OFF -DBUILD_DOC=OFF && \
 	cmake --build .
 
+.PHONY: build-doc
+build-doc: conan_install
+	mkdir build || \
+	cd build && \
+	cmake .. -DCMAKE_CONFIGURATION_TYPES=Debug;Release -DBUILD_APP=OFF -DBUILD_TEST=OFF -DBUILD_DOC=ON && \
+	cmake --build .
+
 .PHONY: run-test
 run-test:
 	cd build && \
@@ -48,13 +55,6 @@ run-app:
 	
 .PHONY: app
 app: build-app run-app
-
-.PHONY: build-doc
-build-doc: conan_install
-	mkdir build || \
-	cd build && \
-	cmake .. -DCMAKE_CONFIGURATION_TYPES=Debug;Release -DBUILD_APP=OFF -DBUILD_TEST=OFF -DBUILD_DOC=ON && \
-	cmake --build .
 
 .PHONY: doc
 doc: build-doc

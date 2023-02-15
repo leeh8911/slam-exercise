@@ -106,7 +106,7 @@ void CamViewPannel::RenderInterface(bool& open) const
     ImGui::Text("Hello, world!");
 
     // clang-format off
-    std::string image_file = "D:\\sangwon\\dataset\\kitti\\odometry\\dataset\\sequences\\00\\image_2\\000000.png";
+    std::string image_file = "D:\\sangwon\\dataset\\kitti\\odometry\\dataset\\sequences\\00\\image_3\\000000.png";
     // clang-format on
 
     cv::Mat img = cv::imread(image_file, cv::IMREAD_COLOR);
@@ -122,10 +122,10 @@ void CamViewPannel::RenderInterface(bool& open) const
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
     // Upload pixels into texture
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, img.rows, img.cols, 0, GL_RGBA,
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, img.cols, img.rows, 0, GL_RGB,
                  GL_UNSIGNED_BYTE, img.ptr());
 
-    // ImGui::Image((void*)(intptr_t)image_texture, ImGui::GetWindowSize());
+    ImGui::Image((void*)(intptr_t)image_texture, ImGui::GetWindowSize());
 }
 
 CamViewPannel::CamViewPannel(const ImVec2& position, const ImVec2& size)
