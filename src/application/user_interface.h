@@ -18,14 +18,8 @@
 #include <memory>
 #include <string>
 
-#include "drawer\top_view_drawer.h"
-#include "src/application/pannel/cam_view_pannel.h"
-#include "src/application/pannel/control_pannel.h"
-#include "src/application/pannel/dialog_pannel.h"
-#include "src/application/pannel/file_selector_pannel.h"
-#include "src/application/pannel/media_pannel.h"
+#include "src/application/dataset.h"
 #include "src/application/pannel/pannel.h"
-#include "src/application/pannel/top_view_pannel.h"
 
 namespace ad_framework::application
 {
@@ -57,6 +51,7 @@ class UserInterface
  private:
     Window window_;
     std::forward_list<PannelPtr> pannels_{};
+    DatasetPtr dataset_{};
 };
 
 }  // namespace ad_framework::application

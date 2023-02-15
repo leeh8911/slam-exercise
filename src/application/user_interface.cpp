@@ -31,6 +31,8 @@
 #include "src/application/pannel/file_selector_pannel.h"
 #include "src/application/pannel/media_pannel.h"
 #include "src/application/pannel/pannel.h"
+#include "src/application/pannel/top_view_pannel.h"
+
 
 namespace ad_framework::application
 {
@@ -108,7 +110,8 @@ ImVec2 Window::GetSize() const
     return ImVec2(static_cast<float>(width), static_cast<float>(height));
 }
 
-UserInterface::UserInterface() : window_{Window{}}, pannels_{}
+UserInterface::UserInterface()
+    : window_{Window{}}, pannels_{}, dataset_{std::make_shared<Dataset>()}
 {
     ImVec2 cam_view_position = ImVec2(0.00f, 0.00f);
     ImVec2 cam_view_size = ImVec2(0.20f, 0.40f);
@@ -134,6 +137,11 @@ UserInterface::UserInterface() : window_{Window{}}, pannels_{}
         std::make_unique<ControlPannel>(control_position, control_size));
     pannels_.emplace_front(
         std::make_unique<MediaPannel>(media_position, media_size));
+
+    for (auto& pannel : pannels_)
+    {
+        pannel->SetDataset(dataset_);
+    }
 }
 
 void UserInterface::Execute() { window_.Render(pannels_); }
