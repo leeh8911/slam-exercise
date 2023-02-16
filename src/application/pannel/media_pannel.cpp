@@ -19,6 +19,13 @@ MediaPannel::MediaPannel(const ImVec2& position, const ImVec2& size)
 {
 }
 
-void MediaPannel::RenderInterface(bool& open) { ImGui::Text("Hello, world!"); }
+void MediaPannel::RenderInterface(bool& open)
+{
+    if (!open)
+    {
+        return;
+    }
+    ImGui::Text("Hello, world!");
+}
 
 }  // namespace ad_framework::application

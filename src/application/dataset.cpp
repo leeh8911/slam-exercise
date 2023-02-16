@@ -46,8 +46,8 @@ void Dataset::FindCandidates()
 void Dataset::FindSequences(DatasetType type)
 {
     sequence_list_.clear();
-    fs::path dataset_path = candidate_map_.find(DatasetType::kKitti)->second /
-                            "odometry\\dataset\\sequences";
+    fs::path dataset_path =
+        candidate_map_.find(type)->second / "odometry\\dataset\\sequences";
     for (const auto& entry : std::filesystem::directory_iterator(dataset_path))
     {
         sequence_list_.emplace_back(entry.path());

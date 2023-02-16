@@ -19,6 +19,13 @@ DialogPannel::DialogPannel(const ImVec2& position, const ImVec2& size)
 {
 }
 
-void DialogPannel::RenderInterface(bool& open) { ImGui::Text("Hello, world!"); }
+void DialogPannel::RenderInterface(bool& open)
+{
+    if (!open)
+    {
+        return;
+    }
+    ImGui::Text("Hello, world!");
+}
 
 }  // namespace ad_framework::application

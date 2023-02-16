@@ -5,7 +5,7 @@ cmake_path(GET CMAKE_SOURCE_DIR FILENAME PROJECT_NAME)
 project(${PROJECT_NAME} LANGUAGES CXX)
 
 if (MSVC)
-    add_compile_options(/W4 /MDd)
+    add_compile_options(/W4 /WX /MDd /Wv:18)
 else()
     add_compile_options(-Wall -Wextra -pedantic)
 endif()

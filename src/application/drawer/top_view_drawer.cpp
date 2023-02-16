@@ -47,7 +47,8 @@ void TopViewDrawer::Draw() const
                                 axes_range_y_.x, axes_range_y_.y,
                                 ImGuiCond_Always);
         ImPlot::PlotScatter("y = x^2", x_data.data(), y_data.data(),
-                            x_data.size(), 0, 0, sizeof(float));
+                            static_cast<int>(x_data.size()), 0, 0,
+                            sizeof(float));
         ImPlot::EndPlot();
     }
 }

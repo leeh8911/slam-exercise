@@ -22,6 +22,10 @@ FileselectorPannel::FileselectorPannel(const ImVec2& position,
 
 void FileselectorPannel::RenderInterface(bool& open)
 {
+    if (!open)
+    {
+        return;
+    }
     ImGui::Text("File Selector");
 }
 }  // namespace ad_framework::application

@@ -24,6 +24,10 @@ TopViewPannel::TopViewPannel(const ImVec2& position, const ImVec2& size)
 /// @param open
 void TopViewPannel::RenderInterface(bool& open)
 {
+    if (!open)
+    {
+        return;
+    }
     ImGui::Text("Top View");
 
     drawer_->Draw();

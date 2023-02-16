@@ -29,6 +29,10 @@ CamViewPannel::CamViewPannel(const ImVec2& position, const ImVec2& size)
 
 void CamViewPannel::RenderInterface(bool& open)
 {
+    if (!open)
+    {
+        return;
+    }
     ImGui::Text("Hello, world!");
 
     // clang-format off
@@ -37,8 +41,7 @@ void CamViewPannel::RenderInterface(bool& open)
 
     cv::Mat img = cv::imread(image_file, cv::IMREAD_COLOR);
 
-    ImDrawList* draw_list = ImGui::GetWindowDrawList();
-    GLuint image_texture;
+    GLuint image_texture = 0;
 
     glGenTextures(1, &image_texture);
     glBindTexture(GL_TEXTURE_2D, image_texture);

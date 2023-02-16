@@ -26,6 +26,10 @@ ControlPannel::ControlPannel(const ImVec2& position, const ImVec2& size)
 
 void ControlPannel::RenderInterface(bool& open)
 {
+    if (!open)
+    {
+        return;
+    }
     ImGui::Text("Control Pannel");
     ImGui::Spacing();
 
