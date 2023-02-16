@@ -23,7 +23,7 @@ class MediaPannel : public Pannel
     ~MediaPannel() = default;
 
  private:
-    void RenderInterface(bool& open) const override;
+    void RenderInterface(bool& open) override;
 };
 }  // namespace ad_framework::application
 

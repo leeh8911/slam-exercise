@@ -22,7 +22,7 @@ TopViewPannel::TopViewPannel(const ImVec2& position, const ImVec2& size)
 /// @brief Draw 3D plot for top view. Top view data is stored in the Frame
 /// object.
 /// @param open
-void TopViewPannel::RenderInterface(bool& open) const
+void TopViewPannel::RenderInterface(bool& open)
 {
     ImGui::Text("Top View");
 

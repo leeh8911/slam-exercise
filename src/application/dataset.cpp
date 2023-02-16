@@ -19,41 +19,42 @@ namespace ad_framework::application
 
 namespace fs = std::filesystem;
 
+DatasetTypeToName Dataset::kDatasetTypeToName{{DatasetType::kKitti, "kitti"}};
+DatasetNameToType Dataset::kDatasetNameToType{{"kitti", DatasetType::kKitti}};
+
 Dataset::Dataset()
     : base_path_{"D:\\sangwon\\dataset"},
       type_{DatasetType::kKitti},
       selected_path_{""},
       sequence_list_{},
-      candidate_path_list_{}
+      candidate_map_{}
 {
+    FindCandidates();
 }
 
-bool Dataset::IsExist(DatasetType type) const
+void Dataset::FindCandidates()
 {
-    if (type == DatasetType::kKitti)
+    for (const auto& candidate : kDatasetTypeToName)
     {
-        fs::path kitti_path(path_);
-        if (fs::exists(kitti_path))
+        fs::path candidate_path = base_path_ / candidate.second;
+        if (fs::exists(candidate_path))
         {
-            return true;
+            candidate_map_.emplace(candidate.first, candidate_path);
         }
     }
-    return false;
 }
-
-std::vector<fs::path> Dataset::GetSequenceList() const
+void Dataset::FindSequences(DatasetType type)
 {
-    std::vector<fs::path> sequence_list;
-    if (IsExist(DatasetType::kKitti))
+    sequence_list_.clear();
+    fs::path dataset_path = candidate_map_.find(DatasetType::kKitti)->second /
+                            "odometry\\dataset\\sequences";
+    for (const auto& entry : std::filesystem::directory_iterator(dataset_path))
     {
-        std::filesystem::path kitti_path(path_);
-        for (const auto& entry :
-             std::filesystem::directory_iterator(kitti_path))
-        {
-            sequence_list.push_back(entry.path().string());
-        }
+        sequence_list_.emplace_back(entry.path());
     }
-    return sequence_list;
 }
 
+SequenceList Dataset::GetSequenceList() const { return sequence_list_; }
+
+DatasetPathMap Dataset::GetCandidateMap() const { return candidate_map_; }
 }  // namespace ad_framework::application

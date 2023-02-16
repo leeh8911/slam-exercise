@@ -20,7 +20,7 @@ FileselectorPannel::FileselectorPannel(const ImVec2& position,
 {
 }
 
-void FileselectorPannel::RenderInterface(bool& open) const
+void FileselectorPannel::RenderInterface(bool& open)
 {
     ImGui::Text("File Selector");
 }

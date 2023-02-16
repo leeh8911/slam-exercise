@@ -11,10 +11,8 @@ opencv/4.3.0@conan/stable
 cmake
 
 [options]
-gtest:shared=False
-glew:shared=False
+*:shared=False
 opencv:nonfree=False
-opencv:shared=False
 opencv:quirc=False
 opencv:protobuf=False
 opencv:openexr=False

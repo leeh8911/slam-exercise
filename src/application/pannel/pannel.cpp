@@ -27,7 +27,7 @@ Pannel::Pannel(std::string name, const ImVec2& position, const ImVec2& size)
     window_flags_ |= ImGuiWindowFlags_NoMove;
 }
 
-void Pannel::Render(bool& open, const ImVec2& window_size) const
+void Pannel::Render(bool& open, const ImVec2& window_size)
 {
     SetSize(window_size);
     SetPosition(window_size);

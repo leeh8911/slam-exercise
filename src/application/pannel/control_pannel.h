@@ -13,7 +13,9 @@
 
 #include <imgui.h>
 
+#include "src/application/dataset.h"
 #include "src/application/pannel/pannel.h"
+
 namespace ad_framework::application
 {
 
@@ -24,7 +26,9 @@ class ControlPannel : public Pannel
     ~ControlPannel() = default;
 
  private:
-    void RenderInterface(bool& open) const override;
+    void RenderInterface(bool& open) override;
+
+    DatasetPtr dataset_{nullptr};
 };
 }  // namespace ad_framework::application
 

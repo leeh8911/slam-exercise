@@ -24,7 +24,7 @@ class CamViewPannel : public Pannel
     ~CamViewPannel() = default;
 
  private:
-    void RenderInterface(bool& open) const override;
+    void RenderInterface(bool& open) override;
 };
 }  // namespace ad_framework::application
 

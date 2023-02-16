@@ -31,7 +31,7 @@ class TopViewPannel : public Pannel
     ~TopViewPannel() = default;
 
  private:
-    void RenderInterface(bool& open) const override;
+    void RenderInterface(bool& open) override;
 
     std::unique_ptr<TopViewDrawer> drawer_{nullptr};
 };

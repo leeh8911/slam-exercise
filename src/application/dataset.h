@@ -14,6 +14,7 @@
 #include <filesystem>
 #include <memory>
 #include <string>
+#include <unordered_map>
 
 namespace ad_framework::application
 {
@@ -25,20 +26,31 @@ enum class DatasetType
 };
 
 namespace fs = std::filesystem;
+
+using DatasetTypeToName = std::unordered_map<DatasetType, const char*>;
+using DatasetNameToType = std::unordered_map<const char*, DatasetType>;
+using DatasetPathMap = std::unordered_map<DatasetType, fs::path>;
+using SequenceList = std::vector<fs::path>;
+
 class Dataset
 {
  public:
     Dataset();
     ~Dataset() = default;
 
-    bool IsExist(DatasetType type) const;
     std::vector<fs::path> GetSequenceList() const;
+    DatasetPathMap GetCandidateMap() const;
+    void FindSequences(DatasetType type);
 
  private:
-    fs::path base_path_{};
+    void FindCandidates();
+
+    fs::path base_path_{"D:\\sangwon\\dataset"};
     fs::path selected_path_{};
-    std::vector<fs::path> sequence_list_{};
-    std::vector<fs::path> candidate_path_list_{};
+    SequenceList sequence_list_{};
+    DatasetPathMap candidate_map_{};
+    static DatasetTypeToName kDatasetTypeToName;
+    static DatasetNameToType kDatasetNameToType;
     DatasetType type_{};
 };
 

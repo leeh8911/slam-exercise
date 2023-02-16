@@ -26,11 +26,11 @@ class Pannel
  public:
     Pannel(std::string name, const ImVec2& position_, const ImVec2& size_);
     virtual ~Pannel() = default;
-    void Render(bool& open, const ImVec2& window_size) const;
+    void Render(bool& open, const ImVec2& window_size);
     void SetDataset(DatasetPtr dataset);
 
  protected:
-    virtual void RenderInterface(bool& open) const = 0;
+    virtual void RenderInterface(bool& open) = 0;
 
  private:
     void SetSize(const ImVec2& window_size) const;

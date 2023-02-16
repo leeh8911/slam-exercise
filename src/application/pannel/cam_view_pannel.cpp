@@ -27,7 +27,7 @@ CamViewPannel::CamViewPannel(const ImVec2& position, const ImVec2& size)
 {
 }
 
-void CamViewPannel::RenderInterface(bool& open) const
+void CamViewPannel::RenderInterface(bool& open)
 {
     ImGui::Text("Hello, world!");
 

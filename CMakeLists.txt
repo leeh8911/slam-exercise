@@ -4,6 +4,12 @@ cmake_path(GET CMAKE_SOURCE_DIR FILENAME PROJECT_NAME)
 
 project(${PROJECT_NAME} LANGUAGES CXX)
 
+if (MSVC)
+    add_compile_options(/W4 /MDd)
+else()
+    add_compile_options(-Wall -Wextra -pedantic)
+endif()
+
 set(PROJECT_LIB ${PROJECT_NAME}_lib)
 set(PROJECT_TEST ${PROJECT_NAME}_test)
 set(PROJECT_APP ${PROJECT_NAME}_app)
