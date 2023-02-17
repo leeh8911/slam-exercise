@@ -16,11 +16,7 @@ namespace ad_framework::application
 {
 
 Pannel::Pannel(std::string name, const ImVec2& position, const ImVec2& size)
-    : name_{name},
-      position_{position},
-      size_{size},
-      window_flags_{0},
-      dataset_{nullptr}
+    : name_{name}, position_{position}, size_{size}, window_flags_{0}
 {
     window_flags_ |= ImGuiWindowFlags_NoTitleBar;
     window_flags_ |= ImGuiWindowFlags_NoResize;
@@ -50,7 +46,5 @@ void Pannel::SetPosition(const ImVec2& window_size) const
         ImVec2(position_.x * window_size.x, position_.y * window_size.y);
     ImGui::SetNextWindowPos(position, ImGuiCond_FirstUseEver);
 }
-
-void Pannel::SetDataset(DatasetPtr dataset) { dataset_ = dataset; }
 
 }  // namespace ad_framework::application

@@ -10,7 +10,9 @@
 
 #include "src/application/pannel/control_pannel.h"
 
+#include <algorithm>
 #include <array>
+#include <cstring>
 #include <filesystem>
 #include <iostream>
 #include <string>
@@ -35,31 +37,37 @@ void ControlPannel::RenderInterface(bool& open)
 
     ImGui::LabelText("Name", "Dataset");
     {
-        static std::array<const char*, 5> items = {"kitti"};
         static int item_current = 0;
-        ImGui::Combo("Select", &item_current, items.data(),
-                     static_cast<int>(items.size()));
-
-        dataset_->FindSequences(static_cast<DatasetType>(item_current));
+        ImGui::Combo("Select", &item_current, Dataset::kItems.data(),
+                     static_cast<int>(Dataset::kItems.size()));
+        dataset_->SelectType(static_cast<DatasetType>(item_current));
     }
 
-    if (ImGui::Button("Load"))
+    std::string load_button_label = "Load";
+    if (dataset_->GetSequencePathList().empty())
     {
-        std::cout << "Loading..." << std::endl;
+        load_button_label = "Download";
     }
 
-    ImGui::BeginChild("left pane", ImVec2(150, 0), true);
-    static int selected_index = 0;
-    int current_index = 0;
-    for (const auto& sequence : dataset_->GetSequenceList())
+    if (ImGui::Button(load_button_label.c_str()))
     {
-        std::string label = sequence.filename().string();
-        if (ImGui::Selectable(label.c_str(), selected_index == current_index))
+        std::cout << "Downloading..." << std::endl;
+    }
+
+    ImGui::LabelText("Name", "Sequence");
+    {
+        static int sequence_index = 0;
+
+        auto item_getter = [](void* data, int idx, const char** out_text)
         {
-            selected_index = current_index;
-        }
-        ++current_index;
+            auto* dataset = static_cast<Dataset*>(data);
+            std::string name = dataset->GetSequencePathList()[idx].string();
+            *out_text = name.c_str();
+            return true;
+        };
+        ImGui::Combo("Select", &sequence_index, item_getter, dataset_.get(),
+                     static_cast<int>(dataset_->GetSequencePathList().size()));
+        dataset_->SelectSequence(sequence_index);
     }
-    ImGui::EndChild();
 }
 }  // namespace ad_framework::application

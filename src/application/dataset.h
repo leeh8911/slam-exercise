@@ -11,6 +11,7 @@
 #ifndef SRC_APPLICATION_DATASET_H_
 #define SRC_APPLICATION_DATASET_H_
 
+#include <array>
 #include <filesystem>
 #include <memory>
 #include <string>
@@ -22,6 +23,10 @@ namespace ad_framework::application
 enum class DatasetType
 {
     kKitti,
+    kNuscenes,
+    kWaymo,
+    kArgoverse,
+    kLyft,
     kNone
 };
 
@@ -30,7 +35,8 @@ namespace fs = std::filesystem;
 using DatasetTypeToName = std::unordered_map<DatasetType, const char*>;
 using DatasetNameToType = std::unordered_map<const char*, DatasetType>;
 using DatasetPathMap = std::unordered_map<DatasetType, fs::path>;
-using SequenceList = std::vector<fs::path>;
+using SequencePathList = std::vector<fs::path>;
+using SequenceNameList = std::vector<std::string>;
 
 class Dataset
 {
@@ -38,16 +44,23 @@ class Dataset
     Dataset();
     ~Dataset() = default;
 
-    std::vector<fs::path> GetSequenceList() const;
+    const SequencePathList& GetSequencePathList() const;
     DatasetPathMap GetCandidateMap() const;
+    void SelectType(DatasetType type);
     void FindSequences(DatasetType type);
+    void SelectSequence(size_t index);
+    fs::path GetSelectedPath() const;
+
+    constexpr static std::array<const char*, 5> kItems = {
+        "kitti", "nuscenes", "waymo", "argoverse", "lyft"};
 
  private:
     void FindCandidates();
 
     fs::path base_path_{"D:\\sangwon\\dataset"};
     fs::path selected_path_{};
-    SequenceList sequence_list_{};
+    SequencePathList sequence_path_list_{};
+    SequenceNameList sequence_name_list_{};
     DatasetPathMap candidate_map_{};
     static DatasetTypeToName kDatasetTypeToName;
     static DatasetNameToType kDatasetNameToType;
