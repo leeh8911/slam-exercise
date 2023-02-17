@@ -27,8 +27,6 @@ class ControlPannel : public Pannel
 
  private:
     void RenderInterface(bool& open) override;
-
-    DatasetPtr dataset_{nullptr};
 };
 }  // namespace ad_framework::application
 

@@ -11,6 +11,7 @@
 #include "src/application/dataset.h"
 
 #include <filesystem>
+#include <iostream>
 #include <string>
 #include <vector>
 

@@ -16,6 +16,7 @@
 #include <memory>
 #include <string>
 
+#include "src/application/dataset.h"
 namespace ad_framework::application
 
 {
@@ -25,9 +26,12 @@ class Pannel
     Pannel(std::string name, const ImVec2& position_, const ImVec2& size_);
     virtual ~Pannel() = default;
     void Render(bool& open, const ImVec2& window_size);
+    void SetDataset(DatasetPtr dataset);
+    std::string GetName() const;
 
  protected:
     virtual void RenderInterface(bool& open) = 0;
+    DatasetPtr dataset_{nullptr};
 
  private:
     void SetSize(const ImVec2& window_size) const;

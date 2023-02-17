@@ -136,6 +136,11 @@ UserInterface::UserInterface()
         std::make_unique<ControlPannel>(control_position, control_size));
     pannels_.emplace_front(
         std::make_unique<MediaPannel>(media_position, media_size));
+
+    for (auto& pannel : pannels_)
+    {
+        pannel->SetDataset(dataset_);
+    }
 }
 
 void UserInterface::Execute() { window_.Render(pannels_); }

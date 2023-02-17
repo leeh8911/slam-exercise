@@ -24,7 +24,7 @@
 namespace ad_framework::application
 {
 ControlPannel::ControlPannel(const ImVec2& position, const ImVec2& size)
-    : Pannel("Control", position, size), dataset_{std::make_shared<Dataset>()}
+    : Pannel("Control", position, size)
 {
 }
 
