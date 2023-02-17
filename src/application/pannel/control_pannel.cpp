@@ -10,6 +10,8 @@
 
 #include "src/application/pannel/control_pannel.h"
 
+#include <stdio.h>
+
 #include <algorithm>
 #include <array>
 #include <cstring>
@@ -56,18 +58,28 @@ void ControlPannel::RenderInterface(bool& open)
 
     ImGui::LabelText("Name", "Sequence");
     {
-        static int sequence_index = 0;
+        static std::string current_item = "";
+        static std::string selected_item = "";
 
-        auto item_getter = [](void* data, int idx, const char** out_text)
+        auto& path_list = dataset_->GetSequencePathList();
+        if (ImGui::BeginCombo("Sequence", current_item.c_str()))
         {
-            auto* dataset = static_cast<Dataset*>(data);
-            std::string name = dataset->GetSequencePathList()[idx].string();
-            *out_text = name.c_str();
-            return true;
-        };
-        ImGui::Combo("Select", &sequence_index, item_getter, dataset_.get(),
-                     static_cast<int>(dataset_->GetSequencePathList().size()));
-        dataset_->SelectSequence(sequence_index);
+            for (size_t n = 0; n < path_list.size(); n++)
+            {
+                selected_item = std::to_string(n);
+                bool is_selected = (current_item == selected_item);
+                if (ImGui::Selectable(selected_item.c_str(), is_selected))
+                {
+                    current_item = selected_item;
+                    dataset_->SelectSequence(n);
+                }
+                if (is_selected)
+                {
+                    ImGui::SetItemDefaultFocus();
+                }
+            }
+            ImGui::EndCombo();
+        }
     }
 }
 }  // namespace ad_framework::application
