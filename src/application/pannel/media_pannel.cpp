@@ -10,6 +10,8 @@
 
 #include "src/application/pannel/media_pannel.h"
 
+#include <iostream>
+
 #include "bindings/imgui.h"
 
 namespace ad_framework::application

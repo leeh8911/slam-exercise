@@ -28,7 +28,6 @@
 #include "src/application/pannel/cam_view_pannel.h"
 #include "src/application/pannel/control_pannel.h"
 #include "src/application/pannel/dialog_pannel.h"
-#include "src/application/pannel/file_selector_pannel.h"
 #include "src/application/pannel/media_pannel.h"
 #include "src/application/pannel/pannel.h"
 #include "src/application/pannel/top_view_pannel.h"

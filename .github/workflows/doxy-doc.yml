@@ -23,14 +23,14 @@ jobs:
       # 3. Create the doxygen pages.
       - name: Create the doxygen
         run: |
-          git clone https://github.com/leeh8911/search_doc.git
-          mkdir search_doc/build && cd search_doc
+          git clone git@github.com:leeh8911/slam-exercise.git
+          mkdir slam-exercise/build && cd slam-exercise
           make doc
 
       - name: Move documents
         run: |
           mkdir -p ./docs/Doxygen/html
-          mv ./search_doc/docs/Doxygen/html ./docs/Doxygen
+          mv ./slam-exercise/docs/Doxygen/html ./docs/Doxygen
 
       # Deploy to GitHub Pages
       - name: Deploy
