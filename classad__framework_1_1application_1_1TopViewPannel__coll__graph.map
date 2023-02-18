@@ -1,0 +1,13 @@
+<map id="ad_framework::application::TopViewPannel" name="ad_framework::application::TopViewPannel">
+<area shape="rect" id="node1" title="This class is for rendering the top view of measurements (from lidar, camera, radar,..." alt="" coords="103,717,535,824"/>
+<area shape="rect" id="node2" href="$classad__framework_1_1application_1_1Pannel.html" title=" " alt="" coords="315,488,821,668"/>
+<area shape="rect" id="node3" title=" " alt="" coords="777,285,1001,363"/>
+<area shape="rect" id="node4" title=" " alt="" coords="811,145,968,223"/>
+<area shape="rect" id="node5" title=" " alt="" coords="603,5,642,83"/>
+<area shape="rect" id="node11" title=" " alt="" coords="347,145,504,223"/>
+<area shape="rect" id="node6" title=" " alt="" coords="399,285,470,363"/>
+<area shape="rect" id="node7" title=" " alt="" coords="494,285,642,363"/>
+<area shape="rect" id="node8" title=" " alt="" coords="666,285,753,363"/>
+<area shape="rect" id="node9" title=" " alt="" coords="598,145,786,223"/>
+<area shape="rect" id="node10" title=" " alt="" coords="5,387,437,464"/>
+</map>

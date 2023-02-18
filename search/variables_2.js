@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['calibration_5f_246',['calibration_',['../classad__framework_1_1application_1_1Dataset.html#a93ff77fd2ccac77977013e0f158e50aa',1,'ad_framework::application::Dataset::calibration_()'],['../classad__framework_1_1application_1_1KittiDataset.html#a93078282444e5dc4821295b9f6561471',1,'ad_framework::application::KittiDataset::calibration_()']]],
+  ['candidate_5fmap_5f_247',['candidate_map_',['../classad__framework_1_1application_1_1DataLoader.html#a98feccc9ce2d728c905673a86bdd569f',1,'ad_framework::application::DataLoader']]],
+  ['color_5fimage_5fptr_5f_248',['color_image_ptr_',['../classad__framework_1_1application_1_1Dataset.html#a9547d290ed32f8552f19d12bec304433',1,'ad_framework::application::Dataset::color_image_ptr_()'],['../classad__framework_1_1application_1_1KittiDataset.html#a3f667c8f7e6814c2c4664bac2241818e',1,'ad_framework::application::KittiDataset::color_image_ptr_()']]],
+  ['color_5fstereo_5fimage_5fptr_5f_249',['color_stereo_image_ptr_',['../classad__framework_1_1application_1_1Dataset.html#a672a1823a4d1057ddc18f3f6a858e5e8',1,'ad_framework::application::Dataset::color_stereo_image_ptr_()'],['../classad__framework_1_1application_1_1KittiDataset.html#a0b9cafc455a87ea70a4d076ccd238948',1,'ad_framework::application::KittiDataset::color_stereo_image_ptr_()']]],
+  ['current_5findex_5f_250',['current_index_',['../classad__framework_1_1application_1_1Dataset.html#a7c6a0bcecd6130713b164ff87a7c5901',1,'ad_framework::application::Dataset::current_index_()'],['../classad__framework_1_1application_1_1KittiDataset.html#a743693e84c4e4ae50acc058c80a0bf07',1,'ad_framework::application::KittiDataset::current_index_()']]]
+];
