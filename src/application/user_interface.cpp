@@ -140,7 +140,7 @@ UserInterface::UserInterface()
 
     for (auto& pannel : pannels_)
     {
-        pannel->SetDataset(dataloader_ptr_);
+        pannel->SetDataLoader(dataloader_ptr_);
     }
 }
 

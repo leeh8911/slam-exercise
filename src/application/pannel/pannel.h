@@ -26,7 +26,7 @@ class Pannel
     Pannel(std::string name, const ImVec2& position_, const ImVec2& size_);
     virtual ~Pannel() = default;
     void Render(bool& open, const ImVec2& window_size);
-    void SetDataset(DataLoaderPtr dataset);
+    void SetDataLoader(DataLoaderPtr dataset);
     std::string GetName() const;
 
  protected:

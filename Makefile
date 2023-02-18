@@ -37,7 +37,7 @@ build-app: conan_install
 .PHONY: build-doc
 build-doc: dir_make
 	cd build && \
-	cmake .. -DCMAKE_CONFIGURATION_TYPES=Debug;Release -DBUILD_APP=OFF -DBUILD_TEST=OFF -DBUILD_DOC=ON && \
+	cmake .. -DBUILD_APP=OFF -DBUILD_TEST=OFF -DBUILD_DOC=ON && \
 	cmake --build .
 
 .PHONY: run-test

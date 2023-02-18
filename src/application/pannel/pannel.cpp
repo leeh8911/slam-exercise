@@ -27,7 +27,7 @@ Pannel::Pannel(std::string name, const ImVec2& position, const ImVec2& size)
     window_flags_ |= ImGuiWindowFlags_NoMove;
 }
 
-void Pannel::SetDataset(DataLoaderPtr dataloader_ptr)
+void Pannel::SetDataLoader(DataLoaderPtr dataloader_ptr)
 {
     dataloader_ptr_ = dataloader_ptr;
 }

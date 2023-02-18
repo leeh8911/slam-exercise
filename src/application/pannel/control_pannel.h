@@ -31,7 +31,7 @@ class ControlPannel : public Pannel
     void RenderInterface(bool& open) override;
 
     class Impl;
-    std::unique_ptr<Impl> impl_{};
+    std::unique_ptr<Impl> pimpl_{nullptr};
 };
 }  // namespace ad_framework::application
 
