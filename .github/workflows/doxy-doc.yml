@@ -23,8 +23,6 @@ jobs:
       # 3. Create the doxygen pages.
       - name: Create the doxygen
         run: |
-          git clone git@github.com:leeh8911/slam-exercise.git
-          mkdir slam-exercise/build && cd slam-exercise
           make doc
 
       - name: Move documents
