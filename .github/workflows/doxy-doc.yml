@@ -25,11 +25,6 @@ jobs:
         run: |
           make doc
 
-      - name: Move documents
-        run: |
-          mkdir -p ./docs/Doxygen/html
-          mv ./slam-exercise/docs/Doxygen/html ./docs/Doxygen
-
       # Deploy to GitHub Pages
       - name: Deploy
 
