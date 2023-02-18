@@ -13,7 +13,9 @@
 
 #include <imgui.h>
 
-#include "src/application/dataset.h"
+#include <memory>
+
+#include "..\dataloader.h"
 #include "src/application/pannel/pannel.h"
 
 namespace ad_framework::application
@@ -27,6 +29,9 @@ class ControlPannel : public Pannel
 
  private:
     void RenderInterface(bool& open) override;
+
+    class Impl;
+    std::unique_ptr<Impl> impl_{};
 };
 }  // namespace ad_framework::application
 

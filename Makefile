@@ -8,9 +8,12 @@ else
 	config = Debug
 endif
 
+.PHONY: dir_make
+dir_make:
+	mkdir build 2>nul || echo build already exists
+
 .PHONY: conan_install
-conan_install:
-	mkdir build || \
+conan_install: dir_make
 	cd build && \
 	conan install .. -s build_type=Release --build=missing && \
 	conan install .. -s build_type=Debug --build=missing
@@ -21,21 +24,18 @@ format:
 
 .PHONY: build-test
 build-test: conan_install
-	mkdir build || \
 	cd build && \
 	cmake .. -DCMAKE_CONFIGURATION_TYPES=Debug;Release -DBUILD_APP=OFF -DBUILD_TEST=ON -DBUILD_DOC=OFF && \
 	cmake --build .
 
 .PHONY: build-app
 build-app: conan_install
-	mkdir build || \
 	cd build && \
 	cmake .. -DCMAKE_CONFIGURATION_TYPES=Debug;Release -DBUILD_APP=ON -DBUILD_TEST=OFF -DBUILD_DOC=OFF && \
 	cmake --build .
 
 .PHONY: build-doc
-build-doc:
-	mkdir build || \
+build-doc: dir_make
 	cd build && \
 	cmake .. -DCMAKE_CONFIGURATION_TYPES=Debug;Release -DBUILD_APP=OFF -DBUILD_TEST=OFF -DBUILD_DOC=ON && \
 	cmake --build .

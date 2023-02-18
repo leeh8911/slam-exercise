@@ -109,7 +109,9 @@ ImVec2 Window::GetSize() const
 }
 
 UserInterface::UserInterface()
-    : window_{Window{}}, pannels_{}, dataset_{std::make_shared<Dataset>()}
+    : window_{Window{}},
+      pannels_{},
+      dataloader_ptr_{std::make_shared<DataLoader>()}
 {
     ImVec2 cam_view_position = ImVec2(0.00f, 0.00f);
     ImVec2 cam_view_size = ImVec2(0.20f, 0.40f);
@@ -138,7 +140,7 @@ UserInterface::UserInterface()
 
     for (auto& pannel : pannels_)
     {
-        pannel->SetDataset(dataset_);
+        pannel->SetDataset(dataloader_ptr_);
     }
 }
 

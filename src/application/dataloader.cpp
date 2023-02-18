@@ -8,7 +8,7 @@
 ///
 ///
 
-#include "src/application/dataset.h"
+#include "src/application/dataloader.h"
 
 #include <filesystem>
 #include <iostream>
@@ -20,10 +20,12 @@ namespace ad_framework::application
 
 namespace fs = std::filesystem;
 
-DatasetTypeToName Dataset::kDatasetTypeToName{{DatasetType::kKitti, "kitti"}};
-DatasetNameToType Dataset::kDatasetNameToType{{"kitti", DatasetType::kKitti}};
+DataLoaderTypeToName DataLoader::kDatasetTypeToName{
+    {DatasetType::kKitti, "kitti"}};
+DatasetNameToType DataLoader::kDatasetNameToType{
+    {"kitti", DatasetType::kKitti}};
 
-Dataset::Dataset()
+DataLoader::DataLoader()
     : base_path_{"D:\\sangwon\\dataset"},
       type_{DatasetType::kKitti},
       selected_path_{""},
@@ -34,7 +36,7 @@ Dataset::Dataset()
     FindCandidates();
 }
 
-void Dataset::FindCandidates()
+void DataLoader::FindCandidates()
 {
     for (const auto& candidate : kDatasetTypeToName)
     {
@@ -46,13 +48,13 @@ void Dataset::FindCandidates()
     }
 }
 
-void Dataset::SelectType(DatasetType type)
+void DataLoader::SelectType(DatasetType type)
 {
     type_ = type;
     FindSequences(type);
 }
 
-void Dataset::SelectSequence(size_t index)
+void DataLoader::SelectSequence(size_t index)
 {
     if (index < sequence_path_list_.size())
     {
@@ -60,9 +62,9 @@ void Dataset::SelectSequence(size_t index)
     }
 }
 
-fs::path Dataset::GetSelectedPath() const { return selected_path_; }
+fs::path DataLoader::GetSelectedPath() const { return selected_path_; }
 
-void Dataset::FindSequences(DatasetType type)
+void DataLoader::FindSequences(DatasetType type)
 {
     sequence_path_list_.clear();
     sequence_name_list_.clear();
@@ -79,10 +81,10 @@ void Dataset::FindSequences(DatasetType type)
     }
 }
 
-const SequencePathList& Dataset::GetSequencePathList() const
+const SequencePathList& DataLoader::GetSequencePathList() const
 {
     return sequence_path_list_;
 }
 
-DatasetPathMap Dataset::GetCandidateMap() const { return candidate_map_; }
+DatasetPathMap DataLoader::GetCandidateMap() const { return candidate_map_; }
 }  // namespace ad_framework::application

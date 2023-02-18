@@ -18,7 +18,7 @@
 #include <memory>
 #include <string>
 
-#include "src/application/dataset.h"
+#include "dataloader.h"
 #include "src/application/pannel/pannel.h"
 
 namespace ad_framework::application
@@ -51,7 +51,7 @@ class UserInterface
  private:
     Window window_;
     std::forward_list<PannelPtr> pannels_{};
-    DatasetPtr dataset_{};
+    DataLoaderPtr dataloader_ptr_{};
 };
 
 }  // namespace ad_framework::application

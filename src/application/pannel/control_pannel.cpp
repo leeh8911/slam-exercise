@@ -23,6 +23,16 @@
 
 namespace ad_framework::application
 {
+
+class ControlPannel::Impl
+{
+ public:
+    Impl() = default;
+    ~Impl() = default;
+
+ private:
+};
+
 ControlPannel::ControlPannel(const ImVec2& position, const ImVec2& size)
     : Pannel("Control", position, size)
 {
@@ -40,13 +50,13 @@ void ControlPannel::RenderInterface(bool& open)
     ImGui::LabelText("Name", "Dataset");
     {
         static int item_current = 0;
-        ImGui::Combo("Select", &item_current, Dataset::kItems.data(),
-                     static_cast<int>(Dataset::kItems.size()));
-        dataset_->SelectType(static_cast<DatasetType>(item_current));
+        ImGui::Combo("Select", &item_current, DataLoader::kItems.data(),
+                     static_cast<int>(DataLoader::kItems.size()));
+        dataloader_ptr_->SelectType(static_cast<DatasetType>(item_current));
     }
 
     std::string load_button_label = "Load";
-    if (dataset_->GetSequencePathList().empty())
+    if (dataloader_ptr_->GetSequencePathList().empty())
     {
         load_button_label = "Download";
     }
@@ -61,7 +71,7 @@ void ControlPannel::RenderInterface(bool& open)
         static std::string current_item = "";
         static std::string selected_item = "";
 
-        auto& path_list = dataset_->GetSequencePathList();
+        auto& path_list = dataloader_ptr_->GetSequencePathList();
         if (ImGui::BeginCombo("Sequence", current_item.c_str()))
         {
             for (size_t n = 0; n < path_list.size(); n++)
@@ -71,7 +81,7 @@ void ControlPannel::RenderInterface(bool& open)
                 if (ImGui::Selectable(selected_item.c_str(), is_selected))
                 {
                     current_item = selected_item;
-                    dataset_->SelectSequence(n);
+                    dataloader_ptr_->SelectSequence(n);
                 }
                 if (is_selected)
                 {

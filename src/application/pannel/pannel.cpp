@@ -20,14 +20,17 @@ Pannel::Pannel(std::string name, const ImVec2& position, const ImVec2& size)
       position_{position},
       size_{size},
       window_flags_{0},
-      dataset_{nullptr}
+      dataloader_ptr_{nullptr}
 {
     window_flags_ |= ImGuiWindowFlags_NoTitleBar;
     window_flags_ |= ImGuiWindowFlags_NoResize;
     window_flags_ |= ImGuiWindowFlags_NoMove;
 }
 
-void Pannel::SetDataset(DatasetPtr dataset) { dataset_ = dataset; }
+void Pannel::SetDataset(DataLoaderPtr dataloader_ptr)
+{
+    dataloader_ptr_ = dataloader_ptr;
+}
 std::string Pannel::GetName() const { return name_; }
 void Pannel::Render(bool& open, const ImVec2& window_size)
 {

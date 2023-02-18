@@ -32,17 +32,17 @@ enum class DatasetType
 
 namespace fs = std::filesystem;
 
-using DatasetTypeToName = std::unordered_map<DatasetType, const char*>;
+using DataLoaderTypeToName = std::unordered_map<DatasetType, const char*>;
 using DatasetNameToType = std::unordered_map<const char*, DatasetType>;
 using DatasetPathMap = std::unordered_map<DatasetType, fs::path>;
 using SequencePathList = std::vector<fs::path>;
 using SequenceNameList = std::vector<std::string>;
 
-class Dataset
+class DataLoader
 {
  public:
-    Dataset();
-    ~Dataset() = default;
+    DataLoader();
+    ~DataLoader() = default;
 
     const SequencePathList& GetSequencePathList() const;
     DatasetPathMap GetCandidateMap() const;
@@ -62,12 +62,12 @@ class Dataset
     SequencePathList sequence_path_list_{};
     SequenceNameList sequence_name_list_{};
     DatasetPathMap candidate_map_{};
-    static DatasetTypeToName kDatasetTypeToName;
+    static DataLoaderTypeToName kDatasetTypeToName;
     static DatasetNameToType kDatasetNameToType;
     DatasetType type_{};
 };
 
-using DatasetPtr = std::shared_ptr<Dataset>;
+using DataLoaderPtr = std::shared_ptr<DataLoader>;
 
 }  // namespace ad_framework::application
 
