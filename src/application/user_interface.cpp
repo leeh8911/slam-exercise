@@ -66,35 +66,47 @@ Window::Window()
     ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 }
 
+bool Window::IsOpen() const { return !glfwWindowShouldClose(window_); }
+
+void Window::NewFrame() const
+{
+    glfwPollEvents();
+
+    // Start the Dear ImGui frame
+    ImGui_ImplOpenGL2_NewFrame();
+    ImGui_ImplGlfw_NewFrame();
+    ImGui::NewFrame();
+}
+
+void Window::XXRender() const
+{
+    // Rendering
+    ImGui::Render();
+    int display_w = 0, display_h = 0;
+    glfwGetFramebufferSize(window_, &display_w, &display_h);
+    glViewport(0, 0, display_w, display_h);
+    glClearColor(kClearColor.x, kClearColor.y, kClearColor.z, kClearColor.w);
+    glClear(GL_COLOR_BUFFER_BIT);
+    ImGui_ImplOpenGL2_RenderDrawData(ImGui::GetDrawData());
+
+    glfwSwapBuffers(window_);
+}
+
 void Window::Render(std::forward_list<PannelPtr>& pannels) const
 {
     bool open = true;
 
     ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
-    while (!glfwWindowShouldClose(window_))
+    while (IsOpen())
     {
-        glfwPollEvents();
-
-        // Start the Dear ImGui frame
-        ImGui_ImplOpenGL2_NewFrame();
-        ImGui_ImplGlfw_NewFrame();
-        ImGui::NewFrame();
+        NewFrame();
 
         for (auto& pannel : pannels)
         {
             pannel->Render(open, GetSize());
         }
-        // Rendering
-        ImGui::Render();
-        int display_w = 0, display_h = 0;
-        glfwGetFramebufferSize(window_, &display_w, &display_h);
-        glViewport(0, 0, display_w, display_h);
-        glClearColor(clear_color.x, clear_color.y, clear_color.z,
-                     clear_color.w);
-        glClear(GL_COLOR_BUFFER_BIT);
-        ImGui_ImplOpenGL2_RenderDrawData(ImGui::GetDrawData());
 
-        glfwSwapBuffers(window_);
+        XXRender();
     }
 }
 

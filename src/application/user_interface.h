@@ -18,7 +18,7 @@
 #include <memory>
 #include <string>
 
-#include "dataloader.h"
+#include "src/application/dataloader.h"
 #include "src/application/pannel/pannel.h"
 
 namespace ad_framework::application
@@ -32,11 +32,17 @@ class Window
 
     void Render(std::forward_list<PannelPtr>& pannels) const;
 
+    bool IsOpen() const;
+    void XXRender() const;
+    void NewFrame() const;
+
     ImVec2 GetSize() const;
 
  private:
     static constexpr int kWidth = 1280;
     static constexpr int kHeight = 720;
+    static constexpr ImVec4 kClearColor = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
+
     GLFWwindow* window_{nullptr};
 };
 
@@ -51,7 +57,7 @@ class UserInterface
  private:
     Window window_;
     std::forward_list<PannelPtr> pannels_{};
-    DataLoaderPtr dataloader_ptr_{};
+    DataLoaderPtr dataloader_ptr_{nullptr};
 };
 
 }  // namespace ad_framework::application

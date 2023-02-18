@@ -31,6 +31,7 @@ void Pannel::SetDataLoader(DataLoaderPtr dataloader_ptr)
 {
     dataloader_ptr_ = dataloader_ptr;
 }
+
 std::string Pannel::GetName() const { return name_; }
 void Pannel::Render(bool& open, const ImVec2& window_size)
 {

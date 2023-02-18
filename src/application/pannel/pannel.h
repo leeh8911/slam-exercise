@@ -16,7 +16,7 @@
 #include <memory>
 #include <string>
 
-#include "..\dataloader.h"
+#include "src/application/dataloader.h"
 namespace ad_framework::application
 
 {
@@ -26,7 +26,7 @@ class Pannel
     Pannel(std::string name, const ImVec2& position_, const ImVec2& size_);
     virtual ~Pannel() = default;
     void Render(bool& open, const ImVec2& window_size);
-    void SetDataLoader(DataLoaderPtr dataset);
+    void SetDataLoader(DataLoaderPtr dataloader);
     std::string GetName() const;
 
  protected:
