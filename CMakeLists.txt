@@ -26,22 +26,26 @@ set(CMAKE_MODULE_PATH
     ${CMAKE_MODULE_PATH} 
     ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-conan_basic_setup()
-
-include(import_imgui_and_implot)
-
-add_subdirectory(src)
-
 if(${BUILD_DOC})
+
 add_subdirectory(docs)
 endif()
 
-if(${BUILD_TEST})
-add_subdirectory(test)
-endif()
+if (${BUILD_TEST} OR ${BUILD_APP})
+    include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+    conan_basic_setup()
 
-if(${BUILD_APP})
-    add_subdirectory(app)
-    add_dependencies(${PROJECT_APP} ${PROJECT_LIB})
-endif()
+    include(import_imgui_and_implot)
+
+    add_subdirectory(src)
+
+    if(${BUILD_TEST})
+        add_subdirectory(test)
+    endif(${BUILD_TEST})
+
+    if(${BUILD_APP})
+        add_subdirectory(app)
+        add_dependencies(${PROJECT_APP} ${PROJECT_LIB})
+    endif(${BUILD_APP})
+
+endif(${BUILD_TEST} OR ${BUILD_APP})
