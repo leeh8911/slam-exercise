@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['imageptr_346',['ImagePtr',['../namespacead__framework_1_1application.html#a2e689e932c107776794c1262a4622c67',1,'ad_framework::application']]]
+  ['imageptr_366',['ImagePtr',['../namespacead__framework.html#aed2e131a810a47c91a8c49d1eb4a454b',1,'ad_framework']]]
 ];

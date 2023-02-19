@@ -2,19 +2,12 @@ var namespacead__framework_1_1application =
 [
     [ "Application", "classad__framework_1_1application_1_1Application.html", "classad__framework_1_1application_1_1Application" ],
     [ "DataLoader", "classad__framework_1_1application_1_1DataLoader.html", "classad__framework_1_1application_1_1DataLoader" ],
-    [ "Image", "classad__framework_1_1application_1_1Image.html", "classad__framework_1_1application_1_1Image" ],
-    [ "StereoImage", "classad__framework_1_1application_1_1StereoImage.html", "classad__framework_1_1application_1_1StereoImage" ],
-    [ "PointCloud", "classad__framework_1_1application_1_1PointCloud.html", "classad__framework_1_1application_1_1PointCloud" ],
-    [ "Calibration", "classad__framework_1_1application_1_1Calibration.html", "classad__framework_1_1application_1_1Calibration" ],
-    [ "DataReader", "classad__framework_1_1application_1_1DataReader.html", "classad__framework_1_1application_1_1DataReader" ],
-    [ "NoneDataReader", "classad__framework_1_1application_1_1NoneDataReader.html", "classad__framework_1_1application_1_1NoneDataReader" ],
-    [ "KittiDataReader", "classad__framework_1_1application_1_1KittiDataReader.html", "classad__framework_1_1application_1_1KittiDataReader" ],
     [ "TopViewDrawer", "classad__framework_1_1application_1_1TopViewDrawer.html", "classad__framework_1_1application_1_1TopViewDrawer" ],
+    [ "Pannel", "classad__framework_1_1application_1_1Pannel.html", "classad__framework_1_1application_1_1Pannel" ],
     [ "CamViewPannel", "classad__framework_1_1application_1_1CamViewPannel.html", "classad__framework_1_1application_1_1CamViewPannel" ],
     [ "ControlPannel", "classad__framework_1_1application_1_1ControlPannel.html", "classad__framework_1_1application_1_1ControlPannel" ],
     [ "DialogPannel", "classad__framework_1_1application_1_1DialogPannel.html", "classad__framework_1_1application_1_1DialogPannel" ],
     [ "MediaPannel", "classad__framework_1_1application_1_1MediaPannel.html", "classad__framework_1_1application_1_1MediaPannel" ],
-    [ "Pannel", "classad__framework_1_1application_1_1Pannel.html", "classad__framework_1_1application_1_1Pannel" ],
     [ "TopViewPannel", "classad__framework_1_1application_1_1TopViewPannel.html", "classad__framework_1_1application_1_1TopViewPannel" ],
     [ "Window", "classad__framework_1_1application_1_1Window.html", "classad__framework_1_1application_1_1Window" ],
     [ "UserInterface", "classad__framework_1_1application_1_1UserInterface.html", "classad__framework_1_1application_1_1UserInterface" ],
@@ -24,11 +17,6 @@ var namespacead__framework_1_1application =
     [ "SequencePathList", "namespacead__framework_1_1application.html#ad2ce2d38791f1ad31cce923ccc4391f9", null ],
     [ "SequenceNameList", "namespacead__framework_1_1application.html#a65b423567663d85af34b75ee2f7da6b3", null ],
     [ "DataLoaderPtr", "namespacead__framework_1_1application.html#a1173744f40824f7dc8e8439227d1399b", null ],
-    [ "ImagePtr", "namespacead__framework_1_1application.html#a2e689e932c107776794c1262a4622c67", null ],
-    [ "StereoImagePtr", "namespacead__framework_1_1application.html#a1ab77877f33b13a9e8954b034bdfa22f", null ],
-    [ "PointCloudPtr", "namespacead__framework_1_1application.html#a3dd529aa6bcbeca16309c060594ffbd9", null ],
-    [ "CalibrationPtr", "namespacead__framework_1_1application.html#a3faa06d9bd4bedc2c55e80ee52c49624", null ],
-    [ "DataReaderPtr", "namespacead__framework_1_1application.html#ace9dd4d6f46f730835848777954f59fe", null ],
     [ "PannelPtr", "namespacead__framework_1_1application.html#a9864a4303346d2579bc1f5995a584ecc", null ],
     [ "DatasetType", "namespacead__framework_1_1application.html#a990965dc3b4fdb81cca94690946f0ecc", [
       [ "kKitti", "namespacead__framework_1_1application.html#a990965dc3b4fdb81cca94690946f0ecca9a3bd5310c4e77aee23fcf0bd584aed3", null ],
@@ -37,6 +25,5 @@ var namespacead__framework_1_1application =
       [ "kArgoverse", "namespacead__framework_1_1application.html#a990965dc3b4fdb81cca94690946f0eccafd9262d8f46dd80edda46ca4035a5649", null ],
       [ "kLyft", "namespacead__framework_1_1application.html#a990965dc3b4fdb81cca94690946f0eccad036adac2a83ece5ae502c807cc539da", null ],
       [ "kNone", "namespacead__framework_1_1application.html#a990965dc3b4fdb81cca94690946f0ecca35c3ace1970663a16e5c65baa5941b13", null ]
-    ] ],
-    [ "ToStringWithZeroPadding", "namespacead__framework_1_1application.html#a06fede36f7dc9140b6bb8df24a376524", null ]
+    ] ]
 ];
