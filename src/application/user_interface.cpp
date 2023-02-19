@@ -25,6 +25,8 @@
 #include "bindings/imgui_impl_glfw.h"
 #include "bindings/imgui_impl_opengl2.h"
 #include "bindings/implot.h"
+#include "src/application/dataloader.h"
+#include "src/application/datareader.h"
 #include "src/application/pannel/cam_view_pannel.h"
 #include "src/application/pannel/control_pannel.h"
 #include "src/application/pannel/dialog_pannel.h"
@@ -63,39 +65,32 @@ Window::Window()
 
     ImGui_ImplGlfw_InitForOpenGL(window_, true);
     ImGui_ImplOpenGL2_Init();
-    ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 }
 
-void Window::Render(std::forward_list<PannelPtr>& pannels) const
+bool Window::IsOpen() const { return !glfwWindowShouldClose(window_); }
+
+void Window::NewFrame() const
 {
-    bool open = true;
+    glfwPollEvents();
 
-    ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
-    while (!glfwWindowShouldClose(window_))
-    {
-        glfwPollEvents();
+    // Start the Dear ImGui frame
+    ImGui_ImplOpenGL2_NewFrame();
+    ImGui_ImplGlfw_NewFrame();
+    ImGui::NewFrame();
+}
 
-        // Start the Dear ImGui frame
-        ImGui_ImplOpenGL2_NewFrame();
-        ImGui_ImplGlfw_NewFrame();
-        ImGui::NewFrame();
+void Window::Render() const
+{
+    // Rendering
+    ImGui::Render();
+    int display_w = 0, display_h = 0;
+    glfwGetFramebufferSize(window_, &display_w, &display_h);
+    glViewport(0, 0, display_w, display_h);
+    glClearColor(kClearColor.x, kClearColor.y, kClearColor.z, kClearColor.w);
+    glClear(GL_COLOR_BUFFER_BIT);
+    ImGui_ImplOpenGL2_RenderDrawData(ImGui::GetDrawData());
 
-        for (auto& pannel : pannels)
-        {
-            pannel->Render(open, GetSize());
-        }
-        // Rendering
-        ImGui::Render();
-        int display_w = 0, display_h = 0;
-        glfwGetFramebufferSize(window_, &display_w, &display_h);
-        glViewport(0, 0, display_w, display_h);
-        glClearColor(clear_color.x, clear_color.y, clear_color.z,
-                     clear_color.w);
-        glClear(GL_COLOR_BUFFER_BIT);
-        ImGui_ImplOpenGL2_RenderDrawData(ImGui::GetDrawData());
-
-        glfwSwapBuffers(window_);
-    }
+    glfwSwapBuffers(window_);
 }
 
 ImVec2 Window::GetSize() const
@@ -111,7 +106,8 @@ ImVec2 Window::GetSize() const
 UserInterface::UserInterface()
     : window_{Window{}},
       pannels_{},
-      dataloader_ptr_{std::make_shared<DataLoader>()}
+      dataloader_ptr_{std::make_shared<DataLoader>()},
+      datareader_ptr_{nullptr}
 {
     ImVec2 cam_view_position = ImVec2(0.00f, 0.00f);
     ImVec2 cam_view_size = ImVec2(0.20f, 0.40f);
@@ -137,13 +133,53 @@ UserInterface::UserInterface()
         std::make_unique<ControlPannel>(control_position, control_size));
     pannels_.emplace_front(
         std::make_unique<MediaPannel>(media_position, media_size));
+}
 
-    for (auto& pannel : pannels_)
+void UserInterface::UpdateDataReader()
+{
+    if (dataset_type_ == dataloader_ptr_->GetDatasetType())
     {
-        pannel->SetDataLoader(dataloader_ptr_);
+    }
+
+    dataset_type_ = dataloader_ptr_->GetDatasetType();
+    auto base_path = dataloader_ptr_->GetSelectedPath();
+
+    switch (dataset_type_)
+    {
+        case (DatasetType::kKitti):
+            datareader_ptr_ = std::make_shared<KittiDataReader>(base_path);
+            break;
+        case (DatasetType::kNuscenes):
+            [[fallthrough]];
+        case (DatasetType::kNone):
+            [[fallthrough]];
+        default:
+            datareader_ptr_ = std::make_shared<NoneDataReader>(base_path);
+            break;
     }
 }
 
-void UserInterface::Execute() { window_.Render(pannels_); }
+void UserInterface::Execute()
+{
+    bool open = true;
+
+    while (window_.IsOpen())
+    {
+        window_.NewFrame();
+
+        UpdateDataReader();
+
+        for (auto& pannel : pannels_)
+        {
+            pannel->Update(dataloader_ptr_, datareader_ptr_);
+        }
+        for (auto& pannel : pannels_)
+        {
+            pannel->Render(open, window_.GetSize());
+        }
+
+        window_.Render();
+    }
+}
 
 }  // namespace ad_framework::application

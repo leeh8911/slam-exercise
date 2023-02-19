@@ -46,6 +46,7 @@ class DataLoader
 
     const SequencePathList& GetSequencePathList() const;
     DatasetPathMap GetCandidateMap() const;
+    DatasetType GetDatasetType() const;
     void SelectType(DatasetType type);
     void FindSequences(DatasetType type);
     void SelectSequence(size_t index);
