@@ -8,14 +8,14 @@
 ///
 ///
 
-#ifndef SRC_APPLICATION_PANNEL_TOP_VIEW_PANNEL_H_
-#define SRC_APPLICATION_PANNEL_TOP_VIEW_PANNEL_H_
+#ifndef SRC_APPLICATION_USER_INTERFACE_PANNEL_TOP_VIEW_PANNEL_H_
+#define SRC_APPLICATION_USER_INTERFACE_PANNEL_TOP_VIEW_PANNEL_H_
 
 #include <memory>
 
+#include "abstract_pannel.h"
 #include "bindings/imgui.h"
 #include "src/application/user_interface/drawer/top_view_drawer.h"
-#include "src/application/user_interface/pannel/pannel.h"
 
 namespace ad_framework::application
 {
@@ -37,4 +37,4 @@ class TopViewPannel : public Pannel
 };
 }  // namespace ad_framework::application
 
-#endif  // SRC_APPLICATION_PANNEL_TOP_VIEW_PANNEL_H_
+#endif  // SRC_APPLICATION_USER_INTERFACE_PANNEL_TOP_VIEW_PANNEL_H_

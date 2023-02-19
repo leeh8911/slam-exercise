@@ -8,7 +8,7 @@
 ///
 ///
 
-#include "src/application/user_interface/pannel/pannel.h"
+#include "src/application/user_interface/pannel/abstract_pannel.h"
 
 #include "bindings/imgui.h"
 

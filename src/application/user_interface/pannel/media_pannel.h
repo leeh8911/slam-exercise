@@ -8,12 +8,12 @@
 ///
 ///
 
-#ifndef SRC_APPLICATION_PANNEL_MEDIA_PANNEL_H_
-#define SRC_APPLICATION_PANNEL_MEDIA_PANNEL_H_
+#ifndef SRC_APPLICATION_USER_INTERFACE_PANNEL_MEDIA_PANNEL_H_
+#define SRC_APPLICATION_USER_INTERFACE_PANNEL_MEDIA_PANNEL_H_
 
 #include <imgui.h>
 
-#include "src/application/user_interface/pannel/pannel.h"
+#include "abstract_pannel.h"
 namespace ad_framework::application
 {
 class MediaPannel : public Pannel
@@ -27,4 +27,4 @@ class MediaPannel : public Pannel
 };
 }  // namespace ad_framework::application
 
-#endif  // SRC_APPLICATION_PANNEL_MEDIA_PANNEL_H_
+#endif  // SRC_APPLICATION_USER_INTERFACE_PANNEL_MEDIA_PANNEL_H_

@@ -19,7 +19,7 @@
 #include <string>
 
 #include "src/application/dataloader.h"
-#include "src/application/user_interface/pannel/pannel.h"
+#include "src/application/user_interface/pannel/abstract_pannel.h"
 #include "src/data_reader/abstract_data_reader.h"
 
 namespace ad_framework::application
