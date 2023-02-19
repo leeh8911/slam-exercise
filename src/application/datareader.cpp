@@ -20,14 +20,14 @@ class Image
 {
  public:
     Image() = default;
-    static ImagePtr ReadFromFile(const fs::path path);
+    static ImagePtr ReadFromFile(const fs::path path) { return nullptr; }
 
  private:
 };
 class StereoImage
 {
  public:
-    StereoImage(ImagePtr left, ImagePtr right);
+    StereoImage(ImagePtr left, ImagePtr right) : left_{left}, right_{right} {}
 
  private:
     ImagePtr left_{nullptr};
@@ -36,14 +36,14 @@ class StereoImage
 class PointCloud
 {
  public:
-    static PointCloudPtr ReadFromFile(const fs::path path);
+    static PointCloudPtr ReadFromFile(const fs::path path) { return nullptr; }
 
  private:
 };
 class Calibration
 {
  public:
-    static CalibrationPtr ReadFromFile(const fs::path path);
+    static CalibrationPtr ReadFromFile(const fs::path path) { return nullptr; }
 
  private:
 };
@@ -64,7 +64,7 @@ std::string ToStringWithZeroPadding(size_t num, size_t padding = 6)
 DataReader::DataReader(const fs::path path)
     : path_(path),
       current_index_{0},
-      size_{ReadSize()},
+      size_{0},
       color_image_ptr_{nullptr},
       gray_image_ptr_{nullptr},
       color_stereo_image_ptr_{nullptr},
@@ -72,10 +72,14 @@ DataReader::DataReader(const fs::path path)
       point_cloud_{nullptr},
       calibration_{nullptr}
 {
-    calibration_ = ReadCalibration(path_);
 }
 
 size_t DataReader::GetSize() const { return size_; }
+void DataReader::SetSize(size_t size) { size_ = size; }
+void DataReader::SetCalibration(CalibrationPtr calibration)
+{
+    calibration_ = calibration;
+}
 
 bool DataReader::LoadIndex(size_t index)
 {
@@ -108,7 +112,14 @@ const StereoImagePtr DataReader::GetColorStereoImage() const
 const PointCloudPtr DataReader::GetPointCloud() const { return point_cloud_; }
 const CalibrationPtr DataReader::GetCalibration() const { return calibration_; }
 
-KittiDataReader::KittiDataReader(const fs::path path) : DataReader(path) {}
+KittiDataReader::KittiDataReader(const fs::path path) : DataReader(path)
+{
+    SetSize(ReadSize());
+
+    SetCalibration(ReadCalibration(path));
+}
+
+size_t KittiDataReader::ReadSize() { return 0; }
 
 ImagePtr KittiDataReader::ReadGrayImage(size_t index, fs::path base_path)
 {
@@ -157,6 +168,62 @@ PointCloudPtr KittiDataReader::ReadPointCloud(size_t index, fs::path base_path)
 CalibrationPtr KittiDataReader::ReadCalibration(fs::path base_path)
 {
     return Calibration::ReadFromFile(base_path / kCalibrationFile / ".txt");
+}
+
+NoneDataReader::NoneDataReader(const fs::path path) : DataReader(path) {}
+
+size_t NoneDataReader::ReadSize() { return 0; }
+
+ImagePtr NoneDataReader::ReadGrayImage(size_t index, fs::path base_path)
+{
+    if (index >= 0)
+    {
+        return nullptr;
+    }
+    return nullptr;
+}
+
+ImagePtr NoneDataReader::ReadColorImage(size_t index, fs::path base_path)
+{
+    if (index >= 0)
+    {
+        return nullptr;
+    }
+    return nullptr;
+}
+
+StereoImagePtr NoneDataReader::ReadGrayStereoImage(size_t index,
+                                                   fs::path base_path)
+{
+    if (index >= 0)
+    {
+        return nullptr;
+    }
+    return nullptr;
+}
+
+StereoImagePtr NoneDataReader::ReadColorStereoImage(size_t index,
+                                                    fs::path base_path)
+{
+    if (index >= 0)
+    {
+        return nullptr;
+    }
+    return nullptr;
+}
+
+PointCloudPtr NoneDataReader::ReadPointCloud(size_t index, fs::path base_path)
+{
+    if (index >= 0)
+    {
+        return nullptr;
+    }
+    return nullptr;
+}
+
+CalibrationPtr NoneDataReader::ReadCalibration(fs::path base_path)
+{
+    return nullptr;
 }
 
 }  // namespace ad_framework::application

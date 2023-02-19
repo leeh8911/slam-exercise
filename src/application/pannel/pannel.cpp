@@ -27,12 +27,14 @@ Pannel::Pannel(std::string name, const ImVec2& position, const ImVec2& size)
     window_flags_ |= ImGuiWindowFlags_NoMove;
 }
 
-void Pannel::SetDataLoader(DataLoaderPtr dataloader_ptr)
+std::string Pannel::GetName() const { return name_; }
+
+void Pannel::Update(DataLoaderPtr dataloader_ptr, DataReaderPtr datareader_ptr)
 {
     dataloader_ptr_ = dataloader_ptr;
+    datareader_ptr_ = datareader_ptr;
 }
 
-std::string Pannel::GetName() const { return name_; }
 void Pannel::Render(bool& open, const ImVec2& window_size)
 {
     SetSize(window_size);

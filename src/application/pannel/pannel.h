@@ -17,6 +17,7 @@
 #include <string>
 
 #include "src/application/dataloader.h"
+#include "src/application/datareader.h"
 namespace ad_framework::application
 
 {
@@ -25,13 +26,15 @@ class Pannel
  public:
     Pannel(std::string name, const ImVec2& position_, const ImVec2& size_);
     virtual ~Pannel() = default;
+    void Update(DataLoaderPtr dataloader_ptr, DataReaderPtr datareader_ptr);
     void Render(bool& open, const ImVec2& window_size);
-    void SetDataLoader(DataLoaderPtr dataloader);
+
     std::string GetName() const;
 
  protected:
     virtual void RenderInterface(bool& open) = 0;
     DataLoaderPtr dataloader_ptr_{nullptr};
+    DataReaderPtr datareader_ptr_{nullptr};
 
  private:
     void SetSize(const ImVec2& window_size) const;

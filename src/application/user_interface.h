@@ -19,6 +19,7 @@
 #include <string>
 
 #include "src/application/dataloader.h"
+#include "src/application/datareader.h"
 #include "src/application/pannel/pannel.h"
 
 namespace ad_framework::application
@@ -30,10 +31,8 @@ class Window
     Window();
     ~Window() = default;
 
-    void Render(std::forward_list<PannelPtr>& pannels) const;
-
     bool IsOpen() const;
-    void XXRender() const;
+    void Render() const;
     void NewFrame() const;
 
     ImVec2 GetSize() const;
@@ -54,10 +53,14 @@ class UserInterface
 
     void Execute();
 
+    void UpdateDataReader();
+
  private:
     Window window_;
     std::forward_list<PannelPtr> pannels_{};
     DataLoaderPtr dataloader_ptr_{nullptr};
+    DataReaderPtr datareader_ptr_{nullptr};
+    DatasetType dataset_type_{DatasetType::kNone};
 };
 
 }  // namespace ad_framework::application

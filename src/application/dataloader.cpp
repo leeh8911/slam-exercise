@@ -87,4 +87,6 @@ const SequencePathList& DataLoader::GetSequencePathList() const
 }
 
 DatasetPathMap DataLoader::GetCandidateMap() const { return candidate_map_; }
+
+DatasetType DataLoader::GetDatasetType() const { return type_; }
 }  // namespace ad_framework::application

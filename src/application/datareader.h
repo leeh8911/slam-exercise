@@ -47,6 +47,10 @@ class DataReader
     const PointCloudPtr GetPointCloud() const;
     const CalibrationPtr GetCalibration() const;
 
+ protected:
+    void SetSize(size_t size);
+    void SetCalibration(CalibrationPtr calibration);
+
  private:
     fs::path path_{""};
     size_t current_index_{0};
@@ -70,12 +74,32 @@ class DataReader
     CalibrationPtr calibration_{nullptr};
 };
 using DataReaderPtr = std::shared_ptr<DataReader>;
+
+class NoneDataReader : public DataReader
+{
+ public:
+    NoneDataReader(const fs::path path);
+
+ private:
+    size_t ReadSize() override;
+
+    ImagePtr ReadGrayImage(size_t index, fs::path base_path) override;
+    ImagePtr ReadColorImage(size_t index, fs::path base_path) override;
+    StereoImagePtr ReadGrayStereoImage(size_t index,
+                                       fs::path base_path) override;
+    StereoImagePtr ReadColorStereoImage(size_t index,
+                                        fs::path base_path) override;
+    PointCloudPtr ReadPointCloud(size_t index, fs::path base_path) override;
+    CalibrationPtr ReadCalibration(fs::path base_path) override;
+};
 class KittiDataReader : public DataReader
 {
  public:
     KittiDataReader(const fs::path path);
 
  private:
+    size_t ReadSize() override;
+
     ImagePtr ReadGrayImage(size_t index, fs::path base_path) override;
     ImagePtr ReadColorImage(size_t index, fs::path base_path) override;
     StereoImagePtr ReadGrayStereoImage(size_t index,
