@@ -8,7 +8,7 @@
 ///
 ///
 
-#include "src/application/pannel/top_view_pannel.h"
+#include "src/application/user_interface/pannel/top_view_pannel.h"
 
 namespace ad_framework::application
 {

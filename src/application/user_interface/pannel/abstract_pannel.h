@@ -1,15 +1,15 @@
-﻿/// @file pannel.h
+﻿/// @file abstract_pannel.h
 /// @author sangwon lee (leeh8911@gmail.com)
 /// @brief
 /// @version 0.1
-/// @date 2023-02-16
+/// @date 2023-02-19
 ///
 /// @copyright Copyright (c) 2023
 ///
 ///
 
-#ifndef SRC_APPLICATION_PANNEL_H_
-#define SRC_APPLICATION_PANNEL_H_
+#ifndef SRC_APPLICATION_USER_INTERFACE_PANNEL_ABSTRACT_PANNEL_H_
+#define SRC_APPLICATION_USER_INTERFACE_PANNEL_ABSTRACT_PANNEL_H_
 
 #include <imgui.h>
 
@@ -17,7 +17,8 @@
 #include <string>
 
 #include "src/application/dataloader.h"
-#include "src/application/datareader.h"
+#include "src/data_reader/abstract_data_reader.h"
+
 namespace ad_framework::application
 
 {
@@ -49,4 +50,4 @@ using PannelPtr = std::shared_ptr<Pannel>;
 
 }  // namespace ad_framework::application
 
-#endif  // SRC_APPLICATION_PANNEL_H_
+#endif  // SRC_APPLICATION_USER_INTERFACE_PANNEL_ABSTRACT_PANNEL_H_

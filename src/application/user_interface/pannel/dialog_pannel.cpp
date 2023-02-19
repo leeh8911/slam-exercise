@@ -1,4 +1,4 @@
-﻿/// @file media_pannel.cpp
+﻿/// @file dialog_pannel.cpp
 /// @author sangwon lee (leeh8911@gmail.com)
 /// @brief
 /// @version 0.1
@@ -8,20 +8,18 @@
 ///
 ///
 
-#include "src/application/pannel/media_pannel.h"
-
-#include <iostream>
+#include "src/application/user_interface/pannel/dialog_pannel.h"
 
 #include "bindings/imgui.h"
 
 namespace ad_framework::application
 {
-MediaPannel::MediaPannel(const ImVec2& position, const ImVec2& size)
-    : Pannel("Media", position, size)
+DialogPannel::DialogPannel(const ImVec2& position, const ImVec2& size)
+    : Pannel("Dialog", position, size)
 {
 }
 
-void MediaPannel::RenderInterface(bool& open)
+void DialogPannel::RenderInterface(bool& open)
 {
     if (!open)
     {
