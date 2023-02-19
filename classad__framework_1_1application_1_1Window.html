@@ -105,9 +105,10 @@ Collaboration diagram for ad_framework::application::Window:</div>
 <div class="dyncontent">
 <div class="center"><img src="classad__framework_1_1application_1_1Window__coll__graph.png" border="0" usemap="#aad__framework_1_1application_1_1Window_coll__map" alt="Collaboration graph"/></div>
 <map name="aad__framework_1_1application_1_1Window_coll__map" id="aad__framework_1_1application_1_1Window_coll__map">
-<area shape="rect" title=" " alt="" coords="5,160,431,281"/>
-<area shape="rect" title=" " alt="" coords="66,5,213,83"/>
-<area shape="rect" title=" " alt="" coords="237,5,359,83"/>
+<area shape="rect" title=" " alt="" coords="109,160,365,311"/>
+<area shape="rect" title=" " alt="" coords="5,5,152,83"/>
+<area shape="rect" title=" " alt="" coords="177,5,298,83"/>
+<area shape="rect" title=" " alt="" coords="323,5,501,83"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -117,8 +118,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0a9109324799dad55b8c33dd1bde1af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae439ef4e74f4f0fa421a512181299f28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1application_1_1Window.html#ae439ef4e74f4f0fa421a512181299f28">~Window</a> ()=default</td></tr>
 <tr class="separator:ae439ef4e74f4f0fa421a512181299f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50f5680f645c7b36d938515c3834dbf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1application_1_1Window.html#a50f5680f645c7b36d938515c3834dbf1">Render</a> (std::forward_list&lt; <a class="el" href="namespacead__framework_1_1application.html#a9864a4303346d2579bc1f5995a584ecc">PannelPtr</a> &gt; &amp;pannels) const</td></tr>
-<tr class="separator:a50f5680f645c7b36d938515c3834dbf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9569910e63065451d43ad6d955ec07d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1application_1_1Window.html#a9569910e63065451d43ad6d955ec07d4">IsOpen</a> () const</td></tr>
+<tr class="separator:a9569910e63065451d43ad6d955ec07d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f5991bdfb43dd781dff432388f1be9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1application_1_1Window.html#a7f5991bdfb43dd781dff432388f1be9b">Render</a> () const</td></tr>
+<tr class="separator:a7f5991bdfb43dd781dff432388f1be9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa26d85e7b58a197aca840c4c555bbca3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1application_1_1Window.html#aa26d85e7b58a197aca840c4c555bbca3">NewFrame</a> () const</td></tr>
+<tr class="separator:aa26d85e7b58a197aca840c4c555bbca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5180c05c72e0c026613df66965a12c09"><td class="memItemLeft" align="right" valign="top">ImVec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1application_1_1Window.html#a5180c05c72e0c026613df66965a12c09">GetSize</a> () const</td></tr>
 <tr class="separator:a5180c05c72e0c026613df66965a12c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -133,10 +138,12 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:a94b85b04d4f1e19b4a918418cfd3b365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af89637fcb24071c5bfac43aac6634d1b"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1application_1_1Window.html#af89637fcb24071c5bfac43aac6634d1b">kHeight</a> = 720</td></tr>
 <tr class="separator:af89637fcb24071c5bfac43aac6634d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8740cda2a40c18690abb63c0877c626"><td class="memItemLeft" align="right" valign="top">static constexpr ImVec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1application_1_1Window.html#af8740cda2a40c18690abb63c0877c626">kClearColor</a> = ImVec4(0.45f, 0.55f, 0.60f, 1.00f)</td></tr>
+<tr class="separator:af8740cda2a40c18690abb63c0877c626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="user__interface_8h_source.html#l00027">27</a> of file <a class="el" href="user__interface_8h_source.html">user_interface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="user__interface_8h_source.html#l00028">28</a> of file <a class="el" href="user__interface_8h_source.html">user_interface.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0a9109324799dad55b8c33dd1bde1af7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a9109324799dad55b8c33dd1bde1af7">&#9670;&nbsp;</a></span>Window()</h2>
@@ -153,39 +160,38 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="user__interface_8cpp_source.html#l00038">38</a> of file <a class="el" href="user__interface_8cpp_source.html">user_interface.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">if</span> (!glfwInit())</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Failed to initialize GLFW&quot;</span>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classad__framework_1_1application_1_1Window.html#ab8be8373e9f4db33ea5c4249114074e1">window_</a> = glfwCreateWindow(<a class="code" href="classad__framework_1_1application_1_1Window.html#a94b85b04d4f1e19b4a918418cfd3b365">kWidth</a>, <a class="code" href="classad__framework_1_1application_1_1Window.html#af89637fcb24071c5bfac43aac6634d1b">kHeight</a>, <span class="stringliteral">&quot;Autonomous Driving Framework&quot;</span>,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                               <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classad__framework_1_1application_1_1Window.html#ab8be8373e9f4db33ea5c4249114074e1">window_</a> == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Failed to create GLFW window&quot;</span>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    glfwMakeContextCurrent(<a class="code" href="classad__framework_1_1application_1_1Window.html#ab8be8373e9f4db33ea5c4249114074e1">window_</a>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    glfwSwapInterval(1);  <span class="comment">// Enable vsync</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// Setup Dear ImGui context</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    IMGUI_CHECKVERSION();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    ImGui::CreateContext();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    ImPlot::CreateContext();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    ImGuiIO&amp; io = ImGui::GetIO();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    io.ConfigFlags |=</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        ImGuiConfigFlags_NavEnableKeyboard;  <span class="comment">// Enable Keyboard Controls</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    ImGui::StyleColorsDark();</div>
+<p class="definition">Definition at line <a class="el" href="user__interface_8cpp_source.html#l00040">40</a> of file <a class="el" href="user__interface_8cpp_source.html">user_interface.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (!glfwInit())</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Failed to initialize GLFW&quot;</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classad__framework_1_1application_1_1Window.html#ab8be8373e9f4db33ea5c4249114074e1">window_</a> = glfwCreateWindow(<a class="code" href="classad__framework_1_1application_1_1Window.html#a94b85b04d4f1e19b4a918418cfd3b365">kWidth</a>, <a class="code" href="classad__framework_1_1application_1_1Window.html#af89637fcb24071c5bfac43aac6634d1b">kHeight</a>, <span class="stringliteral">&quot;Autonomous Driving Framework&quot;</span>,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                               <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classad__framework_1_1application_1_1Window.html#ab8be8373e9f4db33ea5c4249114074e1">window_</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Failed to create GLFW window&quot;</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    glfwMakeContextCurrent(<a class="code" href="classad__framework_1_1application_1_1Window.html#ab8be8373e9f4db33ea5c4249114074e1">window_</a>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    glfwSwapInterval(1);  <span class="comment">// Enable vsync</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// Setup Dear ImGui context</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    IMGUI_CHECKVERSION();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    ImGui::CreateContext();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    ImPlot::CreateContext();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    ImGuiIO&amp; io = ImGui::GetIO();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    io.ConfigFlags |=</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        ImGuiConfigFlags_NavEnableKeyboard;  <span class="comment">// Enable Keyboard Controls</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    ImGui_ImplGlfw_InitForOpenGL(<a class="code" href="classad__framework_1_1application_1_1Window.html#ab8be8373e9f4db33ea5c4249114074e1">window_</a>, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    ImGui_ImplOpenGL2_Init();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="ttc" id="aclassad__framework_1_1application_1_1Window_html_a94b85b04d4f1e19b4a918418cfd3b365"><div class="ttname"><a href="classad__framework_1_1application_1_1Window.html#a94b85b04d4f1e19b4a918418cfd3b365">ad_framework::application::Window::kWidth</a></div><div class="ttdeci">static constexpr int kWidth</div><div class="ttdef"><b>Definition:</b> <a href="user__interface_8h_source.html#l00038">user_interface.h:38</a></div></div>
-<div class="ttc" id="aclassad__framework_1_1application_1_1Window_html_ab8be8373e9f4db33ea5c4249114074e1"><div class="ttname"><a href="classad__framework_1_1application_1_1Window.html#ab8be8373e9f4db33ea5c4249114074e1">ad_framework::application::Window::window_</a></div><div class="ttdeci">GLFWwindow * window_</div><div class="ttdef"><b>Definition:</b> <a href="user__interface_8h_source.html#l00040">user_interface.h:40</a></div></div>
-<div class="ttc" id="aclassad__framework_1_1application_1_1Window_html_af89637fcb24071c5bfac43aac6634d1b"><div class="ttname"><a href="classad__framework_1_1application_1_1Window.html#af89637fcb24071c5bfac43aac6634d1b">ad_framework::application::Window::kHeight</a></div><div class="ttdeci">static constexpr int kHeight</div><div class="ttdef"><b>Definition:</b> <a href="user__interface_8h_source.html#l00039">user_interface.h:39</a></div></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    ImGui::StyleColorsDark();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    ImGui_ImplGlfw_InitForOpenGL(<a class="code" href="classad__framework_1_1application_1_1Window.html#ab8be8373e9f4db33ea5c4249114074e1">window_</a>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    ImGui_ImplOpenGL2_Init();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="ttc" id="aclassad__framework_1_1application_1_1Window_html_a94b85b04d4f1e19b4a918418cfd3b365"><div class="ttname"><a href="classad__framework_1_1application_1_1Window.html#a94b85b04d4f1e19b4a918418cfd3b365">ad_framework::application::Window::kWidth</a></div><div class="ttdeci">static constexpr int kWidth</div><div class="ttdef"><b>Definition:</b> <a href="user__interface_8h_source.html#l00041">user_interface.h:41</a></div></div>
+<div class="ttc" id="aclassad__framework_1_1application_1_1Window_html_ab8be8373e9f4db33ea5c4249114074e1"><div class="ttname"><a href="classad__framework_1_1application_1_1Window.html#ab8be8373e9f4db33ea5c4249114074e1">ad_framework::application::Window::window_</a></div><div class="ttdeci">GLFWwindow * window_</div><div class="ttdef"><b>Definition:</b> <a href="user__interface_8h_source.html#l00045">user_interface.h:45</a></div></div>
+<div class="ttc" id="aclassad__framework_1_1application_1_1Window_html_af89637fcb24071c5bfac43aac6634d1b"><div class="ttname"><a href="classad__framework_1_1application_1_1Window.html#af89637fcb24071c5bfac43aac6634d1b">ad_framework::application::Window::kHeight</a></div><div class="ttdeci">static constexpr int kHeight</div><div class="ttdef"><b>Definition:</b> <a href="user__interface_8h_source.html#l00042">user_interface.h:42</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -215,8 +221,39 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a50f5680f645c7b36d938515c3834dbf1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50f5680f645c7b36d938515c3834dbf1">&#9670;&nbsp;</a></span>Render()</h2>
+<a id="a9569910e63065451d43ad6d955ec07d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9569910e63065451d43ad6d955ec07d4">&#9670;&nbsp;</a></span>IsOpen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ad_framework::application::Window::IsOpen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="user__interface_8cpp_source.html#l00070">70</a> of file <a class="el" href="user__interface_8cpp_source.html">user_interface.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{ <span class="keywordflow">return</span> !glfwWindowShouldClose(<a class="code" href="classad__framework_1_1application_1_1Window.html#ab8be8373e9f4db33ea5c4249114074e1">window_</a>); }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classad__framework_1_1application_1_1Window_a9569910e63065451d43ad6d955ec07d4_icgraph.png" border="0" usemap="#aclassad__framework_1_1application_1_1Window_a9569910e63065451d43ad6d955ec07d4_icgraph" alt=""/></div>
+<map name="aclassad__framework_1_1application_1_1Window_a9569910e63065451d43ad6d955ec07d4_icgraph" id="aclassad__framework_1_1application_1_1Window_a9569910e63065451d43ad6d955ec07d4_icgraph">
+<area shape="rect" title=" " alt="" coords="891,5,1199,32"/>
+<area shape="rect" href="classad__framework_1_1application_1_1UserInterface.html#a95aec93006c0a8a8652ff20f6ab63b69" title=" " alt="" coords="492,5,843,32"/>
+<area shape="rect" href="classad__framework_1_1application_1_1Application.html#a628121d5f80684a330360ad502114fc4" title=" " alt="" coords="108,5,444,32"/>
+<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7f5991bdfb43dd781dff432388f1be9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f5991bdfb43dd781dff432388f1be9b">&#9670;&nbsp;</a></span>Render()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,60 +261,70 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void ad_framework::application::Window::Render </td>
           <td>(</td>
-          <td class="paramtype">std::forward_list&lt; <a class="el" href="namespacead__framework_1_1application.html#a9864a4303346d2579bc1f5995a584ecc">PannelPtr</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pannels</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="user__interface_8cpp_source.html#l00069">69</a> of file <a class="el" href="user__interface_8cpp_source.html">user_interface.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> open = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">while</span> (!glfwWindowShouldClose(<a class="code" href="classad__framework_1_1application_1_1Window.html#ab8be8373e9f4db33ea5c4249114074e1">window_</a>))</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        glfwPollEvents();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="comment">// Start the Dear ImGui frame</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        ImGui_ImplOpenGL2_NewFrame();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        ImGui_ImplGlfw_NewFrame();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        ImGui::NewFrame();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; pannel : pannels)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            pannel-&gt;Render(open, <a class="code" href="classad__framework_1_1application_1_1Window.html#a5180c05c72e0c026613df66965a12c09">GetSize</a>());</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">// Rendering</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        ImGui::Render();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">int</span> display_w = 0, display_h = 0;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        glfwGetFramebufferSize(<a class="code" href="classad__framework_1_1application_1_1Window.html#ab8be8373e9f4db33ea5c4249114074e1">window_</a>, &amp;display_w, &amp;display_h);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        glViewport(0, 0, display_w, display_h);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        glClearColor(clear_color.x, clear_color.y, clear_color.z,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                     clear_color.w);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        glClear(GL_COLOR_BUFFER_BIT);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        ImGui_ImplOpenGL2_RenderDrawData(ImGui::GetDrawData());</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        glfwSwapBuffers(<a class="code" href="classad__framework_1_1application_1_1Window.html#ab8be8373e9f4db33ea5c4249114074e1">window_</a>);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
-<div class="ttc" id="aclassad__framework_1_1application_1_1Window_html_a5180c05c72e0c026613df66965a12c09"><div class="ttname"><a href="classad__framework_1_1application_1_1Window.html#a5180c05c72e0c026613df66965a12c09">ad_framework::application::Window::GetSize</a></div><div class="ttdeci">ImVec2 GetSize() const</div><div class="ttdef"><b>Definition:</b> <a href="user__interface_8cpp_source.html#l00101">user_interface.cpp:101</a></div></div>
+<p class="definition">Definition at line <a class="el" href="user__interface_8cpp_source.html#l00082">82</a> of file <a class="el" href="user__interface_8cpp_source.html">user_interface.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// Rendering</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    ImGui::Render();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">int</span> display_w = 0, display_h = 0;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    glfwGetFramebufferSize(<a class="code" href="classad__framework_1_1application_1_1Window.html#ab8be8373e9f4db33ea5c4249114074e1">window_</a>, &amp;display_w, &amp;display_h);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    glViewport(0, 0, display_w, display_h);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    glClearColor(<a class="code" href="classad__framework_1_1application_1_1Window.html#af8740cda2a40c18690abb63c0877c626">kClearColor</a>.x, <a class="code" href="classad__framework_1_1application_1_1Window.html#af8740cda2a40c18690abb63c0877c626">kClearColor</a>.y, <a class="code" href="classad__framework_1_1application_1_1Window.html#af8740cda2a40c18690abb63c0877c626">kClearColor</a>.z, <a class="code" href="classad__framework_1_1application_1_1Window.html#af8740cda2a40c18690abb63c0877c626">kClearColor</a>.w);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    glClear(GL_COLOR_BUFFER_BIT);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    ImGui_ImplOpenGL2_RenderDrawData(ImGui::GetDrawData());</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    glfwSwapBuffers(<a class="code" href="classad__framework_1_1application_1_1Window.html#ab8be8373e9f4db33ea5c4249114074e1">window_</a>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="ttc" id="aclassad__framework_1_1application_1_1Window_html_af8740cda2a40c18690abb63c0877c626"><div class="ttname"><a href="classad__framework_1_1application_1_1Window.html#af8740cda2a40c18690abb63c0877c626">ad_framework::application::Window::kClearColor</a></div><div class="ttdeci">static constexpr ImVec4 kClearColor</div><div class="ttdef"><b>Definition:</b> <a href="user__interface_8h_source.html#l00043">user_interface.h:43</a></div></div>
 </div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classad__framework_1_1application_1_1Window_a50f5680f645c7b36d938515c3834dbf1_cgraph.png" border="0" usemap="#aclassad__framework_1_1application_1_1Window_a50f5680f645c7b36d938515c3834dbf1_cgraph" alt=""/></div>
-<map name="aclassad__framework_1_1application_1_1Window_a50f5680f645c7b36d938515c3834dbf1_cgraph" id="aclassad__framework_1_1application_1_1Window_a50f5680f645c7b36d938515c3834dbf1_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,315,32"/>
-<area shape="rect" href="classad__framework_1_1application_1_1Window.html#a5180c05c72e0c026613df66965a12c09" title=" " alt="" coords="363,5,676,32"/>
-</map>
-</div>
-<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classad__framework_1_1application_1_1Window_a50f5680f645c7b36d938515c3834dbf1_icgraph.png" border="0" usemap="#aclassad__framework_1_1application_1_1Window_a50f5680f645c7b36d938515c3834dbf1_icgraph" alt=""/></div>
-<map name="aclassad__framework_1_1application_1_1Window_a50f5680f645c7b36d938515c3834dbf1_icgraph" id="aclassad__framework_1_1application_1_1Window_a50f5680f645c7b36d938515c3834dbf1_icgraph">
+<div class="center"><img src="classad__framework_1_1application_1_1Window_a7f5991bdfb43dd781dff432388f1be9b_icgraph.png" border="0" usemap="#aclassad__framework_1_1application_1_1Window_a7f5991bdfb43dd781dff432388f1be9b_icgraph" alt=""/></div>
+<map name="aclassad__framework_1_1application_1_1Window_a7f5991bdfb43dd781dff432388f1be9b_icgraph" id="aclassad__framework_1_1application_1_1Window_a7f5991bdfb43dd781dff432388f1be9b_icgraph">
 <area shape="rect" title=" " alt="" coords="891,5,1200,32"/>
+<area shape="rect" href="classad__framework_1_1application_1_1UserInterface.html#a95aec93006c0a8a8652ff20f6ab63b69" title=" " alt="" coords="492,5,843,32"/>
+<area shape="rect" href="classad__framework_1_1application_1_1Application.html#a628121d5f80684a330360ad502114fc4" title=" " alt="" coords="108,5,444,32"/>
+<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa26d85e7b58a197aca840c4c555bbca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa26d85e7b58a197aca840c4c555bbca3">&#9670;&nbsp;</a></span>NewFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ad_framework::application::Window::NewFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="user__interface_8cpp_source.html#l00072">72</a> of file <a class="el" href="user__interface_8cpp_source.html">user_interface.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    glfwPollEvents();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// Start the Dear ImGui frame</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    ImGui_ImplOpenGL2_NewFrame();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    ImGui_ImplGlfw_NewFrame();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    ImGui::NewFrame();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classad__framework_1_1application_1_1Window_aa26d85e7b58a197aca840c4c555bbca3_icgraph.png" border="0" usemap="#aclassad__framework_1_1application_1_1Window_aa26d85e7b58a197aca840c4c555bbca3_icgraph" alt=""/></div>
+<map name="aclassad__framework_1_1application_1_1Window_aa26d85e7b58a197aca840c4c555bbca3_icgraph" id="aclassad__framework_1_1application_1_1Window_aa26d85e7b58a197aca840c4c555bbca3_icgraph">
+<area shape="rect" title=" " alt="" coords="891,5,1224,32"/>
 <area shape="rect" href="classad__framework_1_1application_1_1UserInterface.html#a95aec93006c0a8a8652ff20f6ab63b69" title=" " alt="" coords="492,5,843,32"/>
 <area shape="rect" href="classad__framework_1_1application_1_1Application.html#a628121d5f80684a330360ad502114fc4" title=" " alt="" coords="108,5,444,32"/>
 <area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,32"/>
@@ -301,22 +348,21 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="user__interface_8cpp_source.html#l00101">101</a> of file <a class="el" href="user__interface_8cpp_source.html">user_interface.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">int</span> width = 0;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">int</span> height = 0;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    glfwGetWindowSize(<a class="code" href="classad__framework_1_1application_1_1Window.html#ab8be8373e9f4db33ea5c4249114074e1">window_</a>, &amp;width, &amp;height);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> ImVec2(<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(width), <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(height));</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="user__interface_8cpp_source.html#l00096">96</a> of file <a class="el" href="user__interface_8cpp_source.html">user_interface.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">int</span> width = 0;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">int</span> height = 0;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    glfwGetWindowSize(<a class="code" href="classad__framework_1_1application_1_1Window.html#ab8be8373e9f4db33ea5c4249114074e1">window_</a>, &amp;width, &amp;height);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">return</span> ImVec2(<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(width), <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(height));</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classad__framework_1_1application_1_1Window_a5180c05c72e0c026613df66965a12c09_icgraph.png" border="0" usemap="#aclassad__framework_1_1application_1_1Window_a5180c05c72e0c026613df66965a12c09_icgraph" alt=""/></div>
 <map name="aclassad__framework_1_1application_1_1Window_a5180c05c72e0c026613df66965a12c09_icgraph" id="aclassad__framework_1_1application_1_1Window_a5180c05c72e0c026613df66965a12c09_icgraph">
-<area shape="rect" title=" " alt="" coords="1248,5,1561,32"/>
-<area shape="rect" href="classad__framework_1_1application_1_1Window.html#a50f5680f645c7b36d938515c3834dbf1" title=" " alt="" coords="891,5,1200,32"/>
+<area shape="rect" title=" " alt="" coords="891,5,1204,32"/>
 <area shape="rect" href="classad__framework_1_1application_1_1UserInterface.html#a95aec93006c0a8a8652ff20f6ab63b69" title=" " alt="" coords="492,5,843,32"/>
 <area shape="rect" href="classad__framework_1_1application_1_1Application.html#a628121d5f80684a330360ad502114fc4" title=" " alt="" coords="108,5,444,32"/>
 <area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,32"/>
@@ -346,7 +392,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="user__interface_8h_source.html#l00038">38</a> of file <a class="el" href="user__interface_8h_source.html">user_interface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="user__interface_8h_source.html#l00041">41</a> of file <a class="el" href="user__interface_8h_source.html">user_interface.h</a>.</p>
 
 </div>
 </div>
@@ -370,7 +416,31 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="user__interface_8h_source.html#l00039">39</a> of file <a class="el" href="user__interface_8h_source.html">user_interface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="user__interface_8h_source.html#l00042">42</a> of file <a class="el" href="user__interface_8h_source.html">user_interface.h</a>.</p>
+
+</div>
+</div>
+<a id="af8740cda2a40c18690abb63c0877c626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8740cda2a40c18690abb63c0877c626">&#9670;&nbsp;</a></span>kClearColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr ImVec4 ad_framework::application::Window::kClearColor = ImVec4(0.45f, 0.55f, 0.60f, 1.00f)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="user__interface_8h_source.html#l00043">43</a> of file <a class="el" href="user__interface_8h_source.html">user_interface.h</a>.</p>
 
 </div>
 </div>
@@ -394,7 +464,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="user__interface_8h_source.html#l00040">40</a> of file <a class="el" href="user__interface_8h_source.html">user_interface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="user__interface_8h_source.html#l00045">45</a> of file <a class="el" href="user__interface_8h_source.html">user_interface.h</a>.</p>
 
 </div>
 </div>

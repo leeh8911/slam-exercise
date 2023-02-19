@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['loadindex_83',['LoadIndex',['../classad__framework_1_1application_1_1Dataset.html#a68a85316732e65eda2b1401a72cbf36e',1,'ad_framework::application::Dataset::LoadIndex()'],['../classad__framework_1_1application_1_1KittiDataset.html#ac764c939f72eb2d840a79c05329b241f',1,'ad_framework::application::KittiDataset::LoadIndex()']]]
+  ['left_5f_93',['left_',['../classad__framework_1_1application_1_1StereoImage.html#a2bee2d0b7c7aeecea67217206a74687e',1,'ad_framework::application::StereoImage']]],
+  ['loadindex_94',['LoadIndex',['../classad__framework_1_1application_1_1DataReader.html#a4fa004a88e468fb6b673182be15536ee',1,'ad_framework::application::DataReader']]]
 ];

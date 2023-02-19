@@ -1,8 +1,13 @@
 <map id="src/application/pannel/control_pannel.h" name="src/application/pannel/control_pannel.h">
-<area shape="rect" id="node1" title=" " alt="" coords="25,5,302,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,155,76,181"/>
-<area shape="rect" id="node3" title=" " alt="" coords="105,155,182,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="310,155,425,181"/>
-<area shape="rect" id="node5" href="$pannel_8h.html" title=" " alt="" coords="125,80,351,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="209,155,267,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,283,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="57,155,127,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="124,229,201,256"/>
+<area shape="rect" id="node4" title=" " alt="" coords="356,80,471,107"/>
+<area shape="rect" id="node5" href="$pannel_8h.html" title=" " alt="" coords="106,80,331,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="225,229,284,256"/>
+<area shape="rect" id="node7" href="$dataloader_8h.html" title=" " alt="" coords="253,155,456,181"/>
+<area shape="rect" id="node11" href="$datareader_8h.html" title=" " alt="" coords="480,155,683,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="308,229,364,256"/>
+<area shape="rect" id="node9" title=" " alt="" coords="537,229,628,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="389,229,513,256"/>
 </map>

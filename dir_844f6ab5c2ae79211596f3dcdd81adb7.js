@@ -8,6 +8,7 @@ var dir_844f6ab5c2ae79211596f3dcdd81adb7 =
     ] ],
     [ "dataloader.cpp", "dataloader_8cpp.html", null ],
     [ "dataloader.h", "dataloader_8h.html", "dataloader_8h" ],
+    [ "datareader.cpp", "datareader_8cpp.html", "datareader_8cpp" ],
     [ "datareader.h", "datareader_8h.html", "datareader_8h" ],
     [ "user_interface.cpp", "user__interface_8cpp.html", null ],
     [ "user_interface.h", "user__interface_8h.html", [

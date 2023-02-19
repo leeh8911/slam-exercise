@@ -4,6 +4,7 @@ var classad__framework_1_1application_1_1DataLoader =
     [ "~DataLoader", "classad__framework_1_1application_1_1DataLoader.html#a376f1aba53db15a123d5a410e4518b84", null ],
     [ "GetSequencePathList", "classad__framework_1_1application_1_1DataLoader.html#af4bcfbf8cb37e0742ccbaabc83734879", null ],
     [ "GetCandidateMap", "classad__framework_1_1application_1_1DataLoader.html#a3f32586746480e47cd6544966a9abfbc", null ],
+    [ "GetDatasetType", "classad__framework_1_1application_1_1DataLoader.html#aff6b4bc4a63f8850538041fdaa227204", null ],
     [ "SelectType", "classad__framework_1_1application_1_1DataLoader.html#a735a06d75bc49c31e55df3211dbdd756", null ],
     [ "FindSequences", "classad__framework_1_1application_1_1DataLoader.html#a13e87935063283ccbde38e3e7f9eb411", null ],
     [ "SelectSequence", "classad__framework_1_1application_1_1DataLoader.html#a76dfe4cdf060a02323083fb4ee025963", null ],

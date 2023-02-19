@@ -92,7 +92,8 @@ $(document).ready(function(){initNavTree('namespacead__framework_1_1application.
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ad_framework::application Namespace Reference</div>  </div>
 </div><!--header-->
@@ -104,9 +105,19 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1application_1_1DataLoader.html">DataLoader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1application_1_1Dataset.html">Dataset</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1application_1_1Image.html">Image</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1application_1_1KittiDataset.html">KittiDataset</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1application_1_1StereoImage.html">StereoImage</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1application_1_1PointCloud.html">PointCloud</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1application_1_1Calibration.html">Calibration</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1application_1_1DataReader.html">DataReader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1application_1_1NoneDataReader.html">NoneDataReader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1application_1_1KittiDataReader.html">KittiDataReader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1application_1_1TopViewDrawer.html">TopViewDrawer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,16 +153,16 @@ Typedefs</h2></td></tr>
 <tr class="separator:a65b423567663d85af34b75ee2f7da6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1173744f40824f7dc8e8439227d1399b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacead__framework_1_1application.html#a1173744f40824f7dc8e8439227d1399b">DataLoaderPtr</a> = std::shared_ptr&lt; <a class="el" href="classad__framework_1_1application_1_1DataLoader.html">DataLoader</a> &gt;</td></tr>
 <tr class="separator:a1173744f40824f7dc8e8439227d1399b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90878687fa11171c09b084ffc00d9877"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacead__framework_1_1application.html#a90878687fa11171c09b084ffc00d9877">fs</a> = std::filesystem</td></tr>
-<tr class="separator:a90878687fa11171c09b084ffc00d9877"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e689e932c107776794c1262a4622c67"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacead__framework_1_1application.html#a2e689e932c107776794c1262a4622c67">ImagePtr</a> = std::shared_ptr&lt; Image &gt;</td></tr>
+<tr class="memitem:a2e689e932c107776794c1262a4622c67"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacead__framework_1_1application.html#a2e689e932c107776794c1262a4622c67">ImagePtr</a> = std::shared_ptr&lt; <a class="el" href="classad__framework_1_1application_1_1Image.html">Image</a> &gt;</td></tr>
 <tr class="separator:a2e689e932c107776794c1262a4622c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ab77877f33b13a9e8954b034bdfa22f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacead__framework_1_1application.html#a1ab77877f33b13a9e8954b034bdfa22f">StereoImagePtr</a> = std::shared_ptr&lt; StereoImage &gt;</td></tr>
+<tr class="memitem:a1ab77877f33b13a9e8954b034bdfa22f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacead__framework_1_1application.html#a1ab77877f33b13a9e8954b034bdfa22f">StereoImagePtr</a> = std::shared_ptr&lt; <a class="el" href="classad__framework_1_1application_1_1StereoImage.html">StereoImage</a> &gt;</td></tr>
 <tr class="separator:a1ab77877f33b13a9e8954b034bdfa22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dd529aa6bcbeca16309c060594ffbd9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacead__framework_1_1application.html#a3dd529aa6bcbeca16309c060594ffbd9">PointCloudPtr</a> = std::shared_ptr&lt; PointCloud &gt;</td></tr>
+<tr class="memitem:a3dd529aa6bcbeca16309c060594ffbd9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacead__framework_1_1application.html#a3dd529aa6bcbeca16309c060594ffbd9">PointCloudPtr</a> = std::shared_ptr&lt; <a class="el" href="classad__framework_1_1application_1_1PointCloud.html">PointCloud</a> &gt;</td></tr>
 <tr class="separator:a3dd529aa6bcbeca16309c060594ffbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3faa06d9bd4bedc2c55e80ee52c49624"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacead__framework_1_1application.html#a3faa06d9bd4bedc2c55e80ee52c49624">CalibrationPtr</a> = std::shared_ptr&lt; Calibration &gt;</td></tr>
+<tr class="memitem:a3faa06d9bd4bedc2c55e80ee52c49624"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacead__framework_1_1application.html#a3faa06d9bd4bedc2c55e80ee52c49624">CalibrationPtr</a> = std::shared_ptr&lt; <a class="el" href="classad__framework_1_1application_1_1Calibration.html">Calibration</a> &gt;</td></tr>
 <tr class="separator:a3faa06d9bd4bedc2c55e80ee52c49624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace9dd4d6f46f730835848777954f59fe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacead__framework_1_1application.html#ace9dd4d6f46f730835848777954f59fe">DataReaderPtr</a> = std::shared_ptr&lt; <a class="el" href="classad__framework_1_1application_1_1DataReader.html">DataReader</a> &gt;</td></tr>
+<tr class="separator:ace9dd4d6f46f730835848777954f59fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9864a4303346d2579bc1f5995a584ecc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacead__framework_1_1application.html#a9864a4303346d2579bc1f5995a584ecc">PannelPtr</a> = std::shared_ptr&lt; <a class="el" href="classad__framework_1_1application_1_1Pannel.html">Pannel</a> &gt;</td></tr>
 <tr class="separator:a9864a4303346d2579bc1f5995a584ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -168,6 +179,11 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a990965dc3b4fdb81cca94690946f0ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a06fede36f7dc9140b6bb8df24a376524"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacead__framework_1_1application.html#a06fede36f7dc9140b6bb8df24a376524">ToStringWithZeroPadding</a> (size_t num, size_t padding=6)</td></tr>
+<tr class="separator:a06fede36f7dc9140b6bb8df24a376524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a366d0551864f64982dd4965270f5d85e"></a>
@@ -262,23 +278,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dataloader_8h_source.html#l00070">70</a> of file <a class="el" href="dataloader_8h_source.html">dataloader.h</a>.</p>
-
-</div>
-</div>
-<a id="a90878687fa11171c09b084ffc00d9877"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90878687fa11171c09b084ffc00d9877">&#9670;&nbsp;</a></span>fs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacead__framework_1_1application.html#a90878687fa11171c09b084ffc00d9877">ad_framework::application::fs</a> = typedef std::filesystem</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="datareader_8h_source.html#l00019">19</a> of file <a class="el" href="datareader_8h_source.html">datareader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dataloader_8h_source.html#l00071">71</a> of file <a class="el" href="dataloader_8h_source.html">dataloader.h</a>.</p>
 
 </div>
 </div>
@@ -289,7 +289,7 @@ Enumerations</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacead__framework_1_1application.html#a2e689e932c107776794c1262a4622c67">ad_framework::application::ImagePtr</a> = typedef std::shared_ptr&lt;Image&gt;</td>
+          <td class="memname">using <a class="el" href="namespacead__framework_1_1application.html#a2e689e932c107776794c1262a4622c67">ad_framework::application::ImagePtr</a> = typedef std::shared_ptr&lt;<a class="el" href="classad__framework_1_1application_1_1Image.html">Image</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -305,7 +305,7 @@ Enumerations</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacead__framework_1_1application.html#a1ab77877f33b13a9e8954b034bdfa22f">ad_framework::application::StereoImagePtr</a> = typedef std::shared_ptr&lt;StereoImage&gt;</td>
+          <td class="memname">using <a class="el" href="namespacead__framework_1_1application.html#a1ab77877f33b13a9e8954b034bdfa22f">ad_framework::application::StereoImagePtr</a> = typedef std::shared_ptr&lt;<a class="el" href="classad__framework_1_1application_1_1StereoImage.html">StereoImage</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -321,7 +321,7 @@ Enumerations</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacead__framework_1_1application.html#a3dd529aa6bcbeca16309c060594ffbd9">ad_framework::application::PointCloudPtr</a> = typedef std::shared_ptr&lt;PointCloud&gt;</td>
+          <td class="memname">using <a class="el" href="namespacead__framework_1_1application.html#a3dd529aa6bcbeca16309c060594ffbd9">ad_framework::application::PointCloudPtr</a> = typedef std::shared_ptr&lt;<a class="el" href="classad__framework_1_1application_1_1PointCloud.html">PointCloud</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -337,12 +337,28 @@ Enumerations</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacead__framework_1_1application.html#a3faa06d9bd4bedc2c55e80ee52c49624">ad_framework::application::CalibrationPtr</a> = typedef std::shared_ptr&lt;Calibration&gt;</td>
+          <td class="memname">using <a class="el" href="namespacead__framework_1_1application.html#a3faa06d9bd4bedc2c55e80ee52c49624">ad_framework::application::CalibrationPtr</a> = typedef std::shared_ptr&lt;<a class="el" href="classad__framework_1_1application_1_1Calibration.html">Calibration</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="datareader_8h_source.html#l00030">30</a> of file <a class="el" href="datareader_8h_source.html">datareader.h</a>.</p>
+
+</div>
+</div>
+<a id="ace9dd4d6f46f730835848777954f59fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace9dd4d6f46f730835848777954f59fe">&#9670;&nbsp;</a></span>DataReaderPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacead__framework_1_1application.html#ace9dd4d6f46f730835848777954f59fe">ad_framework::application::DataReaderPtr</a> = typedef std::shared_ptr&lt;<a class="el" href="classad__framework_1_1application_1_1DataReader.html">DataReader</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="datareader_8h_source.html#l00076">76</a> of file <a class="el" href="datareader_8h_source.html">datareader.h</a>.</p>
 
 </div>
 </div>
@@ -358,7 +374,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pannel_8h_source.html#l00045">45</a> of file <a class="el" href="pannel_8h_source.html">pannel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pannel_8h_source.html#l00048">48</a> of file <a class="el" href="pannel_8h_source.html">pannel.h</a>.</p>
 
 </div>
 </div>
@@ -407,6 +423,61 @@ Enumerations</h2></td></tr>
 <div class="ttc" id="anamespacead__framework_1_1application_html_a990965dc3b4fdb81cca94690946f0eccadf56279f6e1e3a201e25b5485f67673c"><div class="ttname"><a href="namespacead__framework_1_1application.html#a990965dc3b4fdb81cca94690946f0eccadf56279f6e1e3a201e25b5485f67673c">ad_framework::application::DatasetType::kWaymo</a></div><div class="ttdeci">@ kWaymo</div></div>
 <div class="ttc" id="anamespacead__framework_1_1application_html_a990965dc3b4fdb81cca94690946f0eccafd9262d8f46dd80edda46ca4035a5649"><div class="ttname"><a href="namespacead__framework_1_1application.html#a990965dc3b4fdb81cca94690946f0eccafd9262d8f46dd80edda46ca4035a5649">ad_framework::application::DatasetType::kArgoverse</a></div><div class="ttdeci">@ kArgoverse</div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a06fede36f7dc9140b6bb8df24a376524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06fede36f7dc9140b6bb8df24a376524">&#9670;&nbsp;</a></span>ToStringWithZeroPadding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ad_framework::application::ToStringWithZeroPadding </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>padding</em> = <code>6</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="datareader_8cpp_source.html#l00051">51</a> of file <a class="el" href="datareader_8cpp_source.html">datareader.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    std::string str = std::to_string(num);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">size_t</span> rest_size = padding - str.length();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span> (rest_size &gt; 0)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        str = std::string(rest_size, <span class="charliteral">&#39;0&#39;</span>) + str;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> str;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacead__framework_1_1application_a06fede36f7dc9140b6bb8df24a376524_icgraph.png" border="0" usemap="#anamespacead__framework_1_1application_a06fede36f7dc9140b6bb8df24a376524_icgraph" alt=""/></div>
+<map name="anamespacead__framework_1_1application_a06fede36f7dc9140b6bb8df24a376524_icgraph" id="anamespacead__framework_1_1application_a06fede36f7dc9140b6bb8df24a376524_icgraph">
+<area shape="rect" title=" " alt="" coords="520,107,887,133"/>
+<area shape="rect" href="classad__framework_1_1application_1_1KittiDataReader.html#a80a2d306b9721534fe83ad0f459d9a15" title=" " alt="" coords="27,5,451,32"/>
+<area shape="rect" href="classad__framework_1_1application_1_1KittiDataReader.html#ac22415d0feb4b03fd0bfc6f2af7fe822" title=" " alt="" coords="5,56,472,83"/>
+<area shape="rect" href="classad__framework_1_1application_1_1KittiDataReader.html#ac3b9cc05e687210a2ce25b32a7215182" title=" " alt="" coords="28,107,449,133"/>
+<area shape="rect" href="classad__framework_1_1application_1_1KittiDataReader.html#abdd56dd507763cba363c4c8e72f3f781" title=" " alt="" coords="7,157,470,184"/>
+<area shape="rect" href="classad__framework_1_1application_1_1KittiDataReader.html#a1d15209adef674ffdcc15055ab9dae60" title=" " alt="" coords="29,208,448,235"/>
+</map>
+</div>
+
 </div>
 </div>
 </div><!-- contents -->
