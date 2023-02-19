@@ -10,7 +10,10 @@
 
 #include "src/data_reader/kitti_data_reader.h"
 
+#include <algorithm>
 #include <filesystem>
+#include <fstream>
+#include <iostream>
 
 #include "src/utility/string.h"
 
@@ -21,9 +24,25 @@ KittiDataReader::KittiDataReader(const fs::path path) : DataReader(path)
     SetSize(ReadSize());
 
     SetCalibration(ReadCalibration(path));
+
+    std::cout << "KittiDataReader::KittiDataReader\n";
+    std::cout << "Size: " << GetSize() << "\n";
 }
 
-size_t KittiDataReader::ReadSize() { return 0; }
+size_t KittiDataReader::ReadSize()
+{
+    std::ifstream file(DataReader::GetPath() / kTimesFile);
+
+    std::cout << "File Name : " << (DataReader::GetPath() / kTimesFile) << "\n";
+
+    std::string line;
+    size_t size = 0;
+    while (std::getline(file, line))
+    {
+        ++size;
+    }
+    return size;
+}
 
 ImagePtr KittiDataReader::ReadGrayImage(size_t index, fs::path base_path)
 {
@@ -40,6 +59,16 @@ ImagePtr KittiDataReader::ReadColorImage(size_t index, fs::path base_path)
 StereoImagePtr KittiDataReader::ReadGrayStereoImage(size_t index,
                                                     fs::path base_path)
 {
+    std::cout << "Left Image : "
+              << base_path / kGrayLeftImageFolder /
+                     ToStringWithZeroPadding(index) / ".png"
+              << "\n";
+
+    std::cout << "Right Image : "
+              << base_path / kGrayRightImageFolder /
+                     ToStringWithZeroPadding(index) / ".png"
+              << "\n";
+
     ImagePtr left_image =
         Image::ReadFromFile(base_path / kGrayLeftImageFolder /
                             ToStringWithZeroPadding(index) / ".png");

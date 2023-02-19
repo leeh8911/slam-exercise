@@ -20,6 +20,7 @@
 
 #include "src/application/dataloader.h"
 #include "src/application/user_interface/pannel/abstract_pannel.h"
+#include "src/control/control_center.h"
 #include "src/data_reader/abstract_data_reader.h"
 
 namespace ad_framework::application
@@ -60,6 +61,7 @@ class UserInterface
     std::forward_list<PannelPtr> pannels_{};
     DataLoaderPtr dataloader_ptr_{nullptr};
     DataReaderPtr datareader_ptr_{nullptr};
+    ControlCenterPtr control_center_ptr_{nullptr};
     DatasetType dataset_type_{DatasetType::kNone};
 };
 

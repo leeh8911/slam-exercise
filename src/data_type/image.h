@@ -12,6 +12,7 @@
 #define SRC_DATA_TYPE_IMAGE_H_
 
 #include <filesystem>
+#include <opencv2/core.hpp>
 
 namespace ad_framework
 {
@@ -26,15 +27,32 @@ class Image
 {
  public:
     Image() = default;
+    Image(const cv::Mat& image);
+
+    Image(const Image& other);
+    Image(Image&& other) noexcept;
+
+    Image& operator=(const Image& other);
+    Image& operator=(Image&& other) noexcept;
+
+    size_t GetRowSize() const;
+    size_t GetColSize() const;
+    uint8_t* GetRawPointer() const;
+    cv::Mat GetRawImage() const;
+
     static ImagePtr ReadFromFile(const fs::path path);
 
  private:
+    std::unique_ptr<cv::Mat> image_{nullptr};
 };
 
 class StereoImage
 {
  public:
     StereoImage(ImagePtr left, ImagePtr right);
+
+    ImagePtr Left() const;
+    ImagePtr Right() const;
 
  private:
     ImagePtr left_{nullptr};

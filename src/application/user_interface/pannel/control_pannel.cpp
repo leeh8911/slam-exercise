@@ -95,6 +95,7 @@ void ControlPannel::RenderInterface(bool& open)
         ImGui::Combo("Select", &item_current, pimpl_->GetDatasetList(),
                      pimpl_->GetDatasetListSize());
         pimpl_->SelectType(static_cast<size_t>(item_current));
+        control_center_ptr_->SelectDataset(item_current);
     }
 
     std::string load_button_label = "Load";
@@ -123,6 +124,7 @@ void ControlPannel::RenderInterface(bool& open)
                 {
                     current_item = selected_item;
                     pimpl_->SelectSequence(n);
+                    control_center_ptr_->SelectSequence(n);
                 }
                 if (is_selected)
                 {

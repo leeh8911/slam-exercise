@@ -45,6 +45,13 @@ void Pannel::Render(bool& open, const ImVec2& window_size)
     ImGui::End();
 }
 
+void Pannel::SetControlCenter(ControlCenterPtr control_center_ptr)
+{
+    control_center_ptr_ = control_center_ptr;
+}
+
+ControlCenterPtr Pannel::GetControlCenter() { return control_center_ptr_; }
+
 void Pannel::SetSize(const ImVec2& window_size) const
 {
     ImVec2 size = ImVec2(size_.x * window_size.x, size_.y * window_size.y);

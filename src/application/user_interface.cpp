@@ -128,12 +128,19 @@ UserInterface::UserInterface()
         std::make_unique<ControlPannel>(control_position, control_size));
     pannels_.emplace_front(
         std::make_unique<MediaPannel>(media_position, media_size));
+
+    control_center_ptr_ = std::make_shared<ControlCenter>();
+    for (auto& pannel : pannels_)
+    {
+        pannel->SetControlCenter(control_center_ptr_);
+    }
 }
 
 void UserInterface::UpdateDataReader()
 {
     if (dataset_type_ == dataloader_ptr_->GetDatasetType())
     {
+        return
     }
 
     dataset_type_ = dataloader_ptr_->GetDatasetType();

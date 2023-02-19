@@ -10,6 +10,7 @@
 
 #include "src/data_reader/abstract_data_reader.h"
 
+#include <iostream>
 namespace ad_framework
 {
 namespace fs = std::filesystem;
@@ -25,8 +26,10 @@ DataReader::DataReader(const fs::path path)
       point_cloud_{nullptr},
       calibration_{nullptr}
 {
+    LoadIndex(0);
 }
 
+fs::path DataReader::GetPath() const { return path_; }
 size_t DataReader::GetSize() const { return size_; }
 void DataReader::SetSize(size_t size) { size_ = size; }
 void DataReader::SetCalibration(CalibrationPtr calibration)
@@ -40,6 +43,7 @@ bool DataReader::LoadIndex(size_t index)
     {
         return false;
     }
+    std::cout << "LoadIndex: " << index << " / " << size_ << "\n";
 
     current_index_ = index;
 

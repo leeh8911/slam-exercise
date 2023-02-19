@@ -17,6 +17,7 @@
 #include <string>
 
 #include "src/application/dataloader.h"
+#include "src/control/control_center.h"
 #include "src/data_reader/abstract_data_reader.h"
 
 namespace ad_framework::application
@@ -32,6 +33,9 @@ class Pannel
 
     std::string GetName() const;
 
+    void SetControlCenter(ControlCenterPtr control_center_ptr);
+    ControlCenterPtr GetControlCenter();
+
  protected:
     virtual void RenderInterface(bool& open) = 0;
     DataLoaderPtr dataloader_ptr_{nullptr};
@@ -44,6 +48,7 @@ class Pannel
     ImVec2 position_{};
     ImVec2 size_{};
     ImGuiWindowFlags window_flags_{};
+    ControlCenterPtr control_center_ptr_{nullptr};
 };
 
 using PannelPtr = std::shared_ptr<Pannel>;

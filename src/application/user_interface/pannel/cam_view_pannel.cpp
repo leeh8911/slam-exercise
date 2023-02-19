@@ -12,6 +12,7 @@
 
 #include <GLFW/glfw3.h>
 
+#include <iostream>
 #include <opencv2/core.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgcodecs.hpp>
@@ -35,12 +36,13 @@ void CamViewPannel::RenderInterface(bool& open)
     }
     ImGui::Text("Hello, world!");
 
-    // clang-format off
-    std::string image_file = "D:\\sangwon\\dataset\\kitti\\odometry\\dataset\\sequences\\00\\image_3\\000000.png";
-    // clang-format on
-
-    cv::Mat img = cv::imread(image_file, cv::IMREAD_COLOR);
-
+    auto stereo_image = datareader_ptr_->GetColorStereoImage();
+    if (stereo_image == nullptr)
+    {
+        return;
+    }
+    std::cout << "Read Image\n";
+    auto left_image = stereo_image->Left();
     GLuint image_texture = 0;
 
     glGenTextures(1, &image_texture);
@@ -50,9 +52,12 @@ void CamViewPannel::RenderInterface(bool& open)
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
+    int rows = static_cast<int>(left_image->GetRowSize());
+    int cols = static_cast<int>(left_image->GetColSize());
+
     // Upload pixels into texture
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, img.cols, img.rows, 0, GL_RGB,
-                 GL_UNSIGNED_BYTE, img.ptr());
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, cols, rows, 0, GL_RGB,
+                 GL_UNSIGNED_BYTE, left_image->GetRawPointer());
 
     ImGui::Image((void*)(intptr_t)image_texture, ImGui::GetWindowSize());
 }
