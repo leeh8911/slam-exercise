@@ -20,7 +20,7 @@
 
 #include "src/application/dataloader.h"
 #include "src/application/pannel/pannel.h"
-#include "src/data_reader/data_reader.h"
+#include "src/data_reader.h"
 
 namespace ad_framework::application
 {
