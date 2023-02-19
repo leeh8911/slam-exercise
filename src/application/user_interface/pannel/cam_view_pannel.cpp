@@ -8,7 +8,7 @@
 ///
 ///
 
-#include "src/application/pannel/cam_view_pannel.h"
+#include "src/application/user_interface/pannel/cam_view_pannel.h"
 
 #include <GLFW/glfw3.h>
 

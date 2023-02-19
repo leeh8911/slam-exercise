@@ -8,7 +8,7 @@
 ///
 ///
 
-#include "src/application/pannel/control_pannel.h"
+#include "src/application/user_interface/pannel/control_pannel.h"
 
 #include <stdio.h>
 

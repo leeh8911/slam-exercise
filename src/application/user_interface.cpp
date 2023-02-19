@@ -26,12 +26,12 @@
 #include "bindings/imgui_impl_opengl2.h"
 #include "bindings/implot.h"
 #include "src/application/dataloader.h"
-#include "src/application/pannel/cam_view_pannel.h"
-#include "src/application/pannel/control_pannel.h"
-#include "src/application/pannel/dialog_pannel.h"
-#include "src/application/pannel/media_pannel.h"
-#include "src/application/pannel/pannel.h"
-#include "src/application/pannel/top_view_pannel.h"
+#include "src/application/user_interface/pannel/cam_view_pannel.h"
+#include "src/application/user_interface/pannel/control_pannel.h"
+#include "src/application/user_interface/pannel/dialog_pannel.h"
+#include "src/application/user_interface/pannel/media_pannel.h"
+#include "src/application/user_interface/pannel/pannel.h"
+#include "src/application/user_interface/pannel/top_view_pannel.h"
 #include "src/data_reader.h"
 
 namespace ad_framework::application

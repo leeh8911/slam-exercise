@@ -15,8 +15,8 @@
 
 #include <memory>
 
-#include "..\dataloader.h"
-#include "src/application/pannel/pannel.h"
+#include "..\..\dataloader.h"
+#include "src/application/user_interface/pannel/pannel.h"
 
 namespace ad_framework::application
 {

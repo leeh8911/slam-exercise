@@ -14,8 +14,8 @@
 #include <memory>
 
 #include "bindings/imgui.h"
-#include "src/application/drawer/top_view_drawer.h"
-#include "src/application/pannel/pannel.h"
+#include "src/application/user_interface/drawer/top_view_drawer.h"
+#include "src/application/user_interface/pannel/pannel.h"
 
 namespace ad_framework::application
 {
