@@ -8,15 +8,23 @@
 ///
 ///
 
+#include <any>
 #include <iostream>
 
-#include "src/callback.h"
+#include "src/utils/callback.h"
 #include "src/window.h"
 
 class SampleCallback : public ::ad_framework::callback::Callback
 {
  public:
-    void operator()() override { std::cout << "Hello, world!" << std::endl; }
+    std::any operator()(const std::any& src) override
+    {
+        if (src.has_value())
+        {
+            std::cout << "src has value" << std::endl;
+        }
+        return src;
+    }
 };
 
 int main()
@@ -26,5 +34,6 @@ int main()
     window.AddCallback(std::make_shared<SampleCallback>());
 
     window();
+
     return 0;
 }

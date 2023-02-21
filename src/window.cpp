@@ -20,7 +20,6 @@
 #include "bindings/imgui_impl_opengl2.h"
 #include "bindings/implot.h"
 
-
 namespace ad_framework::window
 {
 Window::Window(std::string title) : title_{title}, window_{nullptr}
@@ -84,7 +83,7 @@ void Window::operator()()
 
         for (auto& callback : callbacks_)
         {
-            (*callback)();
+            (*callback)(0);
         }
 
         // Rendering

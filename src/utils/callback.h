@@ -11,6 +11,7 @@
 #ifndef SRC_CALLBACK_H_
 #define SRC_CALLBACK_H_
 
+#include <any>
 #include <memory>
 
 namespace ad_framework::callback
@@ -19,7 +20,7 @@ struct Callback
 {
     virtual ~Callback() = default;
 
-    virtual void operator()() = 0;
+    virtual std::any operator()(const std::any& src) = 0;
 };
 
 using CallbackPtr = std::shared_ptr<Callback>;
