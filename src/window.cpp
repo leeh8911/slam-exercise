@@ -10,15 +10,16 @@
 
 #include "src/window.h"
 
-#include <GLFW/glfw3.h>
-
 #include <iostream>
+#include <stdexcept>
 #include <string>
 
+#include "GLFW/glfw3.h"
 #include "bindings/imgui.h"
 #include "bindings/imgui_impl_glfw.h"
 #include "bindings/imgui_impl_opengl2.h"
 #include "bindings/implot.h"
+
 
 namespace ad_framework::window
 {
@@ -42,7 +43,6 @@ Window::Window(std::string title) : title_{title}, window_{nullptr}
     // Setup Dear ImGui context
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
-    ImPlot::CreateContext();
     ImGuiIO& io = ImGui::GetIO();
     io.ConfigFlags |=
         ImGuiConfigFlags_NavEnableKeyboard;  // Enable Keyboard Controls
