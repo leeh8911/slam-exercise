@@ -10,12 +10,21 @@
 
 #include <iostream>
 
-#include "src/application/application.h"
+#include "src/callback.h"
+#include "src/window.h"
+
+class SampleCallback : public ::ad_framework::callback::Callback
+{
+ public:
+    void operator()() override { std::cout << "Hello, world!" << std::endl; }
+};
 
 int main()
 {
-    ::ad_framework::application::Application app{};
+    ::ad_framework::window::Window window("main window");
 
-    app.Execute();
+    window.AddCallback(std::make_shared<SampleCallback>());
+
+    window();
     return 0;
 }
