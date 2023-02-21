@@ -11,6 +11,7 @@
 #include <any>
 #include <iostream>
 
+#include "src/user_interface/button.h"
 #include "src/utils/callback.h"
 #include "src/window.h"
 
@@ -32,6 +33,7 @@ int main()
     ::ad_framework::window::Window window("main window");
 
     window.AddCallback(std::make_shared<SampleCallback>());
+    window.AddUI(std::make_shared<::ad_framework::ui::Button>("button"));
 
     window();
 

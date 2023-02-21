@@ -68,6 +68,7 @@ void Window::AddCallback(Window::CallbackPtr callback)
 {
     callbacks_.emplace_back(callback);
 }
+void Window::AddUI(Window::UserInterfacePtr ui) { uis_.emplace_back(ui); }
 
 void Window::operator()()
 {
@@ -85,6 +86,12 @@ void Window::operator()()
         {
             (*callback)(0);
         }
+        ImGui::Begin("Main Frame");
+        for (auto& ui : uis_)
+        {
+            (*ui)();
+        }
+        ImGui::End();
 
         // Rendering
         ImGui::Render();
