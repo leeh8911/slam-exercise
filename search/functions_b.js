@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pannel_276',['Pannel',['../classad__framework_1_1application_1_1Pannel.html#acc623d668613fb247f8a5ad5815b77d4',1,'ad_framework::application::Pannel']]]
+  ['window_105',['Window',['../classad__framework_1_1window_1_1Window.html#a9a0fbbe1c6d3d86b88d988553fd84af9',1,'ad_framework::window::Window']]]
 ];

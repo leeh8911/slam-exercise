@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['execute_244',['Execute',['../classad__framework_1_1application_1_1Application.html#a628121d5f80684a330360ad502114fc4',1,'ad_framework::application::Application::Execute()'],['../classad__framework_1_1application_1_1UserInterface.html#a95aec93006c0a8a8652ff20f6ab63b69',1,'ad_framework::application::UserInterface::Execute()']]]
+  ['log_92',['Log',['../classad__framework_1_1log_1_1Log.html#ab0a4282d8773125eb1eb87147d7e3558',1,'ad_framework::log::Log']]]
 ];

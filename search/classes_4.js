@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kittidatareader_190',['KittiDataReader',['../classad__framework_1_1KittiDataReader.html',1,'ad_framework']]]
+  ['nullcallback_68',['NullCallback',['../classad__framework_1_1ui_1_1NullCallback.html',1,'ad_framework::ui']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['findcandidates_245',['FindCandidates',['../classad__framework_1_1application_1_1DataLoader.html#a25a5b2a762bd44d05fd41187555ce641',1,'ad_framework::application::DataLoader']]],
-  ['findsequences_246',['FindSequences',['../classad__framework_1_1application_1_1DataLoader.html#a13e87935063283ccbde38e3e7f9eb411',1,'ad_framework::application::DataLoader']]],
-  ['foo_247',['foo',['../dummy_8cpp.html#ac07863d69ae41a4e395b31f73b35fbcd',1,'foo():&#160;dummy.cpp'],['../dummy_8h.html#ac07863d69ae41a4e395b31f73b35fbcd',1,'foo():&#160;dummy.cpp']]]
+  ['main_93',['main',['../app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../test_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;main.cpp']]],
+  ['move_94',['Move',['../classad__framework_1_1ui_1_1UserInterface.html#a8a7ac649bf050fc506c39dffebe99750',1,'ad_framework::ui::UserInterface']]]
 ];

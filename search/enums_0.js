@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['datasettype_372',['DatasetType',['../namespacead__framework_1_1application.html#a990965dc3b4fdb81cca94690946f0ecc',1,'ad_framework::application']]]
+  ['loglevel_123',['LogLevel',['../namespacead__framework_1_1log.html#a1a36723383d2fabfb44059f45b4a4811',1,'ad_framework::log']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['kittidatareader_270',['KittiDataReader',['../classad__framework_1_1KittiDataReader.html#a8d8b5d9d07b897ca74b6317e865d2bd1',1,'ad_framework::KittiDataReader']]]
+  ['rename_99',['Rename',['../classad__framework_1_1ui_1_1UserInterface.html#a0870a4a98c6f112c02ee0ed3e3237b2d',1,'ad_framework::ui::UserInterface']]],
+  ['resize_100',['Resize',['../classad__framework_1_1ui_1_1UserInterface.html#a8a5e714ecb11fe37d97fbaeec4747a0c',1,'ad_framework::ui::UserInterface']]]
 ];

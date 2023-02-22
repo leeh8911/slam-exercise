@@ -1,20 +1,8 @@
 var searchData=
 [
-  ['selected_5fpath_5f_131',['selected_path_',['../classad__framework_1_1application_1_1DataLoader.html#aabccef5b408126dcb3383c6461516dd6',1,'ad_framework::application::DataLoader']]],
-  ['selectsequence_132',['SelectSequence',['../classad__framework_1_1application_1_1DataLoader.html#a76dfe4cdf060a02323083fb4ee025963',1,'ad_framework::application::DataLoader::SelectSequence()'],['../classad__framework_1_1application_1_1ControlPannel_1_1Impl.html#aa7848a4d2718b62edadcfd024b4125c9',1,'ad_framework::application::ControlPannel::Impl::SelectSequence()']]],
-  ['selecttype_133',['SelectType',['../classad__framework_1_1application_1_1DataLoader.html#a735a06d75bc49c31e55df3211dbdd756',1,'ad_framework::application::DataLoader::SelectType()'],['../classad__framework_1_1application_1_1ControlPannel_1_1Impl.html#af54936a31bb886a52e68fdbc1067b6ac',1,'ad_framework::application::ControlPannel::Impl::SelectType()']]],
-  ['sequence_5fname_5flist_5f_134',['sequence_name_list_',['../classad__framework_1_1application_1_1DataLoader.html#a48336ee331120796be7cfab94e219635',1,'ad_framework::application::DataLoader']]],
-  ['sequence_5fpath_5flist_5f_135',['sequence_path_list_',['../classad__framework_1_1application_1_1DataLoader.html#a0160de1df2e62801bba1354226d9fc78',1,'ad_framework::application::DataLoader']]],
-  ['sequencenamelist_136',['SequenceNameList',['../namespacead__framework_1_1application.html#a65b423567663d85af34b75ee2f7da6b3',1,'ad_framework::application']]],
-  ['sequencepathlist_137',['SequencePathList',['../namespacead__framework_1_1application.html#ad2ce2d38791f1ad31cce923ccc4391f9',1,'ad_framework::application']]],
-  ['setcalibration_138',['SetCalibration',['../classad__framework_1_1DataReader.html#a1923005291974cc2c2f7197f720f5faf',1,'ad_framework::DataReader']]],
-  ['setdataloader_139',['SetDataLoader',['../classad__framework_1_1application_1_1ControlPannel_1_1Impl.html#a0c9102f5dbecad15e667b703363b9c23',1,'ad_framework::application::ControlPannel::Impl']]],
-  ['setposition_140',['SetPosition',['../classad__framework_1_1application_1_1Pannel.html#a33dabb5aa7f594264e8c8c90bc118a98',1,'ad_framework::application::Pannel']]],
-  ['setsize_141',['SetSize',['../classad__framework_1_1application_1_1Pannel.html#a78254446b0666d06e18517840f391fc0',1,'ad_framework::application::Pannel::SetSize()'],['../classad__framework_1_1DataReader.html#a7e7c197a4a15dca52e14dbdd26836fc7',1,'ad_framework::DataReader::SetSize()']]],
-  ['shutdown_142',['Shutdown',['../classad__framework_1_1application_1_1Application.html#a12e5a6c1818dfa6c35473f47930b6ca1',1,'ad_framework::application::Application']]],
-  ['size_5f_143',['size_',['../classad__framework_1_1application_1_1Pannel.html#a82064486613ccb288e7fa78763c78567',1,'ad_framework::application::Pannel::size_()'],['../classad__framework_1_1DataReader.html#a74b7450c6f350bcc15f6d4c23def199d',1,'ad_framework::DataReader::size_()']]],
-  ['stereoimage_144',['StereoImage',['../classad__framework_1_1StereoImage.html',1,'ad_framework::StereoImage'],['../classad__framework_1_1StereoImage.html#a8a0a829cfb5385c15015d053564b148e',1,'ad_framework::StereoImage::StereoImage()']]],
-  ['stereoimageptr_145',['StereoImagePtr',['../namespacead__framework.html#af4fe688e033908df531ae0ef11afd4c2',1,'ad_framework']]],
-  ['string_2ecpp_146',['string.cpp',['../string_8cpp.html',1,'']]],
-  ['string_2eh_147',['string.h',['../string_8h.html',1,'']]]
+  ['ui_2ecpp_50',['ui.cpp',['../ui_8cpp.html',1,'']]],
+  ['ui_2eh_51',['ui.h',['../ui_8h.html',1,'']]],
+  ['uis_5f_52',['uis_',['../classad__framework_1_1ui_1_1Frame.html#a0a1b16e6b6c69d2e7d224f8fc1cb9678',1,'ad_framework::ui::Frame::uis_()'],['../classad__framework_1_1window_1_1Window.html#ada3ea86b036f1a50db4e87bfd39d89b2',1,'ad_framework::window::Window::uis_()']]],
+  ['userinterface_53',['UserInterface',['../classad__framework_1_1ui_1_1UserInterface.html',1,'ad_framework::ui::UserInterface'],['../classad__framework_1_1ui_1_1UserInterface.html#a0e44a1a95f48ed307024185f6b01a2dc',1,'ad_framework::ui::UserInterface::UserInterface()']]],
+  ['userinterfaceptr_54',['UserInterfacePtr',['../classad__framework_1_1window_1_1Window.html#a9eacf322daa971b02de1cdb22cc5e726',1,'ad_framework::window::Window::UserInterfacePtr()'],['../namespacead__framework_1_1ui.html#af5b82e1aadc8bccbfbfef1118749a404',1,'ad_framework::ui::UserInterfacePtr()']]]
 ];

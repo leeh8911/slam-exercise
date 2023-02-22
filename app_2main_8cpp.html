@@ -74,22 +74,34 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">main.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &quot;<a class="el" href="application_8h_source.html">src/application/application.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;any&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &quot;<a class="el" href="button_8h_source.html">src/user_interface/button.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="callback_8h_source.html">src/utils/callback.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="log_8h_source.html">src/utils/log.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="window_8h_source.html">src/window.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.cpp:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="app_2main_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="app_2main_8cpp__incl.svg" width="100%" height="552"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
 <p><a href="app_2main_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSampleCallback.html">SampleCallback</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classButtonCallback.html">ButtonCallback</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
@@ -118,19 +130,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="app_2main_8cpp_source.html#l00015">15</a> of file <a class="el" href="app_2main_8cpp_source.html">main.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classad__framework_1_1application_1_1Application.html">::ad_framework::application::Application</a> app{};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    app.<a class="code" href="classad__framework_1_1application_1_1Application.html#a628121d5f80684a330360ad502114fc4">Execute</a>();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
-<div class="ttc" id="aclassad__framework_1_1application_1_1Application_html"><div class="ttname"><a href="classad__framework_1_1application_1_1Application.html">ad_framework::application::Application</a></div><div class="ttdef"><b>Definition:</b> <a href="application_8h_source.html#l00022">application.h:23</a></div></div>
-<div class="ttc" id="aclassad__framework_1_1application_1_1Application_html_a628121d5f80684a330360ad502114fc4"><div class="ttname"><a href="classad__framework_1_1application_1_1Application.html#a628121d5f80684a330360ad502114fc4">ad_framework::application::Application::Execute</a></div><div class="ttdeci">void Execute()</div><div class="ttdef"><b>Definition:</b> <a href="application_8cpp_source.html#l00020">application.cpp:20</a></div></div>
+<p class="definition">Definition at line <a class="el" href="app_2main_8cpp_source.html#l00050">50</a> of file <a class="el" href="app_2main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classad__framework_1_1window_1_1Window.html">::ad_framework::window::Window</a> window(<span class="stringliteral">&quot;main window&quot;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    window.AddCallback(std::make_shared&lt;SampleCallback&gt;());</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">auto</span> frame = std::make_shared&lt;::ad_framework::ui::Frame&gt;(<span class="stringliteral">&quot;Main Frame&quot;</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    frame-&gt;AddUI(std::make_shared&lt;::ad_framework::ui::Button&gt;(</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="stringliteral">&quot;button&quot;</span>, std::make_shared&lt;ButtonCallback&gt;()));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    window.AddUI(frame);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    window();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="ttc" id="aclassad__framework_1_1window_1_1Window_html"><div class="ttname"><a href="classad__framework_1_1window_1_1Window.html">ad_framework::window::Window</a></div><div class="ttdef"><b>Definition:</b> <a href="window_8h_source.html#l00026">window.h:27</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="app_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="100%" height="480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="app_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="435" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

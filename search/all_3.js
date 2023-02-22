@@ -1,24 +1,4 @@
 var searchData=
 [
-  ['data_5freader_2eh_25',['data_reader.h',['../data__reader_8h.html',1,'']]],
-  ['dataloader_26',['DataLoader',['../classad__framework_1_1application_1_1DataLoader.html',1,'ad_framework::application::DataLoader'],['../classad__framework_1_1application_1_1DataLoader.html#af5389a3596f7ba9e60e09c0fe14fcc07',1,'ad_framework::application::DataLoader::DataLoader()']]],
-  ['dataloader_2ecpp_27',['dataloader.cpp',['../dataloader_8cpp.html',1,'']]],
-  ['dataloader_2eh_28',['dataloader.h',['../dataloader_8h.html',1,'']]],
-  ['dataloader_5fptr_5f_29',['dataloader_ptr_',['../classad__framework_1_1application_1_1UserInterface.html#ab000d5301865b5bb7dc6e4d25e6bedc8',1,'ad_framework::application::UserInterface::dataloader_ptr_()'],['../classad__framework_1_1application_1_1ControlPannel_1_1Impl.html#a7e4eaa174d17154a1cc31814b27eeef3',1,'ad_framework::application::ControlPannel::Impl::dataloader_ptr_()'],['../classad__framework_1_1application_1_1Pannel.html#a006f56c71d5e3de5e057a3f7af864339',1,'ad_framework::application::Pannel::dataloader_ptr_()']]],
-  ['dataloaderptr_30',['DataLoaderPtr',['../namespacead__framework_1_1application.html#a1173744f40824f7dc8e8439227d1399b',1,'ad_framework::application']]],
-  ['dataloadertypetoname_31',['DataLoaderTypeToName',['../namespacead__framework_1_1application.html#a366d0551864f64982dd4965270f5d85e',1,'ad_framework::application']]],
-  ['datareader_32',['DataReader',['../classad__framework_1_1DataReader.html',1,'ad_framework::DataReader'],['../classad__framework_1_1DataReader.html#adb40dd9d3ff929161bcede30cbd87461',1,'ad_framework::DataReader::DataReader()']]],
-  ['datareader_5fptr_5f_33',['datareader_ptr_',['../classad__framework_1_1application_1_1Pannel.html#aa0672e9cc9253502b21ced9170b97ae1',1,'ad_framework::application::Pannel::datareader_ptr_()'],['../classad__framework_1_1application_1_1UserInterface.html#ad3bfb53f26aa2be910bebfcb8f7d7817',1,'ad_framework::application::UserInterface::datareader_ptr_()']]],
-  ['datareaderptr_34',['DataReaderPtr',['../namespacead__framework.html#a93d5281dcb25a731109a6368fd936a8f',1,'ad_framework']]],
-  ['dataset_5ftype_5f_35',['dataset_type_',['../classad__framework_1_1application_1_1UserInterface.html#ab2dc81ddc0901fc91c3550ec54bfa0d2',1,'ad_framework::application::UserInterface']]],
-  ['datasetnametotype_36',['DatasetNameToType',['../namespacead__framework_1_1application.html#a6248d80625d421cbfc8ac10a4a6d96ae',1,'ad_framework::application']]],
-  ['datasetpathmap_37',['DatasetPathMap',['../namespacead__framework_1_1application.html#a0ebe9971ceaf57542502a5536080fa48',1,'ad_framework::application']]],
-  ['datasettype_38',['DatasetType',['../namespacead__framework_1_1application.html#a990965dc3b4fdb81cca94690946f0ecc',1,'ad_framework::application']]],
-  ['dialog_5fpannel_2ecpp_39',['dialog_pannel.cpp',['../dialog__pannel_8cpp.html',1,'']]],
-  ['dialog_5fpannel_2eh_40',['dialog_pannel.h',['../dialog__pannel_8h.html',1,'']]],
-  ['dialogpannel_41',['DialogPannel',['../classad__framework_1_1application_1_1DialogPannel.html',1,'ad_framework::application::DialogPannel'],['../classad__framework_1_1application_1_1DialogPannel.html#a9502e08fa348245d8837687c0de2b4e8',1,'ad_framework::application::DialogPannel::DialogPannel()']]],
-  ['draw_42',['Draw',['../classad__framework_1_1application_1_1TopViewDrawer.html#a2cf6b3b46d120cef3936289fd0514d11',1,'ad_framework::application::TopViewDrawer']]],
-  ['drawer_5f_43',['drawer_',['../classad__framework_1_1application_1_1TopViewPannel.html#a9fc56d4626b43b9bf7549b3f8c56b27d',1,'ad_framework::application::TopViewPannel']]],
-  ['dummy_2ecpp_44',['dummy.cpp',['../dummy_8cpp.html',1,'']]],
-  ['dummy_2eh_45',['dummy.h',['../dummy_8h.html',1,'']]]
+  ['frame_18',['Frame',['../classad__framework_1_1ui_1_1Frame.html',1,'ad_framework::ui::Frame'],['../classad__framework_1_1ui_1_1Frame.html#a23b75b9f4a27022ca373cc296fb61f39',1,'ad_framework::ui::Frame::Frame(std::string title, ImVec2 size, ImVec2 pos)'],['../classad__framework_1_1ui_1_1Frame.html#aebc75c41a2685587e064b4d41b9417c4',1,'ad_framework::ui::Frame::Frame(std::string title)']]]
 ];

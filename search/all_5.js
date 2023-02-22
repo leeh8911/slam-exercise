@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['findcandidates_47',['FindCandidates',['../classad__framework_1_1application_1_1DataLoader.html#a25a5b2a762bd44d05fd41187555ce641',1,'ad_framework::application::DataLoader']]],
-  ['findsequences_48',['FindSequences',['../classad__framework_1_1application_1_1DataLoader.html#a13e87935063283ccbde38e3e7f9eb411',1,'ad_framework::application::DataLoader']]],
-  ['foo_49',['foo',['../dummy_8cpp.html#ac07863d69ae41a4e395b31f73b35fbcd',1,'foo():&#160;dummy.cpp'],['../dummy_8h.html#ac07863d69ae41a4e395b31f73b35fbcd',1,'foo():&#160;dummy.cpp']]]
+  ['kdebug_20',['kDebug',['../namespacead__framework_1_1log.html#a1a36723383d2fabfb44059f45b4a4811abb53ce21b7c0b7c8a8f7860a41901d29',1,'ad_framework::log']]],
+  ['kerror_21',['kError',['../namespacead__framework_1_1log.html#a1a36723383d2fabfb44059f45b4a4811ae3587c730cc1aa530fa4ddc9c4204e97',1,'ad_framework::log']]],
+  ['kfatal_22',['kFatal',['../namespacead__framework_1_1log.html#a1a36723383d2fabfb44059f45b4a4811ae66f945a3c2423ef09406cf09fa9de26',1,'ad_framework::log']]],
+  ['kinfo_23',['kInfo',['../namespacead__framework_1_1log.html#a1a36723383d2fabfb44059f45b4a4811a176a473e63c17ccdac91640c67f149bf',1,'ad_framework::log']]],
+  ['kwarning_24',['kWarning',['../namespacead__framework_1_1log.html#a1a36723383d2fabfb44059f45b4a4811aec0da41f4e48b52c362303eb27ed5dee',1,'ad_framework::log']]]
 ];

@@ -1,8 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classad__framework_1_1application_1_1Pannel.html" title=" " alt="" coords="5,107,252,133"/>
-<area shape="rect" id="node2" href="$classad__framework_1_1application_1_1CamViewPannel.html" title=" " alt="" coords="300,5,609,32"/>
-<area shape="rect" id="node3" href="$classad__framework_1_1application_1_1ControlPannel.html" title=" " alt="" coords="307,56,602,83"/>
-<area shape="rect" id="node4" href="$classad__framework_1_1application_1_1DialogPannel.html" title=" " alt="" coords="310,107,599,133"/>
-<area shape="rect" id="node5" href="$classad__framework_1_1application_1_1MediaPannel.html" title=" " alt="" coords="311,157,598,184"/>
-<area shape="rect" id="node6" href="$classad__framework_1_1application_1_1TopViewPannel.html" title="This class is for rendering the top view of measurements (from lidar, camera, radar,..." alt="" coords="304,208,605,235"/>
+<area shape="rect" id="node1" href="$classad__framework_1_1window_1_1Window.html" title=" " alt="" coords="5,5,239,32"/>
 </map>
