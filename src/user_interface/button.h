@@ -26,6 +26,7 @@ class Button : public UserInterface
  public:
     Button(std::string title, ImVec2 size, ImVec2 pos, CallbackPtr callback);
     Button(std::string title, ImVec2 size, ImVec2 pos);
+    Button(std::string title, CallbackPtr callback);
     Button(std::string title);
 
     void operator()() override;

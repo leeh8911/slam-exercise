@@ -86,12 +86,11 @@ void Window::operator()()
         {
             (*callback)(0);
         }
-        ImGui::Begin("Main Frame");
+
         for (auto& ui : uis_)
         {
             (*ui)();
         }
-        ImGui::End();
 
         // Rendering
         ImGui::Render();

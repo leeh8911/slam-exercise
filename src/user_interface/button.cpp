@@ -23,7 +23,7 @@ class NullCallback : public ::ad_framework::callback::Callback
 
 Button::Button(std::string title, ImVec2 size, ImVec2 pos,
                Button::CallbackPtr callback)
-    : UserInterface(title, size, pos), callback_(callback)
+    : UserInterface(title, size, pos, nullptr), callback_(callback)
 {
     if (callback == nullptr)
     {
@@ -33,6 +33,10 @@ Button::Button(std::string title, ImVec2 size, ImVec2 pos,
 
 Button::Button(std::string title, ImVec2 size, ImVec2 pos)
     : Button(title, size, pos, nullptr)
+{
+}
+Button::Button(std::string title, Button::CallbackPtr callback)
+    : Button(title, ImVec2{0, 0}, ImVec2{0, 0}, callback)
 {
 }
 Button::Button(std::string title)
