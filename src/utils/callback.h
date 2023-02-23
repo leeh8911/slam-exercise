@@ -24,6 +24,12 @@ struct Callback
 };
 
 using CallbackPtr = std::shared_ptr<Callback>;
+
+class NullCallback : public ::ad_framework::callback::Callback
+{
+ public:
+    std::any operator()(const std::any& src) override { return src; }
+};
 }  // namespace ad_framework::callback
 
 #endif  // SRC_CALLBACK_H_

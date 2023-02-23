@@ -15,34 +15,13 @@
 
 namespace ad_framework::ui
 {
-class NullCallback : public ::ad_framework::callback::Callback
-{
- public:
-    std::any operator()(const std::any& src) override { return src; }
-};
-
-Button::Button(std::string title, ImVec2 size, ImVec2 pos,
-               Button::CallbackPtr callback)
-    : UserInterface(title, size, pos, nullptr), callback_(callback)
-{
-    if (callback == nullptr)
-    {
-        callback_ = std::make_shared<NullCallback>();
-    }
-}
 
 Button::Button(std::string title, ImVec2 size, ImVec2 pos)
-    : Button(title, size, pos, nullptr)
+    : UserInterface(std::move(title), size, pos)
 {
 }
-Button::Button(std::string title, Button::CallbackPtr callback)
-    : Button(title, ImVec2{0, 0}, ImVec2{0, 0}, callback)
-{
-}
-Button::Button(std::string title)
-    : Button(title, ImVec2{0, 0}, ImVec2{0, 0}, nullptr)
-{
-}
+
+Button::Button(std::string title) : Button(title, ImVec2{0, 0}, ImVec2{0, 0}) {}
 
 void Button::operator()()
 {
@@ -51,8 +30,26 @@ void Button::operator()()
 
     if (ImGui::Button(Title().c_str()))
     {
-        auto result = (*callback_)(Title());
+        auto callbacks = GetCallbacks();
+
+        auto result = (*callbacks["title"])(Title());
+
         Rename(std::any_cast<std::string>(result));
     }
 }
+
+std::any Button::ButtonChanger::operator()(const std::any& src)
+{
+    std::any result = src;
+    if ("button" == std::any_cast<std::string>(src))
+    {
+        result = std::string("click");
+    }
+    else
+    {
+        result = std::string("button");
+    }
+    return result;
+}
+
 }  // namespace ad_framework::ui

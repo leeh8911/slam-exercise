@@ -36,6 +36,8 @@ class Window
     void AddUI(UserInterfacePtr ui);
     void operator()();
 
+    std::string Title() const;
+
  private:
     std::vector<CallbackPtr> callbacks_{};
     std::vector<UserInterfacePtr> uis_{};
