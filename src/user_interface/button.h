@@ -21,18 +21,20 @@ namespace ad_framework::ui
 {
 class Button : public UserInterface
 {
-    using CallbackPtr = ::ad_framework::callback::CallbackPtr;
-
  public:
-    Button(std::string title, ImVec2 size, ImVec2 pos, CallbackPtr callback);
     Button(std::string title, ImVec2 size, ImVec2 pos);
-    Button(std::string title, CallbackPtr callback);
     Button(std::string title);
 
     void operator()() override;
 
- private:
-    CallbackPtr callback_{nullptr};
+    class ButtonChanger;
+};
+
+class Button::ButtonChanger : public callback::Callback
+{
+ public:
+    ButtonChanger() = default;
+    std::any operator()(const std::any& src) override;
 };
 }  // namespace ad_framework::ui
 

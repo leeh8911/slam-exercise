@@ -13,11 +13,11 @@
 
 #include <memory>
 #include <string>
+#include <unordered_map>
 #include <vector>
 
 #include "src/utils/callback.h"
 #include "src/utils/imgui.h"
-
 
 namespace ad_framework::ui
 {
@@ -25,11 +25,12 @@ namespace ad_framework::ui
 class UserInterface;
 using UserInterfacePtr = std::shared_ptr<UserInterface>;
 
+using CallbackMap = std::unordered_map<std::string, callback::CallbackPtr>;
+
 class UserInterface : public std::enable_shared_from_this<UserInterface>
 {
  public:
-    UserInterface(std::string title, ImVec2 size, ImVec2 pos,
-                  UserInterfacePtr parent);
+    UserInterface(std::string title, ImVec2 size, ImVec2 pos);
     virtual ~UserInterface() = default;
 
     virtual void operator()() = 0;
@@ -41,11 +42,18 @@ class UserInterface : public std::enable_shared_from_this<UserInterface>
     void Resize(ImVec2 size);
     void Move(ImVec2 pos);
 
+    void SetParent(UserInterfacePtr parent);
+    UserInterfacePtr GetParent() const;
+    void AddCallback(std::string name, callback::CallbackPtr callback);
+    CallbackMap GetCallbacks() const;
+
  private:
     std::string title_{""};
-    UserInterfacePtr parent_{nullptr};
     ImVec2 size_{};
     ImVec2 pos_{};
+
+    UserInterfacePtr parent_{nullptr};
+    CallbackMap callbacks_{};
 };
 
 class Frame : public UserInterface
@@ -59,7 +67,7 @@ class Frame : public UserInterface
     void AddUI(UserInterfacePtr ui);
 
  private:
-    std::vector<UserInterfacePtr> uis_{nullptr};
+    std::vector<UserInterfacePtr> children_{};
 };
 
 }  // namespace ad_framework::ui

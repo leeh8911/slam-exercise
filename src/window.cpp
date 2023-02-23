@@ -19,6 +19,7 @@
 #include "bindings/imgui_impl_glfw.h"
 #include "bindings/imgui_impl_opengl2.h"
 #include "bindings/implot.h"
+#include "src/utils/log.h"
 
 namespace ad_framework::window
 {
@@ -68,7 +69,11 @@ void Window::AddCallback(Window::CallbackPtr callback)
 {
     callbacks_.emplace_back(callback);
 }
-void Window::AddUI(Window::UserInterfacePtr ui) { uis_.emplace_back(ui); }
+void Window::AddUI(Window::UserInterfacePtr ui)
+{
+    LOG_MSG(LogLevel::kDebug, ui->Title().c_str());
+    uis_.emplace_back(ui);
+}
 
 void Window::operator()()
 {
@@ -105,4 +110,6 @@ void Window::operator()()
         glfwSwapBuffers(window_);
     }
 }
+
+std::string Window::Title() const { return title_; }
 }  // namespace ad_framework::window
