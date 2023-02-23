@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['button_63',['Button',['../classad__framework_1_1ui_1_1Button.html',1,'ad_framework::ui']]],
-  ['buttoncallback_64',['ButtonCallback',['../classButtonCallback.html',1,'']]]
+  ['button_78',['Button',['../classad__framework_1_1ui_1_1Button.html',1,'ad_framework::ui']]],
+  ['buttonchanger_79',['ButtonChanger',['../classad__framework_1_1ui_1_1Button_1_1ButtonChanger.html',1,'ad_framework::ui::Button']]]
 ];

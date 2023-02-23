@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['readme_2emd_40',['readme.md',['../readme_8md.html',1,'']]],
-  ['rename_41',['Rename',['../classad__framework_1_1ui_1_1UserInterface.html#a0870a4a98c6f112c02ee0ed3e3237b2d',1,'ad_framework::ui::UserInterface']]],
-  ['resize_42',['Resize',['../classad__framework_1_1ui_1_1UserInterface.html#a8a5e714ecb11fe37d97fbaeec4747a0c',1,'ad_framework::ui::UserInterface']]]
+  ['parent_5f_46',['parent_',['../classad__framework_1_1ui_1_1UserInterface.html#a59c8042e0f81a800ddaa7c8f6ad6fc13',1,'ad_framework::ui::UserInterface']]],
+  ['pos_47',['Pos',['../classad__framework_1_1ui_1_1UserInterface.html#a425b365380f3b505eac6e6c5861f6457',1,'ad_framework::ui::UserInterface']]],
+  ['pos_5f_48',['pos_',['../classad__framework_1_1ui_1_1UserInterface.html#a4858fa3bfd0e0503d5f9a393fe2c67c3',1,'ad_framework::ui::UserInterface']]]
 ];

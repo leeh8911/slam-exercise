@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['userinterface_70',['UserInterface',['../classad__framework_1_1ui_1_1UserInterface.html',1,'ad_framework::ui']]]
+  ['samplecallback_86',['SampleCallback',['../classSampleCallback.html',1,'']]],
+  ['selector_87',['Selector',['../classad__framework_1_1ui_1_1Selector.html',1,'ad_framework::ui']]]
 ];

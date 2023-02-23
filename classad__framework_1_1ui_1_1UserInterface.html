@@ -98,8 +98,8 @@ Collaboration diagram for ad_framework::ui::UserInterface:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0e44a1a95f48ed307024185f6b01a2dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1ui_1_1UserInterface.html#a0e44a1a95f48ed307024185f6b01a2dc">UserInterface</a> (std::string title, ImVec2 size, ImVec2 pos, <a class="el" href="namespacead__framework_1_1ui.html#af5b82e1aadc8bccbfbfef1118749a404">UserInterfacePtr</a> parent)</td></tr>
-<tr class="separator:a0e44a1a95f48ed307024185f6b01a2dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f5339d19a8e01c67ed62ef700ded49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1ui_1_1UserInterface.html#a28f5339d19a8e01c67ed62ef700ded49">UserInterface</a> (std::string title, ImVec2 size, ImVec2 pos)</td></tr>
+<tr class="separator:a28f5339d19a8e01c67ed62ef700ded49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e8f2ff2043f1fc5b46dda0b52cb5bd9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1ui_1_1UserInterface.html#a6e8f2ff2043f1fc5b46dda0b52cb5bd9">~UserInterface</a> ()=default</td></tr>
 <tr class="separator:a6e8f2ff2043f1fc5b46dda0b52cb5bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb23e3171758361354395be3371040a2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1ui_1_1UserInterface.html#afb23e3171758361354395be3371040a2">operator()</a> ()=0</td></tr>
@@ -116,24 +116,34 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8a5e714ecb11fe37d97fbaeec4747a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a7ac649bf050fc506c39dffebe99750"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1ui_1_1UserInterface.html#a8a7ac649bf050fc506c39dffebe99750">Move</a> (ImVec2 pos)</td></tr>
 <tr class="separator:a8a7ac649bf050fc506c39dffebe99750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e05318fbd49e2341919302635ed135"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1ui_1_1UserInterface.html#a72e05318fbd49e2341919302635ed135">SetParent</a> (<a class="el" href="namespacead__framework_1_1ui.html#af5b82e1aadc8bccbfbfef1118749a404">UserInterfacePtr</a> parent)</td></tr>
+<tr class="separator:a72e05318fbd49e2341919302635ed135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581ef0708c51d4881401f142215529e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacead__framework_1_1ui.html#af5b82e1aadc8bccbfbfef1118749a404">UserInterfacePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1ui_1_1UserInterface.html#a581ef0708c51d4881401f142215529e1">GetParent</a> () const</td></tr>
+<tr class="separator:a581ef0708c51d4881401f142215529e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a882f87ea3fe1eecf4c01b7895badd5ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1ui_1_1UserInterface.html#a882f87ea3fe1eecf4c01b7895badd5ba">AddCallback</a> (std::string name, <a class="el" href="namespacead__framework_1_1callback.html#a62fa1bcee28735cc2e94ca671ea21ee1">callback::CallbackPtr</a> callback)</td></tr>
+<tr class="separator:a882f87ea3fe1eecf4c01b7895badd5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a611ad02195c288f0eb58c26b94a6ddd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacead__framework_1_1ui.html#a667211389dbd8acd540898e883590a48">CallbackMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1ui_1_1UserInterface.html#a611ad02195c288f0eb58c26b94a6ddd4">GetCallbacks</a> () const</td></tr>
+<tr class="separator:a611ad02195c288f0eb58c26b94a6ddd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:adf51de5586e44abe1563d2b24bf39d6e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1ui_1_1UserInterface.html#adf51de5586e44abe1563d2b24bf39d6e">title_</a> {&quot;&quot;}</td></tr>
 <tr class="separator:adf51de5586e44abe1563d2b24bf39d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59c8042e0f81a800ddaa7c8f6ad6fc13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacead__framework_1_1ui.html#af5b82e1aadc8bccbfbfef1118749a404">UserInterfacePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1ui_1_1UserInterface.html#a59c8042e0f81a800ddaa7c8f6ad6fc13">parent_</a> {nullptr}</td></tr>
-<tr class="separator:a59c8042e0f81a800ddaa7c8f6ad6fc13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cf611c8b2455d25a432760fc6fd5c67"><td class="memItemLeft" align="right" valign="top">ImVec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1ui_1_1UserInterface.html#a8cf611c8b2455d25a432760fc6fd5c67">size_</a> {}</td></tr>
 <tr class="separator:a8cf611c8b2455d25a432760fc6fd5c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4858fa3bfd0e0503d5f9a393fe2c67c3"><td class="memItemLeft" align="right" valign="top">ImVec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1ui_1_1UserInterface.html#a4858fa3bfd0e0503d5f9a393fe2c67c3">pos_</a> {}</td></tr>
 <tr class="separator:a4858fa3bfd0e0503d5f9a393fe2c67c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c8042e0f81a800ddaa7c8f6ad6fc13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacead__framework_1_1ui.html#af5b82e1aadc8bccbfbfef1118749a404">UserInterfacePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1ui_1_1UserInterface.html#a59c8042e0f81a800ddaa7c8f6ad6fc13">parent_</a> {nullptr}</td></tr>
+<tr class="separator:a59c8042e0f81a800ddaa7c8f6ad6fc13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad57c469df1ca7bde5ce9a8dd1d05d1a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacead__framework_1_1ui.html#a667211389dbd8acd540898e883590a48">CallbackMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1ui_1_1UserInterface.html#ad57c469df1ca7bde5ce9a8dd1d05d1a9">callbacks_</a> {}</td></tr>
+<tr class="separator:ad57c469df1ca7bde5ce9a8dd1d05d1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00028">28</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00030">30</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0e44a1a95f48ed307024185f6b01a2dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e44a1a95f48ed307024185f6b01a2dc">&#9670;&nbsp;</a></span>UserInterface()</h2>
+<a id="a28f5339d19a8e01c67ed62ef700ded49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28f5339d19a8e01c67ed62ef700ded49">&#9670;&nbsp;</a></span>UserInterface()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,13 +164,7 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">ImVec2&#160;</td>
-          <td class="paramname"><em>pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacead__framework_1_1ui.html#af5b82e1aadc8bccbfbfef1118749a404">UserInterfacePtr</a>&#160;</td>
-          <td class="paramname"><em>parent</em>&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -171,13 +175,12 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="ui_8cpp_source.html#l00021">21</a> of file <a class="el" href="ui_8cpp_source.html">ui.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    : <a class="code" href="classad__framework_1_1ui_1_1UserInterface.html#adf51de5586e44abe1563d2b24bf39d6e">title_</a>{std::move(title)}, <a class="code" href="classad__framework_1_1ui_1_1UserInterface.html#a8cf611c8b2455d25a432760fc6fd5c67">size_</a>{size}, <a class="code" href="classad__framework_1_1ui_1_1UserInterface.html#a4858fa3bfd0e0503d5f9a393fe2c67c3">pos_</a>{pos}, <a class="code" href="classad__framework_1_1ui_1_1UserInterface.html#a59c8042e0f81a800ddaa7c8f6ad6fc13">parent_</a>{parent}</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
-<div class="ttc" id="aclassad__framework_1_1ui_1_1UserInterface_html_a4858fa3bfd0e0503d5f9a393fe2c67c3"><div class="ttname"><a href="classad__framework_1_1ui_1_1UserInterface.html#a4858fa3bfd0e0503d5f9a393fe2c67c3">ad_framework::ui::UserInterface::pos_</a></div><div class="ttdeci">ImVec2 pos_</div><div class="ttdef"><b>Definition:</b> <a href="ui_8h_source.html#l00048">ui.h:48</a></div></div>
-<div class="ttc" id="aclassad__framework_1_1ui_1_1UserInterface_html_a59c8042e0f81a800ddaa7c8f6ad6fc13"><div class="ttname"><a href="classad__framework_1_1ui_1_1UserInterface.html#a59c8042e0f81a800ddaa7c8f6ad6fc13">ad_framework::ui::UserInterface::parent_</a></div><div class="ttdeci">UserInterfacePtr parent_</div><div class="ttdef"><b>Definition:</b> <a href="ui_8h_source.html#l00046">ui.h:46</a></div></div>
-<div class="ttc" id="aclassad__framework_1_1ui_1_1UserInterface_html_a8cf611c8b2455d25a432760fc6fd5c67"><div class="ttname"><a href="classad__framework_1_1ui_1_1UserInterface.html#a8cf611c8b2455d25a432760fc6fd5c67">ad_framework::ui::UserInterface::size_</a></div><div class="ttdeci">ImVec2 size_</div><div class="ttdef"><b>Definition:</b> <a href="ui_8h_source.html#l00047">ui.h:47</a></div></div>
-<div class="ttc" id="aclassad__framework_1_1ui_1_1UserInterface_html_adf51de5586e44abe1563d2b24bf39d6e"><div class="ttname"><a href="classad__framework_1_1ui_1_1UserInterface.html#adf51de5586e44abe1563d2b24bf39d6e">ad_framework::ui::UserInterface::title_</a></div><div class="ttdeci">std::string title_</div><div class="ttdef"><b>Definition:</b> <a href="ui_8h_source.html#l00045">ui.h:45</a></div></div>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    : <a class="code" href="classad__framework_1_1ui_1_1UserInterface.html#adf51de5586e44abe1563d2b24bf39d6e">title_</a>{std::move(title)}, <a class="code" href="classad__framework_1_1ui_1_1UserInterface.html#a8cf611c8b2455d25a432760fc6fd5c67">size_</a>{size}, <a class="code" href="classad__framework_1_1ui_1_1UserInterface.html#a4858fa3bfd0e0503d5f9a393fe2c67c3">pos_</a>{pos}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="ttc" id="aclassad__framework_1_1ui_1_1UserInterface_html_a4858fa3bfd0e0503d5f9a393fe2c67c3"><div class="ttname"><a href="classad__framework_1_1ui_1_1UserInterface.html#a4858fa3bfd0e0503d5f9a393fe2c67c3">ad_framework::ui::UserInterface::pos_</a></div><div class="ttdeci">ImVec2 pos_</div><div class="ttdef"><b>Definition:</b> <a href="ui_8h_source.html#l00053">ui.h:53</a></div></div>
+<div class="ttc" id="aclassad__framework_1_1ui_1_1UserInterface_html_a8cf611c8b2455d25a432760fc6fd5c67"><div class="ttname"><a href="classad__framework_1_1ui_1_1UserInterface.html#a8cf611c8b2455d25a432760fc6fd5c67">ad_framework::ui::UserInterface::size_</a></div><div class="ttdeci">ImVec2 size_</div><div class="ttdef"><b>Definition:</b> <a href="ui_8h_source.html#l00052">ui.h:52</a></div></div>
+<div class="ttc" id="aclassad__framework_1_1ui_1_1UserInterface_html_adf51de5586e44abe1563d2b24bf39d6e"><div class="ttname"><a href="classad__framework_1_1ui_1_1UserInterface.html#adf51de5586e44abe1563d2b24bf39d6e">ad_framework::ui::UserInterface::title_</a></div><div class="ttdeci">std::string title_</div><div class="ttdef"><b>Definition:</b> <a href="ui_8h_source.html#l00051">ui.h:51</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -230,7 +233,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classad__framework_1_1ui_1_1Frame.html#a4afa78942b9618a75173faa6474451fb">ad_framework::ui::Frame</a>, and <a class="el" href="classad__framework_1_1ui_1_1Button.html#a87bdaf93ee039c7252bd91f12215dcdc">ad_framework::ui::Button</a>.</p>
+<p>Implemented in <a class="el" href="classad__framework_1_1ui_1_1Frame.html#a4afa78942b9618a75173faa6474451fb">ad_framework::ui::Frame</a>, <a class="el" href="classad__framework_1_1ui_1_1Selector.html#ae6bc6a470d499974e5a9b53c65d9e1b1">ad_framework::ui::Selector</a>, and <a class="el" href="classad__framework_1_1ui_1_1Button.html#a87bdaf93ee039c7252bd91f12215dcdc">ad_framework::ui::Button</a>.</p>
 
 </div>
 </div>
@@ -249,12 +252,12 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ui_8cpp_source.html#l00027">27</a> of file <a class="el" href="ui_8cpp_source.html">ui.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classad__framework_1_1ui_1_1UserInterface.html#adf51de5586e44abe1563d2b24bf39d6e">title_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="ui_8cpp_source.html#l00026">26</a> of file <a class="el" href="ui_8cpp_source.html">ui.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classad__framework_1_1ui_1_1UserInterface.html#adf51de5586e44abe1563d2b24bf39d6e">title_</a>; }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classad__framework_1_1ui_1_1UserInterface_acec7bc1f8dbcafa56a310a3be3a048fe_icgraph.svg" width="588" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classad__framework_1_1ui_1_1UserInterface_acec7bc1f8dbcafa56a310a3be3a048fe_icgraph.svg" width="599" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -307,7 +310,7 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classad__framework_1_1ui_1_1UserInterface_a54aca8b9b70563522f1d992bc0d03f37_icgraph.svg" width="586" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classad__framework_1_1ui_1_1UserInterface_a54aca8b9b70563522f1d992bc0d03f37_icgraph.svg" width="596" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -328,12 +331,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ui_8cpp_source.html#l00031">31</a> of file <a class="el" href="ui_8cpp_source.html">ui.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classad__framework_1_1ui_1_1UserInterface.html#a4858fa3bfd0e0503d5f9a393fe2c67c3">pos_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="ui_8cpp_source.html#l00032">32</a> of file <a class="el" href="ui_8cpp_source.html">ui.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classad__framework_1_1ui_1_1UserInterface.html#a4858fa3bfd0e0503d5f9a393fe2c67c3">pos_</a>; }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classad__framework_1_1ui_1_1UserInterface_a425b365380f3b505eac6e6c5861f6457_icgraph.svg" width="582" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classad__framework_1_1ui_1_1UserInterface_a425b365380f3b505eac6e6c5861f6457_icgraph.svg" width="592" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -355,8 +358,8 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ui_8cpp_source.html#l00033">33</a> of file <a class="el" href="ui_8cpp_source.html">ui.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{ <a class="code" href="classad__framework_1_1ui_1_1UserInterface.html#a8cf611c8b2455d25a432760fc6fd5c67">size_</a> = size; }</div>
+<p class="definition">Definition at line <a class="el" href="ui_8cpp_source.html#l00034">34</a> of file <a class="el" href="ui_8cpp_source.html">ui.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{ <a class="code" href="classad__framework_1_1ui_1_1UserInterface.html#a8cf611c8b2455d25a432760fc6fd5c67">size_</a> = size; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -376,9 +379,111 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ui_8cpp_source.html#l00034">34</a> of file <a class="el" href="ui_8cpp_source.html">ui.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{ <a class="code" href="classad__framework_1_1ui_1_1UserInterface.html#a4858fa3bfd0e0503d5f9a393fe2c67c3">pos_</a> = pos; }</div>
+<p class="definition">Definition at line <a class="el" href="ui_8cpp_source.html#l00036">36</a> of file <a class="el" href="ui_8cpp_source.html">ui.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{ <a class="code" href="classad__framework_1_1ui_1_1UserInterface.html#a4858fa3bfd0e0503d5f9a393fe2c67c3">pos_</a> = pos; }</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a72e05318fbd49e2341919302635ed135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72e05318fbd49e2341919302635ed135">&#9670;&nbsp;</a></span>SetParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ad_framework::ui::UserInterface::SetParent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacead__framework_1_1ui.html#af5b82e1aadc8bccbfbfef1118749a404">UserInterfacePtr</a>&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ui_8cpp_source.html#l00038">38</a> of file <a class="el" href="ui_8cpp_source.html">ui.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{ <a class="code" href="classad__framework_1_1ui_1_1UserInterface.html#a59c8042e0f81a800ddaa7c8f6ad6fc13">parent_</a> = parent; }</div>
+<div class="ttc" id="aclassad__framework_1_1ui_1_1UserInterface_html_a59c8042e0f81a800ddaa7c8f6ad6fc13"><div class="ttname"><a href="classad__framework_1_1ui_1_1UserInterface.html#a59c8042e0f81a800ddaa7c8f6ad6fc13">ad_framework::ui::UserInterface::parent_</a></div><div class="ttdeci">UserInterfacePtr parent_</div><div class="ttdef"><b>Definition:</b> <a href="ui_8h_source.html#l00055">ui.h:55</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a581ef0708c51d4881401f142215529e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a581ef0708c51d4881401f142215529e1">&#9670;&nbsp;</a></span>GetParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacead__framework_1_1ui.html#af5b82e1aadc8bccbfbfef1118749a404">UserInterfacePtr</a> ad_framework::ui::UserInterface::GetParent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ui_8cpp_source.html#l00046">46</a> of file <a class="el" href="ui_8cpp_source.html">ui.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classad__framework_1_1ui_1_1UserInterface.html#a59c8042e0f81a800ddaa7c8f6ad6fc13">parent_</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a882f87ea3fe1eecf4c01b7895badd5ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a882f87ea3fe1eecf4c01b7895badd5ba">&#9670;&nbsp;</a></span>AddCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ad_framework::ui::UserInterface::AddCallback </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacead__framework_1_1callback.html#a62fa1bcee28735cc2e94ca671ea21ee1">callback::CallbackPtr</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ui_8cpp_source.html#l00040">40</a> of file <a class="el" href="ui_8cpp_source.html">ui.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classad__framework_1_1ui_1_1UserInterface.html#ad57c469df1ca7bde5ce9a8dd1d05d1a9">callbacks_</a>.emplace(std::move(name), callback);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="ttc" id="aclassad__framework_1_1ui_1_1UserInterface_html_ad57c469df1ca7bde5ce9a8dd1d05d1a9"><div class="ttname"><a href="classad__framework_1_1ui_1_1UserInterface.html#ad57c469df1ca7bde5ce9a8dd1d05d1a9">ad_framework::ui::UserInterface::callbacks_</a></div><div class="ttdeci">CallbackMap callbacks_</div><div class="ttdef"><b>Definition:</b> <a href="ui_8h_source.html#l00056">ui.h:56</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a611ad02195c288f0eb58c26b94a6ddd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a611ad02195c288f0eb58c26b94a6ddd4">&#9670;&nbsp;</a></span>GetCallbacks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacead__framework_1_1ui.html#a667211389dbd8acd540898e883590a48">CallbackMap</a> ad_framework::ui::UserInterface::GetCallbacks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ui_8cpp_source.html#l00048">48</a> of file <a class="el" href="ui_8cpp_source.html">ui.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classad__framework_1_1ui_1_1UserInterface.html#ad57c469df1ca7bde5ce9a8dd1d05d1a9">callbacks_</a>; }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classad__framework_1_1ui_1_1UserInterface_a611ad02195c288f0eb58c26b94a6ddd4_icgraph.svg" width="656" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -402,31 +507,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00045">45</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
-
-</div>
-</div>
-<a id="a59c8042e0f81a800ddaa7c8f6ad6fc13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59c8042e0f81a800ddaa7c8f6ad6fc13">&#9670;&nbsp;</a></span>parent_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacead__framework_1_1ui.html#af5b82e1aadc8bccbfbfef1118749a404">UserInterfacePtr</a> ad_framework::ui::UserInterface::parent_ {nullptr}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00046">46</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00051">51</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
 
 </div>
 </div>
@@ -450,7 +531,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00047">47</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00052">52</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
 
 </div>
 </div>
@@ -474,7 +555,55 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00048">48</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00053">53</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
+
+</div>
+</div>
+<a id="a59c8042e0f81a800ddaa7c8f6ad6fc13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59c8042e0f81a800ddaa7c8f6ad6fc13">&#9670;&nbsp;</a></span>parent_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacead__framework_1_1ui.html#af5b82e1aadc8bccbfbfef1118749a404">UserInterfacePtr</a> ad_framework::ui::UserInterface::parent_ {nullptr}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00055">55</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
+
+</div>
+</div>
+<a id="ad57c469df1ca7bde5ce9a8dd1d05d1a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad57c469df1ca7bde5ce9a8dd1d05d1a9">&#9670;&nbsp;</a></span>callbacks_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacead__framework_1_1ui.html#a667211389dbd8acd540898e883590a48">CallbackMap</a> ad_framework::ui::UserInterface::callbacks_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00056">56</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
 
 </div>
 </div>

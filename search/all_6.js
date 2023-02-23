@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['log_25',['Log',['../classad__framework_1_1log_1_1Log.html',1,'ad_framework::log::Log'],['../classad__framework_1_1log_1_1Log.html#ab0a4282d8773125eb1eb87147d7e3558',1,'ad_framework::log::Log::Log()']]],
-  ['log_26',['LOG',['../log_8h.html#aba7b09d6e8fbe414c23705ad24dde6ff',1,'log.h']]],
-  ['log_2eh_27',['log.h',['../log_8h.html',1,'']]],
-  ['log_5fmsg_28',['LOG_MSG',['../log_8h.html#ab3cd2b163aa41c625f6a58f34087d495',1,'log.h']]],
-  ['loglevel_29',['LogLevel',['../namespacead__framework_1_1log.html#a1a36723383d2fabfb44059f45b4a4811',1,'ad_framework::log::LogLevel()'],['../log_8h.html#afb89c3329254b56308be3b3233298098',1,'LogLevel():&#160;log.h']]]
+  ['kdebug_29',['kDebug',['../namespacead__framework_1_1log.html#a1a36723383d2fabfb44059f45b4a4811abb53ce21b7c0b7c8a8f7860a41901d29',1,'ad_framework::log']]],
+  ['kerror_30',['kError',['../namespacead__framework_1_1log.html#a1a36723383d2fabfb44059f45b4a4811ae3587c730cc1aa530fa4ddc9c4204e97',1,'ad_framework::log']]],
+  ['kfatal_31',['kFatal',['../namespacead__framework_1_1log.html#a1a36723383d2fabfb44059f45b4a4811ae66f945a3c2423ef09406cf09fa9de26',1,'ad_framework::log']]],
+  ['kinfo_32',['kInfo',['../namespacead__framework_1_1log.html#a1a36723383d2fabfb44059f45b4a4811a176a473e63c17ccdac91640c67f149bf',1,'ad_framework::log']]],
+  ['kwarning_33',['kWarning',['../namespacead__framework_1_1log.html#a1a36723383d2fabfb44059f45b4a4811aec0da41f4e48b52c362303eb27ed5dee',1,'ad_framework::log']]]
 ];

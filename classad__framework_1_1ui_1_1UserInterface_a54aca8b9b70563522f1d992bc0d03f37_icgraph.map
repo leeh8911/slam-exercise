@@ -1,4 +1,5 @@
 <map id="ad_framework::ui::UserInterface::Size" name="ad_framework::ui::UserInterface::Size">
-<area shape="rect" id="node1" title=" " alt="" coords="313,5,580,32"/>
-<area shape="rect" id="node2" href="$classad__framework_1_1ui_1_1Button.html#a87bdaf93ee039c7252bd91f12215dcdc" title=" " alt="" coords="5,5,265,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="324,31,591,57"/>
+<area shape="rect" id="node2" href="$classad__framework_1_1ui_1_1Button.html#a87bdaf93ee039c7252bd91f12215dcdc" title=" " alt="" coords="11,5,271,32"/>
+<area shape="rect" id="node3" href="$classad__framework_1_1ui_1_1Selector.html#ae6bc6a470d499974e5a9b53c65d9e1b1" title=" " alt="" coords="5,56,276,83"/>
 </map>

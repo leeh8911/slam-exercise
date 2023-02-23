@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['_7ecallback_59',['~Callback',['../structad__framework_1_1callback_1_1Callback.html#af86fddb47f7054d9ea548065ba11c034',1,'ad_framework::callback::Callback']]],
-  ['_7elog_60',['~Log',['../classad__framework_1_1log_1_1Log.html#a57c3b90e0c8654ec022cbdf17f52c83f',1,'ad_framework::log::Log']]],
-  ['_7euserinterface_61',['~UserInterface',['../classad__framework_1_1ui_1_1UserInterface.html#a6e8f2ff2043f1fc5b46dda0b52cb5bd9',1,'ad_framework::ui::UserInterface']]],
-  ['_7ewindow_62',['~Window',['../classad__framework_1_1window_1_1Window.html#a9dd03f3c0d8288ea5a6bdd2ebe98e10d',1,'ad_framework::window::Window']]]
+  ['window_70',['Window',['../classad__framework_1_1window_1_1Window.html',1,'ad_framework::window::Window'],['../classad__framework_1_1window_1_1Window.html#a9a0fbbe1c6d3d86b88d988553fd84af9',1,'ad_framework::window::Window::Window()']]],
+  ['window_2ecpp_71',['window.cpp',['../window_8cpp.html',1,'']]],
+  ['window_2eh_72',['window.h',['../window_8h.html',1,'']]],
+  ['window_5f_73',['window_',['../classad__framework_1_1window_1_1Window.html#a81eaa482b8940ea30f04723145081892',1,'ad_framework::window::Window']]]
 ];
