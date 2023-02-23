@@ -36,38 +36,24 @@ void Selector::operator()()
 
     auto callbacks = GetCallbacks();
 
-    LOG_MSG(
-        LogLevel::kDebug,
-        typeid(std::any_cast<decltype(items_)>((*callbacks["items"])("items")))
-            .name());
-    const auto items =
-        std::any_cast<decltype(items_)>((*callbacks["items"])("items"));
-    LOG_MSG(LogLevel::kDebug, typeid(items).name());
-    LOG_MSG(LogLevel::kDebug, typeid(items_).name());
-    items_ = std::any_cast<decltype(items_)>((*callbacks["items"])("items"));
-    LOG(LogLevel::kDebug);
-
-    LOG(LogLevel::kDebug);
+    items_ = std::any_cast<decltype(items_)>(
+        (*callbacks["items"])(std::string("items")));
     if (ImGui::BeginCombo(
             Title().c_str(),
             current_item_))  // The second parameter is the label
                              // previewed before opening the combo.
     {
-        LOG(LogLevel::kDebug);
         for (int n = 0; n < items_.size(); n++)
         {
-            LOG(LogLevel::kDebug);
             bool is_selected =
                 (current_item_ ==
                  items_[n]);  // You can store your selection however you want,
                               // outside or inside your objects
-            LOG(LogLevel::kDebug);
             if (ImGui::Selectable(items_[n], is_selected))
             {
                 current_item_ = items_[n];
                 std::any _ = (*callbacks["item"])(std::string(current_item_));
             }
-            LOG(LogLevel::kDebug);
             if (is_selected)
             {
                 // You may set the initial focus
