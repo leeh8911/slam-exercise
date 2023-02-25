@@ -118,16 +118,36 @@ $(function() {
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    selector-&gt;AddCallback(<span class="stringliteral">&quot;items&quot;</span>, item_list_sender);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    selector-&gt;AddCallback(<span class="stringliteral">&quot;item&quot;</span>, item_reciever);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">auto</span> frame = std::make_shared&lt;::ad_framework::ui::Frame&gt;(<span class="stringliteral">&quot;Main Frame&quot;</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    frame-&gt;AddUI(button);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    frame-&gt;AddUI(selector);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    window.<a class="code" href="classad__framework_1_1window_1_1Window.html#adc801b18ac3c696baa562186533cb834">AddUI</a>(frame);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    window();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">auto</span> image_viewer =</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        std::make_shared&lt;::ad_framework::ui::ImageViewer&gt;(<span class="stringliteral">&quot;image viewer&quot;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">auto</span> image_sender =</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        std::make_shared&lt;::ad_framework::ui::ImageViewer::ImageSender&gt;();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    image_sender-&gt;SetImagePath(</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="stringliteral">&quot;D:\\sangwon\\dataset\\kitti\\odometry\\dataset\\sequences\\00\\image_&quot;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="stringliteral">&quot;0\\000000.png&quot;</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    image_viewer-&gt;AddCallback(<span class="stringliteral">&quot;image-texture&quot;</span>, image_sender);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">auto</span> image_viewer_1 =</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        std::make_shared&lt;::ad_framework::ui::ImageViewer&gt;(<span class="stringliteral">&quot;image viewer 1&quot;</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">auto</span> image_sender_1 =</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        std::make_shared&lt;::ad_framework::ui::ImageViewer::ImageSender&gt;(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    image_sender_1-&gt;SetImagePath(</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="stringliteral">&quot;D:\\sangwon\\dataset\\kitti\\odometry\\dataset\\sequences\\00\\image_&quot;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="stringliteral">&quot;2\\000000.png&quot;</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    image_viewer_1-&gt;AddCallback(<span class="stringliteral">&quot;image-texture&quot;</span>, image_sender_1);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">auto</span> frame = std::make_shared&lt;::ad_framework::ui::Frame&gt;(<span class="stringliteral">&quot;Main Frame&quot;</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    frame-&gt;AddUI(button);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    frame-&gt;AddUI(selector);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    frame-&gt;AddUI(image_viewer);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    frame-&gt;AddUI(image_viewer_1);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    window.<a class="code" href="classad__framework_1_1window_1_1Window.html#adc801b18ac3c696baa562186533cb834">AddUI</a>(frame);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    window();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 <div class="ttc" id="aapp_2main_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="app_2main_8cpp_source.html#l00032">main.cpp:32</a></div></div>
 <div class="ttc" id="acallback_8h_html"><div class="ttname"><a href="callback_8h.html">callback.h</a></div></div>
 <div class="ttc" id="aclassSampleCallback_html"><div class="ttname"><a href="classSampleCallback.html">SampleCallback</a></div><div class="ttdef"><b>Definition:</b> <a href="app_2main_8cpp_source.html#l00019">main.cpp:20</a></div></div>

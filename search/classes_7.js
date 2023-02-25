@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['userinterface_88',['UserInterface',['../classad__framework_1_1ui_1_1UserInterface.html',1,'ad_framework::ui']]]
+  ['userinterface_97',['UserInterface',['../classad__framework_1_1ui_1_1UserInterface.html',1,'ad_framework::ui']]]
 ];

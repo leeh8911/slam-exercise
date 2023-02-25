@@ -1,8 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structad__framework_1_1callback_1_1Callback.html" title=" " alt="" coords="5,107,248,133"/>
-<area shape="rect" id="node2" href="$classSampleCallback.html" title=" " alt="" coords="384,5,511,32"/>
-<area shape="rect" id="node3" href="$classad__framework_1_1callback_1_1NullCallback.html" title=" " alt="" coords="313,56,581,83"/>
-<area shape="rect" id="node4" href="$classad__framework_1_1ui_1_1Button_1_1ButtonChanger.html" title=" " alt="" coords="301,107,593,133"/>
-<area shape="rect" id="node5" href="$classad__framework_1_1ui_1_1Selector_1_1ItemListSender.html" title=" " alt="" coords="296,157,599,184"/>
-<area shape="rect" id="node6" href="$classad__framework_1_1ui_1_1Selector_1_1ItemReciever.html" title=" " alt="" coords="301,208,593,235"/>
+<area shape="rect" id="node1" href="$structad__framework_1_1callback_1_1Callback.html" title=" " alt="" coords="5,132,248,159"/>
+<area shape="rect" id="node2" href="$classSampleCallback.html" title=" " alt="" coords="395,5,521,32"/>
+<area shape="rect" id="node3" href="$classad__framework_1_1callback_1_1NullCallback.html" title=" " alt="" coords="324,56,592,83"/>
+<area shape="rect" id="node4" href="$classad__framework_1_1ui_1_1Button_1_1ButtonChanger.html" title=" " alt="" coords="312,107,604,133"/>
+<area shape="rect" id="node5" href="$classad__framework_1_1ui_1_1ImageViewer_1_1ImageSender.html" title=" " alt="" coords="296,157,620,184"/>
+<area shape="rect" id="node6" href="$classad__framework_1_1ui_1_1Selector_1_1ItemListSender.html" title=" " alt="" coords="307,208,609,235"/>
+<area shape="rect" id="node7" href="$classad__framework_1_1ui_1_1Selector_1_1ItemReciever.html" title=" " alt="" coords="312,259,604,285"/>
 </map>
