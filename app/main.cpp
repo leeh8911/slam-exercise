@@ -48,9 +48,29 @@ int main()
     selector->AddCallback("items", item_list_sender);
     selector->AddCallback("item", item_reciever);
 
+    auto image_viewer =
+        std::make_shared<::ad_framework::ui::ImageViewer>("image viewer");
+    auto image_sender =
+        std::make_shared<::ad_framework::ui::ImageViewer::ImageSender>();
+    image_sender->SetImagePath(
+        "D:\\sangwon\\dataset\\kitti\\odometry\\dataset\\sequences\\00\\image_"
+        "0\\000000.png");
+    image_viewer->AddCallback("image-texture", image_sender);
+
+    auto image_viewer_1 =
+        std::make_shared<::ad_framework::ui::ImageViewer>("image viewer 1");
+    auto image_sender_1 =
+        std::make_shared<::ad_framework::ui::ImageViewer::ImageSender>(false);
+    image_sender_1->SetImagePath(
+        "D:\\sangwon\\dataset\\kitti\\odometry\\dataset\\sequences\\00\\image_"
+        "2\\000000.png");
+    image_viewer_1->AddCallback("image-texture", image_sender_1);
+
     auto frame = std::make_shared<::ad_framework::ui::Frame>("Main Frame");
     frame->AddUI(button);
     frame->AddUI(selector);
+    frame->AddUI(image_viewer);
+    frame->AddUI(image_viewer_1);
 
     window.AddUI(frame);
 
