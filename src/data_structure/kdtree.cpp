@@ -17,6 +17,31 @@
 namespace ad_framwork::data_structure
 {
 
+Circle::Circle(const Eigen::Vector3d& center, double radius)
+    : center_(center), radius_(radius)
+{
+}
+bool Circle::IsIn(const Eigen::Vector3d& point) const
+{
+    return (point - center_).norm() < radius_;
+}
+
+Rectangle::Rectangle(const Eigen::Vector3d& center, const Eigen::Vector3d& size)
+    : center_(center), size_(size)
+{
+}
+bool Rectangle::IsIn(const Eigen::Vector3d& point) const
+{
+    return std::abs(point[0] - center_[0]) < size_[0] &&
+           std::abs(point[1] - center_[1]) < size_[1] &&
+           std::abs(point[2] - center_[2]) < size_[2];
+}
+
+Polygon::Polygon(const std::vector<Eigen::Vector3d>& points) : points_(points)
+{
+}
+bool Polygon::IsIn(const Eigen::Vector3d& point) const { return false; }
+
 Node::Node(const Eigen::Vector3d& point) : point_(point) {}
 
 double Node::Distance(const Eigen::Vector3d& point) const
@@ -102,7 +127,35 @@ NodePtr KdTree::Nearest(NodePtr node, const Eigen::Vector3d& point,
     return best_node;
 }
 
-NodePtr KdTree::FindInBoundary(const Circle& circle) const {}
-NodePtr KdTree::FindInBoundary(const Rectangle& rectangle) const {}
-NodePtr KdTree::FindInBoundary(const Polygon& polygon) const {}
+NodeList KdTree::FindInBoundary(const Shape& shape) const
+{
+    return FindInBoundary(root_, shape);
+}
+NodeList KdTree::FindInBoundary(NodePtr root, const Shape& shape) const
+{
+    NodeList nodes{};
+
+    if (root == nullptr)
+    {
+        return nodes;
+    }
+
+    if (shape.IsIn(root->point_))
+    {
+        nodes.push_back(root);
+    }
+
+    if (root->left_ && shape.IsIn(root->left_->point_))
+    {
+        NodeList left_nodes = FindInBoundary(root->left_, shape);
+        nodes.insert_after(left_nodes.cbegin(), left_nodes.cend());
+    }
+    if (root->right_ && shape.IsIn(root->right_->point_))
+    {
+        NodeList right_nodes = FindInBoundary(root->right_, shape);
+        nodes.insert_after(right_nodes.cbegin(), right_nodes.cend());
+    }
+
+    return nodes;
+}
 }  // namespace ad_framwork::data_structure
