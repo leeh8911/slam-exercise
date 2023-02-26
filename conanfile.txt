@@ -2,7 +2,8 @@
 protobuf/3.5.1@bincrafters/stable
 eigen/3.3.9@camposs/stable
 sophus/22.04.1
-gtest/1.8.1@bincrafters/stable
+# gtest/1.8.1@bincrafters/stable
+gtest/1.13.0
 glfw/3.3.6
 glew/2.2.0
 opencv/4.3.0@conan/stable

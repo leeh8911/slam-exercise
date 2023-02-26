@@ -12,9 +12,12 @@
 
 #include <Eigen/Dense>
 #include <memory>
+#include <sstream>
 #include <utility>
 
-namespace ad_framwork::data_structure
+#include "src/utils/log.h"
+
+namespace ad_framework::data_structure
 {
 
 Circle::Circle(const Eigen::Vector3d& center, double radius)
@@ -24,6 +27,14 @@ Circle::Circle(const Eigen::Vector3d& center, double radius)
 bool Circle::IsIn(const Eigen::Vector3d& point) const
 {
     return (point - center_).norm() < radius_;
+}
+
+std::string Circle::ToString() const
+{
+    std::stringstream ss;
+    ss << "Circle([" << center_[0] << ", " << center_[1] << ", " << center_[2]
+       << "], " << radius_ << ")";
+    return ss.str();
 }
 
 Rectangle::Rectangle(const Eigen::Vector3d& center, const Eigen::Vector3d& size)
@@ -36,11 +47,33 @@ bool Rectangle::IsIn(const Eigen::Vector3d& point) const
            std::abs(point[1] - center_[1]) < size_[1] &&
            std::abs(point[2] - center_[2]) < size_[2];
 }
+std::string Rectangle::ToString() const
+{
+    std::stringstream ss;
+    ss << "Rectangle([" << center_[0] << ", " << center_[1] << ", "
+       << center_[2] << "], [" << size_[0] << ", " << size_[1] << ", "
+       << size_[2] << "])";
+    return ss.str();
+}
 
 Polygon::Polygon(const std::vector<Eigen::Vector3d>& points) : points_(points)
 {
 }
-bool Polygon::IsIn(const Eigen::Vector3d& point) const { return false; }
+bool Polygon::IsIn(const Eigen::Vector3d& point) const
+{
+    return Eigen::Vector3d{0, 0, 0} == point;
+}
+std::string Polygon::ToString() const
+{
+    std::stringstream ss;
+    ss << "Polygon(";
+    for (const auto& point : points_)
+    {
+        ss << "[" << point[0] << ", " << point[1] << ", " << point[2] << "], ";
+    }
+    ss << ")";
+    return ss.str();
+}
 
 Node::Node(const Eigen::Vector3d& point) : point_(point) {}
 
@@ -52,6 +85,15 @@ double Node::Distance(const Eigen::Vector3d& point) const
 double Node::Distance(const Node& point) const
 {
     return Distance(point.point_);
+}
+
+std::string Node::ToString() const
+{
+    std::stringstream ss;
+    ss << "Node(" << point_[0] << ", " << point_[1] << ", " << point_[2] << ")"
+       << " [" << (left_ == nullptr ? "null" : left_->ToString()) << ", "
+       << (right_ == nullptr ? "null" : right_->ToString()) << "]";
+    return ss.str();
 }
 
 void KdTree::Insert(const Eigen::Vector3d& point)
@@ -127,11 +169,12 @@ NodePtr KdTree::Nearest(NodePtr node, const Eigen::Vector3d& point,
     return best_node;
 }
 
-NodeList KdTree::FindInBoundary(const Shape& shape) const
+NodeList KdTree::FindInBoundary(const ShapePtr& shape) const
 {
     return FindInBoundary(root_, shape);
 }
-NodeList KdTree::FindInBoundary(NodePtr root, const Shape& shape) const
+
+NodeList KdTree::FindInBoundary(NodePtr root, const ShapePtr& shape) const
 {
     NodeList nodes{};
 
@@ -140,22 +183,26 @@ NodeList KdTree::FindInBoundary(NodePtr root, const Shape& shape) const
         return nodes;
     }
 
-    if (shape.IsIn(root->point_))
+    LOG_MSG(log::LogLevel::kDebug, shape->ToString().c_str());
+    LOG_MSG(log::LogLevel::kDebug, root->ToString().c_str());
+    if (shape->IsIn(root->point_))
     {
-        nodes.push_back(root);
+        nodes.emplace_back(*root);
     }
 
-    if (root->left_ && shape.IsIn(root->left_->point_))
+    if (root->left_ && shape->IsIn(root->left_->point_))
     {
+        LOG(log::LogLevel::kDebug);
         NodeList left_nodes = FindInBoundary(root->left_, shape);
-        nodes.insert_after(left_nodes.cbegin(), left_nodes.cend());
+        nodes.insert(nodes.end(), left_nodes.cbegin(), left_nodes.cend());
     }
-    if (root->right_ && shape.IsIn(root->right_->point_))
+    if (root->right_ && shape->IsIn(root->right_->point_))
     {
+        LOG(log::LogLevel::kDebug);
         NodeList right_nodes = FindInBoundary(root->right_, shape);
-        nodes.insert_after(right_nodes.cbegin(), right_nodes.cend());
+        nodes.insert(nodes.end(), right_nodes.cbegin(), right_nodes.cend());
     }
 
     return nodes;
 }
-}  // namespace ad_framwork::data_structure
+}  // namespace ad_framework::data_structure
