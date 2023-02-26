@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['selector_141',['Selector',['../classad__framework_1_1ui_1_1Selector.html#a81b08bacfc67d4c6452e0c50d7c77dba',1,'ad_framework::ui::Selector::Selector(std::string title, ImVec2 size, ImVec2 pos)'],['../classad__framework_1_1ui_1_1Selector.html#ae6d6a165aab671810bc74f216be57ffc',1,'ad_framework::ui::Selector::Selector(std::string title)']]],
-  ['setimagepath_142',['SetImagePath',['../classad__framework_1_1ui_1_1ImageViewer_1_1ImageSender.html#acf6129d171cc6285636e646496251156',1,'ad_framework::ui::ImageViewer::ImageSender']]],
-  ['setitems_143',['SetItems',['../classad__framework_1_1ui_1_1Selector_1_1ItemListSender.html#ad00914198e59aee000a51fd760838969',1,'ad_framework::ui::Selector::ItemListSender']]],
-  ['setparent_144',['SetParent',['../classad__framework_1_1ui_1_1UserInterface.html#a72e05318fbd49e2341919302635ed135',1,'ad_framework::ui::UserInterface']]],
-  ['size_145',['Size',['../classad__framework_1_1ui_1_1UserInterface.html#a54aca8b9b70563522f1d992bc0d03f37',1,'ad_framework::ui::UserInterface']]],
-  ['stream_146',['stream',['../classad__framework_1_1log_1_1Log.html#af8da68e1d37489babf08bb8c084b0ca7',1,'ad_framework::log::Log']]]
+  ['nearest_180',['Nearest',['../classad__framwork_1_1data__structure_1_1KdTree.html#ad03e695eba8ab98fd443c5742a5f6fbe',1,'ad_framwork::data_structure::KdTree::Nearest(const Eigen::Vector3d &amp;point) const'],['../classad__framwork_1_1data__structure_1_1KdTree.html#a6696f8652f4a26ae9b8ece7b5842273b',1,'ad_framwork::data_structure::KdTree::Nearest(NodePtr node, const Eigen::Vector3d &amp;point, int depth) const']]],
+  ['node_181',['Node',['../classad__framwork_1_1data__structure_1_1Node.html#affd329a00cd2896f6bdd02448c9a6c14',1,'ad_framwork::data_structure::Node::Node()=default'],['../classad__framwork_1_1data__structure_1_1Node.html#a383fbefe8b781932c198e8f9084d0566',1,'ad_framwork::data_structure::Node::Node(const Eigen::Vector3d &amp;point)']]]
 ];

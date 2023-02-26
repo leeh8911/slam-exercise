@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['_7ecallback_150',['~Callback',['../structad__framework_1_1callback_1_1Callback.html#af86fddb47f7054d9ea548065ba11c034',1,'ad_framework::callback::Callback']]],
-  ['_7elog_151',['~Log',['../classad__framework_1_1log_1_1Log.html#a57c3b90e0c8654ec022cbdf17f52c83f',1,'ad_framework::log::Log']]],
-  ['_7euserinterface_152',['~UserInterface',['../classad__framework_1_1ui_1_1UserInterface.html#a6e8f2ff2043f1fc5b46dda0b52cb5bd9',1,'ad_framework::ui::UserInterface']]],
-  ['_7ewindow_153',['~Window',['../classad__framework_1_1window_1_1Window.html#a9dd03f3c0d8288ea5a6bdd2ebe98e10d',1,'ad_framework::window::Window']]]
+  ['selector_190',['Selector',['../classad__framework_1_1ui_1_1Selector.html#a81b08bacfc67d4c6452e0c50d7c77dba',1,'ad_framework::ui::Selector::Selector(std::string title, ImVec2 size, ImVec2 pos)'],['../classad__framework_1_1ui_1_1Selector.html#ae6d6a165aab671810bc74f216be57ffc',1,'ad_framework::ui::Selector::Selector(std::string title)']]],
+  ['setimagepath_191',['SetImagePath',['../classad__framework_1_1ui_1_1ImageViewer_1_1ImageSender.html#acf6129d171cc6285636e646496251156',1,'ad_framework::ui::ImageViewer::ImageSender']]],
+  ['setitems_192',['SetItems',['../classad__framework_1_1ui_1_1Selector_1_1ItemListSender.html#ad00914198e59aee000a51fd760838969',1,'ad_framework::ui::Selector::ItemListSender']]],
+  ['setparent_193',['SetParent',['../classad__framework_1_1ui_1_1UserInterface.html#a72e05318fbd49e2341919302635ed135',1,'ad_framework::ui::UserInterface']]],
+  ['size_194',['Size',['../classad__framework_1_1ui_1_1UserInterface.html#a54aca8b9b70563522f1d992bc0d03f37',1,'ad_framework::ui::UserInterface']]],
+  ['stream_195',['stream',['../classad__framework_1_1log_1_1Log.html#af8da68e1d37489babf08bb8c084b0ca7',1,'ad_framework::log::Log']]]
 ];

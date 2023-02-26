@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['imagesender_128',['ImageSender',['../classad__framework_1_1ui_1_1ImageViewer_1_1ImageSender.html#ac8885dd63b48140892d4a89dba42c6fb',1,'ad_framework::ui::ImageViewer::ImageSender']]],
-  ['imageviewer_129',['ImageViewer',['../classad__framework_1_1ui_1_1ImageViewer.html#a17ed5a36cd749e5a114f701cda5bde5a',1,'ad_framework::ui::ImageViewer::ImageViewer(std::string title, ImVec2 size, ImVec2 pos)'],['../classad__framework_1_1ui_1_1ImageViewer.html#a82659f500f2d9d4c5afc46aabfce4fed',1,'ad_framework::ui::ImageViewer::ImageViewer(std::string title)']]],
-  ['itemlistsender_130',['ItemListSender',['../classad__framework_1_1ui_1_1Selector_1_1ItemListSender.html#aafbe3e4c03cc5f1e0a2f5c1959260631',1,'ad_framework::ui::Selector::ItemListSender']]],
-  ['itemreciever_131',['ItemReciever',['../classad__framework_1_1ui_1_1Selector_1_1ItemReciever.html#ab185d472e8ad65d8792d5f7d3a682cc5',1,'ad_framework::ui::Selector::ItemReciever']]]
+  ['findinboundary_165',['FindInBoundary',['../classad__framwork_1_1data__structure_1_1KdTree.html#ae4efbe3dd4c34eccc8be2dd3979467a4',1,'ad_framwork::data_structure::KdTree::FindInBoundary(const Shape &amp;shape) const'],['../classad__framwork_1_1data__structure_1_1KdTree.html#ad28d69d18ca4094aaf20e8b63706e239',1,'ad_framwork::data_structure::KdTree::FindInBoundary(NodePtr node, const Shape &amp;shape) const']]],
+  ['frame_166',['Frame',['../classad__framework_1_1ui_1_1Frame.html#a23b75b9f4a27022ca373cc296fb61f39',1,'ad_framework::ui::Frame::Frame(std::string title, ImVec2 size, ImVec2 pos)'],['../classad__framework_1_1ui_1_1Frame.html#aebc75c41a2685587e064b4d41b9417c4',1,'ad_framework::ui::Frame::Frame(std::string title)']]]
 ];

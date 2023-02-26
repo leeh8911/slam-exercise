@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['frame_124',['Frame',['../classad__framework_1_1ui_1_1Frame.html#a23b75b9f4a27022ca373cc296fb61f39',1,'ad_framework::ui::Frame::Frame(std::string title, ImVec2 size, ImVec2 pos)'],['../classad__framework_1_1ui_1_1Frame.html#aebc75c41a2685587e064b4d41b9417c4',1,'ad_framework::ui::Frame::Frame(std::string title)']]]
+  ['circle_163',['Circle',['../classad__framwork_1_1data__structure_1_1Circle.html#a7de6e558e2beabc0625e0420a984cb11',1,'ad_framwork::data_structure::Circle']]]
 ];

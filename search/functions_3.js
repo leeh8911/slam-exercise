@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['getcallbacks_125',['GetCallbacks',['../classad__framework_1_1ui_1_1UserInterface.html#a611ad02195c288f0eb58c26b94a6ddd4',1,'ad_framework::ui::UserInterface']]],
-  ['getitem_126',['GetItem',['../classad__framework_1_1ui_1_1Selector_1_1ItemReciever.html#a9ed2072a504c233f33a02ef9ef93fead',1,'ad_framework::ui::Selector::ItemReciever']]],
-  ['getparent_127',['GetParent',['../classad__framework_1_1ui_1_1UserInterface.html#a581ef0708c51d4881401f142215529e1',1,'ad_framework::ui::UserInterface']]]
+  ['distance_164',['Distance',['../classad__framwork_1_1data__structure_1_1Node.html#a3cfdd0c507edf3020b8e1898f481db9e',1,'ad_framwork::data_structure::Node::Distance(const Eigen::Vector3d &amp;point) const'],['../classad__framwork_1_1data__structure_1_1Node.html#af0dd79077327213efb0215085fdeac26',1,'ad_framwork::data_structure::Node::Distance(const Node &amp;point) const']]]
 ];

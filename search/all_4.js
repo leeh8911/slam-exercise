@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['getcallbacks_21',['GetCallbacks',['../classad__framework_1_1ui_1_1UserInterface.html#a611ad02195c288f0eb58c26b94a6ddd4',1,'ad_framework::ui::UserInterface']]],
-  ['getitem_22',['GetItem',['../classad__framework_1_1ui_1_1Selector_1_1ItemReciever.html#a9ed2072a504c233f33a02ef9ef93fead',1,'ad_framework::ui::Selector::ItemReciever']]],
-  ['getparent_23',['GetParent',['../classad__framework_1_1ui_1_1UserInterface.html#a581ef0708c51d4881401f142215529e1',1,'ad_framework::ui::UserInterface']]]
+  ['findinboundary_25',['FindInBoundary',['../classad__framwork_1_1data__structure_1_1KdTree.html#ae4efbe3dd4c34eccc8be2dd3979467a4',1,'ad_framwork::data_structure::KdTree::FindInBoundary(const Shape &amp;shape) const'],['../classad__framwork_1_1data__structure_1_1KdTree.html#ad28d69d18ca4094aaf20e8b63706e239',1,'ad_framwork::data_structure::KdTree::FindInBoundary(NodePtr node, const Shape &amp;shape) const']]],
+  ['frame_26',['Frame',['../classad__framework_1_1ui_1_1Frame.html',1,'ad_framework::ui::Frame'],['../classad__framework_1_1ui_1_1Frame.html#a23b75b9f4a27022ca373cc296fb61f39',1,'ad_framework::ui::Frame::Frame(std::string title, ImVec2 size, ImVec2 pos)'],['../classad__framework_1_1ui_1_1Frame.html#aebc75c41a2685587e064b4d41b9417c4',1,'ad_framework::ui::Frame::Frame(std::string title)']]]
 ];

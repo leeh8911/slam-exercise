@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['ui_2ecpp_71',['ui.cpp',['../ui_8cpp.html',1,'']]],
-  ['ui_2eh_72',['ui.h',['../ui_8h.html',1,'']]],
-  ['uis_5f_73',['uis_',['../classad__framework_1_1window_1_1Window.html#ada3ea86b036f1a50db4e87bfd39d89b2',1,'ad_framework::window::Window']]],
-  ['user_5finterface_2eh_74',['user_interface.h',['../user__interface_8h.html',1,'']]],
-  ['userinterface_75',['UserInterface',['../classad__framework_1_1ui_1_1UserInterface.html',1,'ad_framework::ui::UserInterface'],['../classad__framework_1_1ui_1_1UserInterface.html#a28f5339d19a8e01c67ed62ef700ded49',1,'ad_framework::ui::UserInterface::UserInterface()']]],
-  ['userinterfaceptr_76',['UserInterfacePtr',['../classad__framework_1_1window_1_1Window.html#a9eacf322daa971b02de1cdb22cc5e726',1,'ad_framework::window::Window::UserInterfacePtr()'],['../namespacead__framework_1_1ui.html#af5b82e1aadc8bccbfbfef1118749a404',1,'ad_framework::ui::UserInterfacePtr()']]]
+  ['test_95',['TEST',['../namespacead__framwork_1_1data__structure.html#acd362d477618983aebd22bd6add522fc',1,'ad_framwork::data_structure::TEST(KdTreeTest, NodeTest)'],['../namespacead__framwork_1_1data__structure.html#a806d68419b184ebab7ebf96730b95e32',1,'ad_framwork::data_structure::TEST(KdTreeTest, DistanceTest)'],['../namespacead__framwork_1_1data__structure.html#a801be1634a9677966a71d88fe5a94bdd',1,'ad_framwork::data_structure::TEST(KdTreeTest, FindNearestNodeCase)'],['../namespacead__framwork_1_1data__structure.html#afc647565591f560995c0d810f4d0e6a3',1,'ad_framwork::data_structure::TEST(KdTreeTest, FindNearestNodeCase2)']]],
+  ['title_96',['Title',['../classad__framework_1_1ui_1_1UserInterface.html#acec7bc1f8dbcafa56a310a3be3a048fe',1,'ad_framework::ui::UserInterface::Title()'],['../classad__framework_1_1window_1_1Window.html#a7a698d14178f8bf161124b0283fb7d91',1,'ad_framework::window::Window::Title()']]],
+  ['title_5f_97',['title_',['../classad__framework_1_1ui_1_1UserInterface.html#adf51de5586e44abe1563d2b24bf39d6e',1,'ad_framework::ui::UserInterface::title_()'],['../classad__framework_1_1window_1_1Window.html#a876fc0749527fd0a3298d71e9d11fbb4',1,'ad_framework::window::Window::title_()']]]
 ];

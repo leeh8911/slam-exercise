@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['userinterfaceptr_172',['UserInterfacePtr',['../classad__framework_1_1window_1_1Window.html#a9eacf322daa971b02de1cdb22cc5e726',1,'ad_framework::window::Window::UserInterfacePtr()'],['../namespacead__framework_1_1ui.html#af5b82e1aadc8bccbfbfef1118749a404',1,'ad_framework::ui::UserInterfacePtr()']]]
+  ['nodelist_230',['NodeList',['../namespacead__framwork_1_1data__structure.html#ae2d4826129fb04d0f049f2fcbd45de08',1,'ad_framwork::data_structure']]],
+  ['nodeptr_231',['NodePtr',['../namespacead__framwork_1_1data__structure.html#a9dace8ae60ac54ee77d11674050df9a6',1,'ad_framwork::data_structure']]],
+  ['nodeptrlist_232',['NodePtrList',['../namespacead__framwork_1_1data__structure.html#a1d6874a0de54153ca9f8b517b7af854f',1,'ad_framwork::data_structure']]]
 ];

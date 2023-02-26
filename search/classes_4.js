@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['log_93',['Log',['../classad__framework_1_1log_1_1Log.html',1,'ad_framework::log']]]
+  ['kdtree_122',['KdTree',['../classad__framwork_1_1data__structure_1_1KdTree.html',1,'ad_framwork::data_structure']]]
 ];

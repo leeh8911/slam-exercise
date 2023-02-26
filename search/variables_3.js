@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['parent_5f_162',['parent_',['../classad__framework_1_1ui_1_1UserInterface.html#a59c8042e0f81a800ddaa7c8f6ad6fc13',1,'ad_framework::ui::UserInterface']]],
-  ['pos_5f_163',['pos_',['../classad__framework_1_1ui_1_1UserInterface.html#a4858fa3bfd0e0503d5f9a393fe2c67c3',1,'ad_framework::ui::UserInterface']]]
+  ['left_5f_214',['left_',['../classad__framwork_1_1data__structure_1_1Node.html#a166efc1e7e4671b9a5cc6f44e55f2ea9',1,'ad_framwork::data_structure::Node']]]
 ];
