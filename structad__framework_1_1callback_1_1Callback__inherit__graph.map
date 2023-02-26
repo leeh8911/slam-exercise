@@ -1,9 +1,10 @@
 <map id="ad_framework::callback::Callback" name="ad_framework::callback::Callback">
-<area shape="rect" id="node1" title=" " alt="" coords="942,5,1299,97"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1133,5,1490,97"/>
 <area shape="rect" id="node2" href="$classSampleCallback.html" title=" " alt="" coords="5,167,356,245"/>
 <area shape="rect" id="node3" href="$classad__framework_1_1callback_1_1NullCallback.html" title=" " alt="" coords="380,167,731,245"/>
 <area shape="rect" id="node4" href="$classad__framework_1_1ui_1_1Button_1_1ButtonChanger.html" title=" " alt="" coords="755,160,1105,252"/>
 <area shape="rect" id="node5" href="$classad__framework_1_1ui_1_1ImageViewer_1_1ImageSender.html" title=" " alt="" coords="1129,145,1493,267"/>
 <area shape="rect" id="node6" href="$classad__framework_1_1ui_1_1Selector_1_1ItemListSender.html" title=" " alt="" coords="1517,153,1908,259"/>
 <area shape="rect" id="node7" href="$classad__framework_1_1ui_1_1Selector_1_1ItemReciever.html" title=" " alt="" coords="1932,153,2283,259"/>
+<area shape="rect" id="node8" href="$classad__framework_1_1ui_1_1TopViewer_1_1FrameSender.html" title=" " alt="" coords="2307,145,2683,267"/>
 </map>

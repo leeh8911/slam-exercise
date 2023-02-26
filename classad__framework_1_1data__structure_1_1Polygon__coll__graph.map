@@ -1,8 +1,10 @@
 <map id="ad_framework::data_structure::Polygon" name="ad_framework::data_structure::Polygon">
-<area shape="rect" id="node1" title=" " alt="" coords="101,455,493,561"/>
-<area shape="rect" id="node2" href="$classad__framework_1_1data__structure_1_1Shape.html" title=" " alt="" coords="5,285,403,392"/>
-<area shape="rect" id="node3" title=" " alt="" coords="426,300,649,377"/>
-<area shape="rect" id="node4" title=" " alt="" coords="439,145,518,223"/>
-<area shape="rect" id="node5" title=" " alt="" coords="542,145,671,223"/>
-<area shape="rect" id="node6" title=" " alt="" coords="587,5,626,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="36,469,428,576"/>
+<area shape="rect" id="node2" href="$classad__framework_1_1data__structure_1_1Shape.html" title=" " alt="" coords="5,5,403,127"/>
+<area shape="rect" id="node4" href="$structad__framework_1_1data__structure_1_1Point.html" title=" " alt="" coords="253,189,512,267"/>
+<area shape="rect" id="node3" title=" " alt="" coords="254,329,613,407"/>
+<area shape="rect" id="node5" title=" " alt="" coords="474,27,553,105"/>
+<area shape="rect" id="node8" title=" " alt="" coords="637,329,859,407"/>
+<area shape="rect" id="node6" title=" " alt="" coords="751,189,881,267"/>
+<area shape="rect" id="node7" title=" " alt="" coords="797,27,835,105"/>
 </map>

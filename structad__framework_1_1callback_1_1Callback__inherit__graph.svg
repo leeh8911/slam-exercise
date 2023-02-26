@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1716;
+var viewWidth = 2017;
 var viewHeight = 204;
 var sectionId = 'dynsection-0';
 </script>
@@ -54,18 +54,18 @@ var sectionId = 'dynsection-0';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>ad_framework::callback::Callback</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-200 1712,-200 1712,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-200 2012.5,-200 2012.5,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="702.5,-127.5 702.5,-195.5 970.5,-195.5 970.5,-127.5 702.5,-127.5"/>
-<text text-anchor="middle" x="836.5" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">ad_framework::callback::Callback</text>
-<polyline fill="none" stroke="black" points="702.5,-176.5 970.5,-176.5 "/>
-<text text-anchor="middle" x="836.5" y="-164.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="702.5,-157.5 970.5,-157.5 "/>
-<text text-anchor="start" x="710.5" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual ~Callback()=default</text>
-<text text-anchor="start" x="710.5" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual std::any operator()(const std::any &amp;src)=0</text>
+<polygon fill="#bfbfbf" stroke="black" points="845.5,-127.5 845.5,-195.5 1113.5,-195.5 1113.5,-127.5 845.5,-127.5"/>
+<text text-anchor="middle" x="979.5" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">ad_framework::callback::Callback</text>
+<polyline fill="none" stroke="black" points="845.5,-176.5 1113.5,-176.5 "/>
+<text text-anchor="middle" x="979.5" y="-164.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="845.5,-157.5 1113.5,-157.5 "/>
+<text text-anchor="start" x="853.5" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual ~Callback()=default</text>
+<text text-anchor="start" x="853.5" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual std::any operator()(const std::any &amp;src)=0</text>
 </a>
 </g>
 </g>
@@ -85,8 +85,8 @@ var sectionId = 'dynsection-0';
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M692.06,-150.16C577.16,-140.15 412.79,-121.87 271.5,-91 251.07,-86.54 229.36,-80.37 209.29,-74.04"/>
-<polygon fill="none" stroke="midnightblue" points="692.07,-153.67 702.33,-151.04 692.67,-146.7 692.07,-153.67"/>
+<path fill="none" stroke="midnightblue" d="M835.25,-155.21C691.24,-147.85 464.22,-130.63 271.5,-91 250.64,-86.71 228.49,-80.49 208.12,-74.04"/>
+<polygon fill="none" stroke="midnightblue" points="835.32,-158.71 845.48,-155.72 835.67,-151.72 835.32,-158.71"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
@@ -104,8 +104,8 @@ var sectionId = 'dynsection-0';
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M692.54,-127.27C647.53,-116.35 597.8,-103.73 552.5,-91 534.09,-85.83 514.44,-79.86 495.88,-74.02"/>
-<polygon fill="none" stroke="midnightblue" points="691.83,-130.7 702.37,-129.65 693.48,-123.9 691.83,-130.7"/>
+<path fill="none" stroke="midnightblue" d="M835.28,-142.39C752.03,-130.6 645.69,-113.27 552.5,-91 532.78,-86.29 511.81,-80.21 492.26,-74.07"/>
+<polygon fill="none" stroke="midnightblue" points="834.92,-145.87 845.31,-143.8 835.9,-138.94 834.92,-145.87"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
@@ -124,8 +124,8 @@ var sectionId = 'dynsection-0';
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M786.65,-120.76C769.8,-107.33 751.18,-92.49 735.05,-79.62"/>
-<polygon fill="none" stroke="midnightblue" points="784.75,-123.72 794.75,-127.22 789.12,-118.25 784.75,-123.72"/>
+<path fill="none" stroke="midnightblue" d="M886.97,-123.62C851.36,-109.42 810.96,-93.32 776.32,-79.51"/>
+<polygon fill="none" stroke="midnightblue" points="885.81,-126.92 896.39,-127.37 888.4,-120.42 885.81,-126.92"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
@@ -146,8 +146,8 @@ var sectionId = 'dynsection-0';
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M886.15,-120.92C898.41,-111.14 911.62,-100.61 924.13,-90.64"/>
-<polygon fill="none" stroke="midnightblue" points="883.88,-118.25 878.25,-127.22 888.25,-123.72 883.88,-118.25"/>
+<path fill="none" stroke="midnightblue" d="M979.5,-116.97C979.5,-108.35 979.5,-99.28 979.5,-90.64"/>
+<polygon fill="none" stroke="midnightblue" points="976,-117.22 979.5,-127.22 983,-117.22 976,-117.22"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
@@ -167,8 +167,8 @@ var sectionId = 'dynsection-0';
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M980.44,-127.19C1026.85,-116.1 1078.45,-103.41 1125.5,-91 1132.67,-89.11 1140.02,-87.13 1147.44,-85.11"/>
-<polygon fill="none" stroke="midnightblue" points="979.53,-123.81 970.62,-129.53 981.16,-130.62 979.53,-123.81"/>
+<path fill="none" stroke="midnightblue" d="M1076.52,-123.75C1109.19,-111.38 1145.72,-97.55 1178.74,-85.04"/>
+<polygon fill="none" stroke="midnightblue" points="1075.08,-120.56 1066.97,-127.37 1077.56,-127.1 1075.08,-120.56"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
@@ -188,8 +188,30 @@ var sectionId = 'dynsection-0';
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M980.74,-151.61C1103.07,-142.22 1282.68,-124.03 1436.5,-91 1444.6,-89.26 1452.91,-87.24 1461.23,-85.05"/>
-<polygon fill="none" stroke="midnightblue" points="980.27,-148.14 970.56,-152.39 980.8,-155.12 980.27,-148.14"/>
+<path fill="none" stroke="midnightblue" d="M1123.59,-144.47C1214.11,-132.95 1332.92,-115.18 1436.5,-91 1444.2,-89.2 1452.09,-87.19 1460,-85.04"/>
+<polygon fill="none" stroke="midnightblue" points="1123.02,-141.01 1113.53,-145.74 1123.89,-147.96 1123.02,-141.01"/>
+</g>
+<!-- Node8 -->
+<g id="node8" class="node">
+<title>Node8</title>
+<g id="a_node8"><a xlink:href="classad__framework_1_1ui_1_1TopViewer_1_1FrameSender.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="1726.5,-0.5 1726.5,-90.5 2008.5,-90.5 2008.5,-0.5 1726.5,-0.5"/>
+<text text-anchor="middle" x="1867.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">ad_framework::ui::TopViewer::FrameSender</text>
+<polyline fill="none" stroke="black" points="1726.5,-71.5 2008.5,-71.5 "/>
+<text text-anchor="start" x="1734.5" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; data_structure::Frame frame_</text>
+<text text-anchor="start" x="1734.5" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; std::string title_</text>
+<polyline fill="none" stroke="black" points="1726.5,-41.5 2008.5,-41.5 "/>
+<text text-anchor="start" x="1734.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ FrameSender()=default</text>
+<text text-anchor="start" x="1734.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ std::any operator()(const std::any &amp;src) override</text>
+<text text-anchor="start" x="1734.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void SetFrame(const data_structure::Frame &amp;frame)</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node8 -->
+<g id="edge7" class="edge">
+<title>Node1&#45;&gt;Node8</title>
+<path fill="none" stroke="midnightblue" d="M1123.76,-155.21C1273.39,-147.79 1513.55,-130.47 1717.5,-91 1720.43,-90.43 1723.39,-89.83 1726.37,-89.2"/>
+<polygon fill="none" stroke="midnightblue" points="1123.41,-151.72 1113.6,-155.71 1123.75,-158.72 1123.41,-151.72"/>
 </g>
 </g>
 </svg>

@@ -1,6 +1,7 @@
 <map id="ad_framework::ui::UserInterface::Title" name="ad_framework::ui::UserInterface::Title">
-<area shape="rect" id="node1" title=" " alt="" coords="324,56,593,83"/>
-<area shape="rect" id="node2" href="$classad__framework_1_1ui_1_1Button.html#a87bdaf93ee039c7252bd91f12215dcdc" title=" " alt="" coords="11,5,271,32"/>
-<area shape="rect" id="node3" href="$classad__framework_1_1ui_1_1Selector.html#ae6bc6a470d499974e5a9b53c65d9e1b1" title=" " alt="" coords="5,56,276,83"/>
-<area shape="rect" id="node4" href="$classad__framework_1_1ui_1_1Frame.html#a4afa78942b9618a75173faa6474451fb" title=" " alt="" coords="11,107,270,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="337,81,607,108"/>
+<area shape="rect" id="node2" href="$classad__framework_1_1ui_1_1Button.html#a87bdaf93ee039c7252bd91f12215dcdc" title=" " alt="" coords="17,5,277,32"/>
+<area shape="rect" id="node3" href="$classad__framework_1_1ui_1_1Selector.html#ae6bc6a470d499974e5a9b53c65d9e1b1" title=" " alt="" coords="12,56,283,83"/>
+<area shape="rect" id="node4" href="$classad__framework_1_1ui_1_1TopViewer.html#a57fd54d9bb406d6a2e90905fac75b3d4" title=" " alt="" coords="5,107,289,133"/>
+<area shape="rect" id="node5" href="$classad__framework_1_1ui_1_1Frame.html#a4afa78942b9618a75173faa6474451fb" title=" " alt="" coords="18,157,277,184"/>
 </map>

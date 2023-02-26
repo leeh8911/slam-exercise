@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>C++ SLAM Research: ad_framework::data_structure::Polygon Class Reference</title>
+<title>C++ SLAM Research: ad_framework::data_structure::Polygon Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -75,10 +75,11 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classad__framework_1_1data__structure_1_1Polygon-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ad_framework::data_structure::Polygon Class Reference</div>  </div>
+<div class="title">ad_framework::data_structure::Polygon Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -86,7 +87,7 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for ad_framework::data_structure::Polygon:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classad__framework_1_1data__structure_1_1Polygon__inherit__graph.svg" width="408" height="272"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classad__framework_1_1data__structure_1_1Polygon__inherit__graph.svg" width="408" height="302"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
@@ -98,12 +99,17 @@ Collaboration diagram for ad_framework::data_structure::Polygon:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a878a147e8bf3346d30fbcf75b613a31a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1data__structure_1_1Polygon.html#a878a147e8bf3346d30fbcf75b613a31a">Polygon</a> (const std::vector&lt; Eigen::Vector3d &gt; &amp;points)</td></tr>
+<tr class="memitem:a878a147e8bf3346d30fbcf75b613a31a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1data__structure_1_1Polygon.html#a878a147e8bf3346d30fbcf75b613a31a">Polygon</a> (const std::vector&lt; Eigen::Vector3d &gt; &amp;<a class="el" href="classad__framework_1_1data__structure_1_1Polygon.html#aca51bf1ffa4c1d78eb8944db8d8195d2">points</a>)</td></tr>
 <tr class="separator:a878a147e8bf3346d30fbcf75b613a31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca9b0fb5e5dbf830d9fccfb4c93f9076"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1data__structure_1_1Polygon.html#aca9b0fb5e5dbf830d9fccfb4c93f9076">IsIn</a> (const Eigen::Vector3d &amp;point) const override</td></tr>
 <tr class="separator:aca9b0fb5e5dbf830d9fccfb4c93f9076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a773e04125b2fa94e38b347e0d771fef0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1data__structure_1_1Polygon.html#a773e04125b2fa94e38b347e0d771fef0">ToString</a> () const override</td></tr>
 <tr class="separator:a773e04125b2fa94e38b347e0d771fef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aca51bf1ffa4c1d78eb8944db8d8195d2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structad__framework_1_1data__structure_1_1Point.html">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classad__framework_1_1data__structure_1_1Polygon.html#aca51bf1ffa4c1d78eb8944db8d8195d2">points</a></td></tr>
+<tr class="separator:aca51bf1ffa4c1d78eb8944db8d8195d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -131,10 +137,11 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="kdtree_8cpp_source.html#l00059">59</a> of file <a class="el" href="kdtree_8cpp_source.html">kdtree.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                                       : <a class="code" href="classad__framework_1_1data__structure_1_1Polygon.html#abede3e804e46f051700c57d94def7e97">points_</a>(points)</div>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                                       : <a class="code" href="classad__framework_1_1data__structure_1_1Polygon.html#abede3e804e46f051700c57d94def7e97">points_</a>(<a class="code" href="classad__framework_1_1data__structure_1_1Polygon.html#aca51bf1ffa4c1d78eb8944db8d8195d2">points</a>)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
 <div class="ttc" id="aclassad__framework_1_1data__structure_1_1Polygon_html_abede3e804e46f051700c57d94def7e97"><div class="ttname"><a href="classad__framework_1_1data__structure_1_1Polygon.html#abede3e804e46f051700c57d94def7e97">ad_framework::data_structure::Polygon::points_</a></div><div class="ttdeci">std::vector&lt; Eigen::Vector3d &gt; points_</div><div class="ttdef"><b>Definition:</b> <a href="kdtree_8h_source.html#l00084">kdtree.h:84</a></div></div>
+<div class="ttc" id="aclassad__framework_1_1data__structure_1_1Polygon_html_aca51bf1ffa4c1d78eb8944db8d8195d2"><div class="ttname"><a href="classad__framework_1_1data__structure_1_1Polygon.html#aca51bf1ffa4c1d78eb8944db8d8195d2">ad_framework::data_structure::Polygon::points</a></div><div class="ttdeci">std::vector&lt; Point &gt; points</div><div class="ttdef"><b>Definition:</b> <a href="shape_8h_source.html#l00044">shape.h:44</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -236,8 +243,25 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<a id="aca51bf1ffa4c1d78eb8944db8d8195d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca51bf1ffa4c1d78eb8944db8d8195d2">&#9670;&nbsp;</a></span>points</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structad__framework_1_1data__structure_1_1Point.html">Point</a>&gt; ad_framework::data_structure::Polygon::points</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="shape_8h_source.html#l00044">44</a> of file <a class="el" href="shape_8h_source.html">shape.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>src/data_structure/<a class="el" href="kdtree_8h_source.html">kdtree.h</a></li>
+<li>src/data_structure/<a class="el" href="shape_8h_source.html">shape.h</a></li>
 <li>src/data_structure/<a class="el" href="kdtree_8cpp_source.html">kdtree.cpp</a></li>
 </ul>
 </div><!-- contents -->

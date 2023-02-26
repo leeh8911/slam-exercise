@@ -1,8 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,81,220,108"/>
-<area shape="rect" id="node2" href="$classad__framework_1_1ui_1_1UserInterface.html" title=" " alt="" coords="268,81,500,108"/>
-<area shape="rect" id="node3" href="$classad__framework_1_1ui_1_1Button.html" title=" " alt="" coords="570,5,757,32"/>
-<area shape="rect" id="node4" href="$classad__framework_1_1ui_1_1Frame.html" title=" " alt="" coords="571,56,756,83"/>
-<area shape="rect" id="node5" href="$classad__framework_1_1ui_1_1ImageViewer.html" title=" " alt="" coords="548,107,779,133"/>
-<area shape="rect" id="node6" href="$classad__framework_1_1ui_1_1Selector.html" title=" " alt="" coords="565,157,762,184"/>
+<area shape="rect" id="node1" href="$classad__framework_1_1log_1_1Log.html" title=" " alt="" coords="5,5,180,32"/>
 </map>

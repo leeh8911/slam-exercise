@@ -1,16 +1,11 @@
 var searchData=
 [
-  ['samplecallback_82',['SampleCallback',['../classSampleCallback.html',1,'']]],
-  ['selector_83',['Selector',['../classad__framework_1_1ui_1_1Selector.html',1,'ad_framework::ui::Selector'],['../classad__framework_1_1ui_1_1Selector.html#a81b08bacfc67d4c6452e0c50d7c77dba',1,'ad_framework::ui::Selector::Selector(std::string title, ImVec2 size, ImVec2 pos)'],['../classad__framework_1_1ui_1_1Selector.html#ae6d6a165aab671810bc74f216be57ffc',1,'ad_framework::ui::Selector::Selector(std::string title)']]],
-  ['selector_2ecpp_84',['selector.cpp',['../selector_8cpp.html',1,'']]],
-  ['selector_2eh_85',['selector.h',['../selector_8h.html',1,'']]],
-  ['setimagepath_86',['SetImagePath',['../classad__framework_1_1ui_1_1ImageViewer_1_1ImageSender.html#acf6129d171cc6285636e646496251156',1,'ad_framework::ui::ImageViewer::ImageSender']]],
-  ['setitems_87',['SetItems',['../classad__framework_1_1ui_1_1Selector_1_1ItemListSender.html#ad00914198e59aee000a51fd760838969',1,'ad_framework::ui::Selector::ItemListSender']]],
-  ['setparent_88',['SetParent',['../classad__framework_1_1ui_1_1UserInterface.html#a72e05318fbd49e2341919302635ed135',1,'ad_framework::ui::UserInterface']]],
-  ['shape_89',['Shape',['../classad__framework_1_1data__structure_1_1Shape.html',1,'ad_framework::data_structure']]],
-  ['shapeptr_90',['ShapePtr',['../namespacead__framework_1_1data__structure.html#a14d78974a6f5b9a1542b8473841d5075',1,'ad_framework::data_structure']]],
-  ['size_91',['Size',['../classad__framework_1_1ui_1_1UserInterface.html#a54aca8b9b70563522f1d992bc0d03f37',1,'ad_framework::ui::UserInterface']]],
-  ['size_5f_92',['size_',['../classad__framework_1_1data__structure_1_1Rectangle.html#a7bf043cf5b356796b0f1ce61d99f79af',1,'ad_framework::data_structure::Rectangle::size_()'],['../classad__framework_1_1ui_1_1UserInterface.html#a8cf611c8b2455d25a432760fc6fd5c67',1,'ad_framework::ui::UserInterface::size_()'],['../classad__framework_1_1window_1_1Window.html#a46ca072c751b925fc0f6e23bfe248d3d',1,'ad_framework::window::Window::size_()']]],
-  ['stream_93',['stream',['../classad__framework_1_1log_1_1Log.html#af8da68e1d37489babf08bb8c084b0ca7',1,'ad_framework::log::Log']]],
-  ['stream_5f_94',['stream_',['../classad__framework_1_1log_1_1Log.html#a28e3b8925163a88b912c1ec735ba956d',1,'ad_framework::log::Log']]]
+  ['radius_89',['radius',['../classad__framework_1_1data__structure_1_1Circle.html#a773ab970e7376aa38727f00ac135167b',1,'ad_framework::data_structure::Circle']]],
+  ['radius_5f_90',['radius_',['../classad__framework_1_1data__structure_1_1Circle.html#ac4faa2a4cd2dac1226bda76fb7bce8de',1,'ad_framework::data_structure::Circle']]],
+  ['readme_2emd_91',['readme.md',['../readme_8md.html',1,'']]],
+  ['rectangle_92',['Rectangle',['../classad__framework_1_1data__structure_1_1Rectangle.html',1,'ad_framework::data_structure::Rectangle'],['../classad__framework_1_1data__structure_1_1Rectangle.html#a120d6947908b9ac298e06b800deff6d4',1,'ad_framework::data_structure::Rectangle::Rectangle()']]],
+  ['rename_93',['Rename',['../classad__framework_1_1ui_1_1UserInterface.html#a0870a4a98c6f112c02ee0ed3e3237b2d',1,'ad_framework::ui::UserInterface']]],
+  ['resize_94',['Resize',['../classad__framework_1_1ui_1_1UserInterface.html#a8a5e714ecb11fe37d97fbaeec4747a0c',1,'ad_framework::ui::UserInterface']]],
+  ['right_5f_95',['right_',['../classad__framework_1_1data__structure_1_1Node.html#ac526e2695d6e5d45b1a5fc685b219b8c',1,'ad_framework::data_structure::Node']]],
+  ['root_5f_96',['root_',['../classad__framework_1_1data__structure_1_1KdTree.html#a6cc74780ec1c9af920347c328b72b771',1,'ad_framework::data_structure::KdTree']]]
 ];

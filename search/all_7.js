@@ -1,12 +1,16 @@
 var searchData=
 [
-  ['kdebug_42',['kDebug',['../namespacead__framework_1_1log.html#a1a36723383d2fabfb44059f45b4a4811abb53ce21b7c0b7c8a8f7860a41901d29',1,'ad_framework::log']]],
-  ['kdtree_43',['KdTree',['../classad__framework_1_1data__structure_1_1KdTree.html',1,'ad_framework::data_structure::KdTree'],['../classad__framework_1_1data__structure_1_1KdTree.html#ae576a1e18a3bf2bbd40c96ea9d942c39',1,'ad_framework::data_structure::KdTree::KdTree()']]],
-  ['kdtree_2ecpp_44',['kdtree.cpp',['../kdtree_8cpp.html',1,'']]],
-  ['kdtree_2eh_45',['kdtree.h',['../kdtree_8h.html',1,'']]],
-  ['kdtree_5ftest_2ecpp_46',['kdtree_test.cpp',['../kdtree__test_8cpp.html',1,'']]],
-  ['kerror_47',['kError',['../namespacead__framework_1_1log.html#a1a36723383d2fabfb44059f45b4a4811ae3587c730cc1aa530fa4ddc9c4204e97',1,'ad_framework::log']]],
-  ['kfatal_48',['kFatal',['../namespacead__framework_1_1log.html#a1a36723383d2fabfb44059f45b4a4811ae66f945a3c2423ef09406cf09fa9de26',1,'ad_framework::log']]],
-  ['kinfo_49',['kInfo',['../namespacead__framework_1_1log.html#a1a36723383d2fabfb44059f45b4a4811a176a473e63c17ccdac91640c67f149bf',1,'ad_framework::log']]],
-  ['kwarning_50',['kWarning',['../namespacead__framework_1_1log.html#a1a36723383d2fabfb44059f45b4a4811aec0da41f4e48b52c362303eb27ed5dee',1,'ad_framework::log']]]
+  ['image_5fpath_5f_38',['image_path_',['../classad__framework_1_1ui_1_1ImageViewer_1_1ImageSender.html#a3c7dd6e89a4ae478f7efd94dd2183978',1,'ad_framework::ui::ImageViewer::ImageSender']]],
+  ['image_5fviewer_2ecpp_39',['image_viewer.cpp',['../image__viewer_8cpp.html',1,'']]],
+  ['image_5fviewer_2eh_40',['image_viewer.h',['../image__viewer_8h.html',1,'']]],
+  ['imagesender_41',['ImageSender',['../classad__framework_1_1ui_1_1ImageViewer_1_1ImageSender.html',1,'ad_framework::ui::ImageViewer::ImageSender'],['../classad__framework_1_1ui_1_1ImageViewer_1_1ImageSender.html#ac8885dd63b48140892d4a89dba42c6fb',1,'ad_framework::ui::ImageViewer::ImageSender::ImageSender()']]],
+  ['imageviewer_42',['ImageViewer',['../classad__framework_1_1ui_1_1ImageViewer.html',1,'ad_framework::ui::ImageViewer'],['../classad__framework_1_1ui_1_1ImageViewer.html#a17ed5a36cd749e5a114f701cda5bde5a',1,'ad_framework::ui::ImageViewer::ImageViewer(std::string title, ImVec2 size, ImVec2 pos)'],['../classad__framework_1_1ui_1_1ImageViewer.html#a82659f500f2d9d4c5afc46aabfce4fed',1,'ad_framework::ui::ImageViewer::ImageViewer(std::string title)']]],
+  ['imgui_2eh_43',['imgui.h',['../imgui_8h.html',1,'']]],
+  ['insert_44',['Insert',['../classad__framework_1_1data__structure_1_1KdTree.html#a0fbcdedd9a3e110c44e1f7232eff069a',1,'ad_framework::data_structure::KdTree::Insert(const Eigen::Vector3d &amp;point)'],['../classad__framework_1_1data__structure_1_1KdTree.html#a1a25f907c297ba485df6cb2fcd9b99af',1,'ad_framework::data_structure::KdTree::Insert(NodePtr node, const Eigen::Vector3d &amp;point, int depth)']]],
+  ['is_5fgray_5f_45',['is_gray_',['../classad__framework_1_1ui_1_1ImageViewer_1_1ImageSender.html#a7a2b5165d24a214d3711313cefbc2449',1,'ad_framework::ui::ImageViewer::ImageSender']]],
+  ['isin_46',['IsIn',['../classad__framework_1_1data__structure_1_1Shape.html#a1e2f61bd9bf56b92a3c0d5e777b5a4f7',1,'ad_framework::data_structure::Shape::IsIn()'],['../classad__framework_1_1data__structure_1_1Circle.html#a811f209b517724aa733a63c3ae0d4f94',1,'ad_framework::data_structure::Circle::IsIn()'],['../classad__framework_1_1data__structure_1_1Rectangle.html#a8ce8adebef691389c434c63b03d6ce75',1,'ad_framework::data_structure::Rectangle::IsIn()'],['../classad__framework_1_1data__structure_1_1Polygon.html#aca9b0fb5e5dbf830d9fccfb4c93f9076',1,'ad_framework::data_structure::Polygon::IsIn()']]],
+  ['item_5f_47',['item_',['../classad__framework_1_1ui_1_1Selector_1_1ItemReciever.html#ab240fe97d1056445eaa34dffe041a35e',1,'ad_framework::ui::Selector::ItemReciever']]],
+  ['itemlistsender_48',['ItemListSender',['../classad__framework_1_1ui_1_1Selector_1_1ItemListSender.html',1,'ad_framework::ui::Selector::ItemListSender'],['../classad__framework_1_1ui_1_1Selector_1_1ItemListSender.html#aafbe3e4c03cc5f1e0a2f5c1959260631',1,'ad_framework::ui::Selector::ItemListSender::ItemListSender()']]],
+  ['itemreciever_49',['ItemReciever',['../classad__framework_1_1ui_1_1Selector_1_1ItemReciever.html',1,'ad_framework::ui::Selector::ItemReciever'],['../classad__framework_1_1ui_1_1Selector_1_1ItemReciever.html#ab185d472e8ad65d8792d5f7d3a682cc5',1,'ad_framework::ui::Selector::ItemReciever::ItemReciever()']]],
+  ['items_5f_50',['items_',['../classad__framework_1_1ui_1_1Selector.html#a95a8a5caec8b3f418e96a7dd2004c41e',1,'ad_framework::ui::Selector::items_()'],['../classad__framework_1_1ui_1_1Selector_1_1ItemListSender.html#a3bfb7990b721302dcbf38573bbed0ac9',1,'ad_framework::ui::Selector::ItemListSender::items_()']]]
 ];

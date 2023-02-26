@@ -1,7 +1,21 @@
 var searchData=
 [
-  ['test_95',['TEST',['../namespacead__framework_1_1data__structure.html#ab3a224e82d7941e9076c999f73f9dbd2',1,'ad_framework::data_structure::TEST(KdTreeTest, NodeTest)'],['../namespacead__framework_1_1data__structure.html#ae31d4822681561b83270bb8adc19976d',1,'ad_framework::data_structure::TEST(KdTreeTest, DistanceTest)'],['../namespacead__framework_1_1data__structure.html#a377d116c8751406760991a41f830b8b4',1,'ad_framework::data_structure::TEST(KdTreeTest, FindNearestNodeCase)'],['../namespacead__framework_1_1data__structure.html#a5eed837355e821cfb9bc2a265f2c1efc',1,'ad_framework::data_structure::TEST(KdTreeTest, FindInBoundaryCase)']]],
-  ['title_96',['Title',['../classad__framework_1_1ui_1_1UserInterface.html#acec7bc1f8dbcafa56a310a3be3a048fe',1,'ad_framework::ui::UserInterface::Title()'],['../classad__framework_1_1window_1_1Window.html#a7a698d14178f8bf161124b0283fb7d91',1,'ad_framework::window::Window::Title()']]],
-  ['title_5f_97',['title_',['../classad__framework_1_1ui_1_1UserInterface.html#adf51de5586e44abe1563d2b24bf39d6e',1,'ad_framework::ui::UserInterface::title_()'],['../classad__framework_1_1window_1_1Window.html#a876fc0749527fd0a3298d71e9d11fbb4',1,'ad_framework::window::Window::title_()']]],
-  ['tostring_98',['ToString',['../classad__framework_1_1data__structure_1_1Node.html#a721358a989965d6f97d5d248c6d2381b',1,'ad_framework::data_structure::Node::ToString()'],['../classad__framework_1_1data__structure_1_1Shape.html#a2d74d5dbcfd3eadc5d6fb736ca6497a5',1,'ad_framework::data_structure::Shape::ToString()'],['../classad__framework_1_1data__structure_1_1Circle.html#a5ddd44716eb7abd60521602437b907ca',1,'ad_framework::data_structure::Circle::ToString()'],['../classad__framework_1_1data__structure_1_1Rectangle.html#aedfe87c61d722f77dc6e73e676822eaa',1,'ad_framework::data_structure::Rectangle::ToString()'],['../classad__framework_1_1data__structure_1_1Polygon.html#a773e04125b2fa94e38b347e0d771fef0',1,'ad_framework::data_structure::Polygon::ToString()']]]
+  ['samplecallback_97',['SampleCallback',['../classSampleCallback.html',1,'']]],
+  ['selector_98',['Selector',['../classad__framework_1_1ui_1_1Selector.html',1,'ad_framework::ui::Selector'],['../classad__framework_1_1ui_1_1Selector.html#a81b08bacfc67d4c6452e0c50d7c77dba',1,'ad_framework::ui::Selector::Selector(std::string title, ImVec2 size, ImVec2 pos)'],['../classad__framework_1_1ui_1_1Selector.html#ae6d6a165aab671810bc74f216be57ffc',1,'ad_framework::ui::Selector::Selector(std::string title)']]],
+  ['selector_2ecpp_99',['selector.cpp',['../selector_8cpp.html',1,'']]],
+  ['selector_2eh_100',['selector.h',['../selector_8h.html',1,'']]],
+  ['setframe_101',['SetFrame',['../classad__framework_1_1ui_1_1TopViewer_1_1FrameSender.html#a5544509eb5d4cef28392809ec8982486',1,'ad_framework::ui::TopViewer::FrameSender']]],
+  ['setimagepath_102',['SetImagePath',['../classad__framework_1_1ui_1_1ImageViewer_1_1ImageSender.html#acf6129d171cc6285636e646496251156',1,'ad_framework::ui::ImageViewer::ImageSender']]],
+  ['setitems_103',['SetItems',['../classad__framework_1_1ui_1_1Selector_1_1ItemListSender.html#ad00914198e59aee000a51fd760838969',1,'ad_framework::ui::Selector::ItemListSender']]],
+  ['setparent_104',['SetParent',['../classad__framework_1_1ui_1_1UserInterface.html#a72e05318fbd49e2341919302635ed135',1,'ad_framework::ui::UserInterface']]],
+  ['shape_105',['Shape',['../classad__framework_1_1data__structure_1_1Shape.html',1,'ad_framework::data_structure']]],
+  ['shape_2eh_106',['shape.h',['../shape_8h.html',1,'']]],
+  ['shapeptr_107',['ShapePtr',['../namespacead__framework_1_1data__structure.html#aa786c7cd9a224e81f2ebe8ca597b453e',1,'ad_framework::data_structure']]],
+  ['shapes_5f_108',['shapes_',['../classad__framework_1_1data__structure_1_1Frame.html#a981314ee2f4119b8deeeea4b85f301ed',1,'ad_framework::data_structure::Frame']]],
+  ['size_109',['Size',['../classad__framework_1_1ui_1_1UserInterface.html#a54aca8b9b70563522f1d992bc0d03f37',1,'ad_framework::ui::UserInterface']]],
+  ['size_110',['size',['../classad__framework_1_1data__structure_1_1Rectangle.html#ac45834ae7a4c32a4b148e6d7589165d5',1,'ad_framework::data_structure::Rectangle']]],
+  ['size_5f_111',['size_',['../classad__framework_1_1data__structure_1_1Rectangle.html#a7bf043cf5b356796b0f1ce61d99f79af',1,'ad_framework::data_structure::Rectangle::size_()'],['../classad__framework_1_1ui_1_1UserInterface.html#a8cf611c8b2455d25a432760fc6fd5c67',1,'ad_framework::ui::UserInterface::size_()'],['../classad__framework_1_1window_1_1Window.html#a46ca072c751b925fc0f6e23bfe248d3d',1,'ad_framework::window::Window::size_()']]],
+  ['start_5fpoint_112',['start_point',['../structad__framework_1_1data__structure_1_1Line.html#a37556be078dcb4a98f186d8532e86af7',1,'ad_framework::data_structure::Line']]],
+  ['stream_113',['stream',['../classad__framework_1_1log_1_1Log.html#af8da68e1d37489babf08bb8c084b0ca7',1,'ad_framework::log::Log']]],
+  ['stream_5f_114',['stream_',['../classad__framework_1_1log_1_1Log.html#a28e3b8925163a88b912c1ec735ba956d',1,'ad_framework::log::Log']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['left_5f_215',['left_',['../classad__framework_1_1data__structure_1_1Node.html#a6fc87490b008dd0552350e25fe350559',1,'ad_framework::data_structure::Node']]]
+  ['frame_5f_252',['frame_',['../classad__framework_1_1ui_1_1TopViewer_1_1FrameSender.html#a973d8ae69c8b2425b54475fa9d3816ba',1,'ad_framework::ui::TopViewer::FrameSender']]]
 ];

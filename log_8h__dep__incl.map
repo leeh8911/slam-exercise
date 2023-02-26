@@ -1,10 +1,11 @@
 <map id="src/utils/log.h" name="src/utils/log.h">
-<area shape="rect" id="node1" title=" " alt="" coords="685,5,794,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="817,5,926,32"/>
 <area shape="rect" id="node2" href="$app_2main_8cpp.html" title=" " alt="" coords="5,80,116,107"/>
 <area shape="rect" id="node3" href="$kdtree_8cpp.html" title=" " alt="" coords="140,80,352,107"/>
 <area shape="rect" id="node4" href="$button_8cpp.html" title=" " alt="" coords="375,80,586,107"/>
 <area shape="rect" id="node5" href="$image__viewer_8cpp.html" title=" " alt="" coords="609,80,869,107"/>
 <area shape="rect" id="node6" href="$selector_8cpp.html" title=" " alt="" coords="893,80,1113,107"/>
-<area shape="rect" id="node7" href="$ui_8cpp.html" title=" " alt="" coords="1138,80,1319,107"/>
-<area shape="rect" id="node8" href="$window_8cpp.html" title=" " alt="" coords="1344,80,1465,107"/>
+<area shape="rect" id="node7" href="$top__viewer_8cpp.html" title=" " alt="" coords="1138,80,1378,107"/>
+<area shape="rect" id="node8" href="$ui_8cpp.html" title=" " alt="" coords="1402,80,1583,107"/>
+<area shape="rect" id="node9" href="$window_8cpp.html" title=" " alt="" coords="1608,80,1729,107"/>
 </map>

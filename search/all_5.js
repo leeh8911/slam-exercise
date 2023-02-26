@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['getcallbacks_26',['GetCallbacks',['../classad__framework_1_1ui_1_1UserInterface.html#a611ad02195c288f0eb58c26b94a6ddd4',1,'ad_framework::ui::UserInterface']]],
-  ['getitem_27',['GetItem',['../classad__framework_1_1ui_1_1Selector_1_1ItemReciever.html#a9ed2072a504c233f33a02ef9ef93fead',1,'ad_framework::ui::Selector::ItemReciever']]],
-  ['getparent_28',['GetParent',['../classad__framework_1_1ui_1_1UserInterface.html#a581ef0708c51d4881401f142215529e1',1,'ad_framework::ui::UserInterface']]]
+  ['findinboundary_28',['FindInBoundary',['../classad__framework_1_1data__structure_1_1KdTree.html#a3ff86dc0546337013d0e19d62fa024f8',1,'ad_framework::data_structure::KdTree::FindInBoundary(const ShapePtr &amp;shape) const'],['../classad__framework_1_1data__structure_1_1KdTree.html#ad2334509ff966448520f9a659c6f7dbe',1,'ad_framework::data_structure::KdTree::FindInBoundary(NodePtr node, const ShapePtr &amp;shape) const']]],
+  ['frame_29',['Frame',['../classad__framework_1_1data__structure_1_1Frame.html',1,'ad_framework::data_structure::Frame'],['../classad__framework_1_1ui_1_1Frame.html',1,'ad_framework::ui::Frame'],['../classad__framework_1_1data__structure_1_1Frame.html#a5fdd04728d3c72a467166e58ae4d3103',1,'ad_framework::data_structure::Frame::Frame()=default'],['../classad__framework_1_1data__structure_1_1Frame.html#a42597b2ad9cce127f8587f75f97cdb8d',1,'ad_framework::data_structure::Frame::Frame(const std::vector&lt; ShapePtr &gt; &amp;shapes)'],['../classad__framework_1_1ui_1_1Frame.html#a23b75b9f4a27022ca373cc296fb61f39',1,'ad_framework::ui::Frame::Frame(std::string title, ImVec2 size, ImVec2 pos)'],['../classad__framework_1_1ui_1_1Frame.html#aebc75c41a2685587e064b4d41b9417c4',1,'ad_framework::ui::Frame::Frame(std::string title)']]],
+  ['frame_2ecpp_30',['frame.cpp',['../frame_8cpp.html',1,'']]],
+  ['frame_2eh_31',['frame.h',['../frame_8h.html',1,'']]],
+  ['frame_5f_32',['frame_',['../classad__framework_1_1ui_1_1TopViewer_1_1FrameSender.html#a973d8ae69c8b2425b54475fa9d3816ba',1,'ad_framework::ui::TopViewer::FrameSender']]],
+  ['framesender_33',['FrameSender',['../classad__framework_1_1ui_1_1TopViewer_1_1FrameSender.html',1,'ad_framework::ui::TopViewer::FrameSender'],['../classad__framework_1_1ui_1_1TopViewer_1_1FrameSender.html#aa4c70fb2c2dbfde511bde8693af45459',1,'ad_framework::ui::TopViewer::FrameSender::FrameSender()']]]
 ];

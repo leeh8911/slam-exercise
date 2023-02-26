@@ -1,6 +1,7 @@
 <map id="ad_framework::data_structure::Circle" name="ad_framework::data_structure::Circle">
-<area shape="rect" id="node1" title=" " alt="" coords="267,175,653,281"/>
-<area shape="rect" id="node2" href="$classad__framework_1_1data__structure_1_1Shape.html" title=" " alt="" coords="5,5,403,112"/>
-<area shape="rect" id="node3" title=" " alt="" coords="427,20,493,97"/>
-<area shape="rect" id="node4" title=" " alt="" coords="518,20,597,97"/>
+<area shape="rect" id="node1" title=" " alt="" coords="189,344,576,451"/>
+<area shape="rect" id="node2" href="$classad__framework_1_1data__structure_1_1Shape.html" title=" " alt="" coords="5,5,403,127"/>
+<area shape="rect" id="node4" href="$structad__framework_1_1data__structure_1_1Point.html" title=" " alt="" coords="253,189,512,267"/>
+<area shape="rect" id="node3" title=" " alt="" coords="641,189,708,267"/>
+<area shape="rect" id="node5" title=" " alt="" coords="474,27,553,105"/>
 </map>

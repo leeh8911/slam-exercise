@@ -1,6 +1,9 @@
 <map id="ad_framework::data_structure::Shape" name="ad_framework::data_structure::Shape">
-<area shape="rect" id="node1" title=" " alt="" coords="413,5,811,112"/>
-<area shape="rect" id="node2" href="$classad__framework_1_1data__structure_1_1Circle.html" title=" " alt="" coords="5,160,392,281"/>
-<area shape="rect" id="node3" href="$classad__framework_1_1data__structure_1_1Polygon.html" title=" " alt="" coords="416,167,808,274"/>
-<area shape="rect" id="node4" href="$classad__framework_1_1data__structure_1_1Rectangle.html" title=" " alt="" coords="833,160,1327,281"/>
+<area shape="rect" id="node1" title=" " alt="" coords="925,5,1323,127"/>
+<area shape="rect" id="node2" href="$classad__framework_1_1data__structure_1_1Circle.html" title=" " alt="" coords="5,175,392,325"/>
+<area shape="rect" id="node3" href="$structad__framework_1_1data__structure_1_1Line.html" title=" " alt="" coords="416,204,669,296"/>
+<area shape="rect" id="node4" href="$structad__framework_1_1data__structure_1_1Point.html" title=" " alt="" coords="693,211,952,289"/>
+<area shape="rect" id="node5" href="$structad__framework_1_1data__structure_1_1PointCloud.html" title=" " alt="" coords="976,211,1272,289"/>
+<area shape="rect" id="node6" href="$classad__framework_1_1data__structure_1_1Polygon.html" title=" " alt="" coords="1296,189,1688,311"/>
+<area shape="rect" id="node7" href="$classad__framework_1_1data__structure_1_1Rectangle.html" title=" " alt="" coords="1713,175,2207,325"/>
 </map>

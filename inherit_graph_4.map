@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classad__framework_1_1log_1_1Log.html" title=" " alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node1" href="$classad__framework_1_1data__structure_1_1Shape.html" title=" " alt="" coords="5,132,272,159"/>
+<area shape="rect" id="node2" href="$classad__framework_1_1data__structure_1_1Circle.html" title=" " alt="" coords="337,5,599,32"/>
+<area shape="rect" id="node3" href="$structad__framework_1_1data__structure_1_1Line.html" title=" " alt="" coords="341,56,595,83"/>
+<area shape="rect" id="node4" href="$structad__framework_1_1data__structure_1_1Point.html" title=" " alt="" coords="339,107,597,133"/>
+<area shape="rect" id="node5" href="$structad__framework_1_1data__structure_1_1PointCloud.html" title=" " alt="" coords="320,157,616,184"/>
+<area shape="rect" id="node6" href="$classad__framework_1_1data__structure_1_1Polygon.html" title=" " alt="" coords="329,208,607,235"/>
+<area shape="rect" id="node7" href="$classad__framework_1_1data__structure_1_1Rectangle.html" title=" " alt="" coords="323,259,613,285"/>
 </map>
