@@ -49,7 +49,7 @@ std::any TopViewer::FrameSender::operator()(const std::any& src)
 {
     if (!src.has_value())
     {
-        LOG(log::LogLevel::kDebug);
+        // do nothing
     }
     return frame_;
 }
@@ -61,11 +61,6 @@ void TopViewer::FrameSender::SetFrame(const data_structure::Frame& frame)
 
 std::any TopViewer::FrameDrawer::operator()(const std::any& src)
 {
-    if (!src.has_value())
-    {
-        LOG(log::LogLevel::kDebug);
-    }
-
     frame_ = std::any_cast<data_structure::Frame>(src);
 
     float x[1000], y[1000];
@@ -75,10 +70,10 @@ std::any TopViewer::FrameDrawer::operator()(const std::any& src)
         y[i] = std::sin(x[i]);
     }
 
+    ImPlot::SetNextAxesLimits(-100, 100, -100, 100);
     if (ImPlot::BeginPlot("3D Viewer"))
     {
-        ImPlot::SetupAxes("y", "x");
-        ImPlot::SetupAxesLimits(-100, 100, -100, 100);
+        LOG(log::LogLevel::kDebug);
         for (auto& shape : frame_.GetShapes())
         {
             shape;
