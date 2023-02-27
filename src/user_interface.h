@@ -14,7 +14,7 @@
 #include "src/user_interface/button.h"
 #include "src/user_interface/image_viewer.h"
 #include "src/user_interface/selector.h"
+#include "src/user_interface/top_viewer.h"
 #include "src/user_interface/ui.h"
-
 
 #endif  // SRC_USER_INTERFACE_H_
