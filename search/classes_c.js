@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['window_161',['Window',['../classad__framework_1_1window_1_1Window.html',1,'ad_framework::window']]]
+  ['topviewer_181',['TopViewer',['../classad__framework_1_1ui_1_1TopViewer.html',1,'ad_framework::ui']]]
 ];

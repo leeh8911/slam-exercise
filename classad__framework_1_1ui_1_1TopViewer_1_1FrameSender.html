@@ -114,7 +114,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="top__viewer_8h_source.html#l00031">31</a> of file <a class="el" href="top__viewer_8h_source.html">top_viewer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="top__viewer_8h_source.html#l00033">33</a> of file <a class="el" href="top__viewer_8h_source.html">top_viewer.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa4c70fb2c2dbfde511bde8693af45459"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa4c70fb2c2dbfde511bde8693af45459">&#9670;&nbsp;</a></span>FrameSender()</h2>
@@ -168,17 +168,15 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="structad__framework_1_1callback_1_1Callback.html#a1e25735afbc8da031fa834fc84f780dc">ad_framework::callback::Callback</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="top__viewer_8cpp_source.html#l00032">32</a> of file <a class="el" href="top__viewer_8cpp_source.html">top_viewer.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> (!src.has_value())</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="log_8h.html#aba7b09d6e8fbe414c23705ad24dde6ff">LOG</a>(<a class="code" href="namespacead__framework_1_1log.html#a1a36723383d2fabfb44059f45b4a4811abb53ce21b7c0b7c8a8f7860a41901d29">log::LogLevel::kDebug</a>);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classad__framework_1_1ui_1_1TopViewer_1_1FrameSender.html#a973d8ae69c8b2425b54475fa9d3816ba">frame_</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="ttc" id="aclassad__framework_1_1ui_1_1TopViewer_1_1FrameSender_html_a973d8ae69c8b2425b54475fa9d3816ba"><div class="ttname"><a href="classad__framework_1_1ui_1_1TopViewer_1_1FrameSender.html#a973d8ae69c8b2425b54475fa9d3816ba">ad_framework::ui::TopViewer::FrameSender::frame_</a></div><div class="ttdeci">data_structure::Frame frame_</div><div class="ttdef"><b>Definition:</b> <a href="top__viewer_8h_source.html#l00040">top_viewer.h:40</a></div></div>
-<div class="ttc" id="alog_8h_html_aba7b09d6e8fbe414c23705ad24dde6ff"><div class="ttname"><a href="log_8h.html#aba7b09d6e8fbe414c23705ad24dde6ff">LOG</a></div><div class="ttdeci">#define LOG(level)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00067">log.h:67</a></div></div>
-<div class="ttc" id="anamespacead__framework_1_1log_html_a1a36723383d2fabfb44059f45b4a4811abb53ce21b7c0b7c8a8f7860a41901d29"><div class="ttname"><a href="namespacead__framework_1_1log.html#a1a36723383d2fabfb44059f45b4a4811abb53ce21b7c0b7c8a8f7860a41901d29">ad_framework::log::LogLevel::kDebug</a></div><div class="ttdeci">@ kDebug</div></div>
+<p class="definition">Definition at line <a class="el" href="top__viewer_8cpp_source.html#l00048">48</a> of file <a class="el" href="top__viewer_8cpp_source.html">top_viewer.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (!src.has_value())</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// do nothing</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classad__framework_1_1ui_1_1TopViewer_1_1FrameSender.html#a973d8ae69c8b2425b54475fa9d3816ba">frame_</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="ttc" id="aclassad__framework_1_1ui_1_1TopViewer_1_1FrameSender_html_a973d8ae69c8b2425b54475fa9d3816ba"><div class="ttname"><a href="classad__framework_1_1ui_1_1TopViewer_1_1FrameSender.html#a973d8ae69c8b2425b54475fa9d3816ba">ad_framework::ui::TopViewer::FrameSender::frame_</a></div><div class="ttdeci">data_structure::Frame frame_</div><div class="ttdef"><b>Definition:</b> <a href="top__viewer_8h_source.html#l00042">top_viewer.h:42</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -198,10 +196,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="top__viewer_8cpp_source.html#l00041">41</a> of file <a class="el" href="top__viewer_8cpp_source.html">top_viewer.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classad__framework_1_1ui_1_1TopViewer_1_1FrameSender.html#a973d8ae69c8b2425b54475fa9d3816ba">frame_</a> = frame;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="top__viewer_8cpp_source.html#l00057">57</a> of file <a class="el" href="top__viewer_8cpp_source.html">top_viewer.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classad__framework_1_1ui_1_1TopViewer_1_1FrameSender.html#a973d8ae69c8b2425b54475fa9d3816ba">frame_</a> = frame;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -226,7 +224,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="top__viewer_8h_source.html#l00040">40</a> of file <a class="el" href="top__viewer_8h_source.html">top_viewer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="top__viewer_8h_source.html#l00042">42</a> of file <a class="el" href="top__viewer_8h_source.html">top_viewer.h</a>.</p>
 
 </div>
 </div>
@@ -250,7 +248,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="top__viewer_8h_source.html#l00041">41</a> of file <a class="el" href="top__viewer_8h_source.html">top_viewer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="top__viewer_8h_source.html#l00043">43</a> of file <a class="el" href="top__viewer_8h_source.html">top_viewer.h</a>.</p>
 
 </div>
 </div>

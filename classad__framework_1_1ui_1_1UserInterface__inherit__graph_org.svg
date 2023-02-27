@@ -128,20 +128,21 @@
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="classad__framework_1_1ui_1_1TopViewer.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="1174,-11.5 1174,-79.5 1458,-79.5 1458,-11.5 1174,-11.5"/>
-<text text-anchor="middle" x="1316" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">ad_framework::ui::TopViewer</text>
-<polyline fill="none" stroke="black" points="1174,-60.5 1458,-60.5 "/>
-<text text-anchor="middle" x="1316" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="1174,-41.5 1458,-41.5 "/>
-<text text-anchor="start" x="1182" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ TopViewer(std::string title, ImVec2 size, ImVec2 pos)</text>
-<text text-anchor="start" x="1182" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void operator()() override</text>
+<polygon fill="white" stroke="black" points="1174,-6 1174,-85 1458,-85 1458,-6 1174,-6"/>
+<text text-anchor="middle" x="1316" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">ad_framework::ui::TopViewer</text>
+<polyline fill="none" stroke="black" points="1174,-66 1458,-66 "/>
+<text text-anchor="middle" x="1316" y="-54" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="1174,-47 1458,-47 "/>
+<text text-anchor="start" x="1182" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ TopViewer(std::string title, ImVec2 size, ImVec2 pos)</text>
+<text text-anchor="start" x="1182" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">+ TopViewer(std::string title)</text>
+<text text-anchor="start" x="1182" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ void operator()() override</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M900.48,-182.35C1004.01,-148.51 1128.97,-107.65 1214.65,-79.64"/>
+<path fill="none" stroke="midnightblue" d="M900.48,-182.36C997.51,-150.63 1113.37,-112.75 1198.07,-85.06"/>
 <polygon fill="none" stroke="midnightblue" points="899.27,-179.07 890.85,-185.5 901.45,-185.72 899.27,-179.07"/>
 </g>
 <!-- Node2 -->

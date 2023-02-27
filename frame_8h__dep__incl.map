@@ -1,6 +1,11 @@
 <map id="src/data_structure/frame.h" name="src/data_structure/frame.h">
-<area shape="rect" id="node1" title=" " alt="" coords="155,5,350,32"/>
-<area shape="rect" id="node2" href="$frame_8cpp.html" title=" " alt="" coords="5,80,215,107"/>
-<area shape="rect" id="node3" href="$top__viewer_8cpp.html" title=" " alt="" coords="207,155,447,181"/>
-<area shape="rect" id="node4" href="$top__viewer_8h.html" title=" " alt="" coords="289,80,515,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="184,5,378,32"/>
+<area shape="rect" id="node2" href="$application_8cpp.html" title=" " alt="" coords="108,304,252,331"/>
+<area shape="rect" id="node3" href="$application_8h.html" title=" " alt="" coords="115,229,244,256"/>
+<area shape="rect" id="node4" href="$frame_8cpp.html" title=" " alt="" coords="51,80,260,107"/>
+<area shape="rect" id="node5" href="$shape__drawer_8h.html" title=" " alt="" coords="284,80,528,107"/>
+<area shape="rect" id="node6" href="$top__viewer_8cpp.html" title=" " alt="" coords="376,155,616,181"/>
+<area shape="rect" id="node7" href="$top__viewer_8h.html" title=" " alt="" coords="603,80,828,107"/>
+<area shape="rect" id="node8" href="$user__interface_8h.html" title=" " alt="" coords="640,155,791,181"/>
+<area shape="rect" id="node9" href="$app_2main_8cpp.html" title=" " alt="" coords="660,229,771,256"/>
 </map>

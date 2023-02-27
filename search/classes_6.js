@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['node_150',['Node',['../classad__framework_1_1data__structure_1_1Node.html',1,'ad_framework::data_structure']]],
-  ['nullcallback_151',['NullCallback',['../classad__framework_1_1callback_1_1NullCallback.html',1,'ad_framework::callback']]]
+  ['line_168',['Line',['../structad__framework_1_1data__structure_1_1Line.html',1,'ad_framework::data_structure']]],
+  ['log_169',['Log',['../classad__framework_1_1log_1_1Log.html',1,'ad_framework::log']]]
 ];
