@@ -66,11 +66,22 @@ int main()
         "2\\000000.png");
     image_viewer_1->AddCallback("image-texture", image_sender_1);
 
+    auto top_viewer =
+        std::make_shared<::ad_framework::ui::TopViewer>("top viewer");
+    auto frame_sender =
+        std::make_shared<::ad_framework::ui::TopViewer::FrameSender>();
+    auto frame_drawer =
+        std::make_shared<::ad_framework::ui::TopViewer::FrameDrawer>();
+
+    top_viewer->AddCallback("frame_sender", frame_sender);
+    top_viewer->AddCallback("frame_drawer", frame_drawer);
+
     auto frame = std::make_shared<::ad_framework::ui::Frame>("Main Frame");
     frame->AddUI(button);
     frame->AddUI(selector);
     frame->AddUI(image_viewer);
     frame->AddUI(image_viewer_1);
+    frame->AddUI(top_viewer);
 
     window.AddUI(frame);
 

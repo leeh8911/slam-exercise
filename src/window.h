@@ -46,6 +46,7 @@ class Window
     std::string title_{""};
     GLFWwindow* window_{nullptr};
 };
+using WindowPtr = std::shared_ptr<Window>;
 }  // namespace ad_framework::window
 
 #endif  // SRC_WINDOW_H_

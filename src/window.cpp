@@ -43,6 +43,7 @@ Window::Window(std::string title) : title_{title}, window_{nullptr}
     // Setup Dear ImGui context
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
+    ImPlot::CreateContext();
     ImGuiIO& io = ImGui::GetIO();
     io.ConfigFlags |=
         ImGuiConfigFlags_NavEnableKeyboard;  // Enable Keyboard Controls
@@ -59,6 +60,7 @@ Window::~Window()
     ImGui_ImplOpenGL2_Shutdown();
     ImGui_ImplGlfw_Shutdown();
     ImGui::DestroyContext();
+    ImPlot::DestroyContext();
 
     // Clean up GLFW
     glfwDestroyWindow(window_);

@@ -21,9 +21,11 @@ class TopViewer : public UserInterface
 {
  public:
     TopViewer(std::string title, ImVec2 size, ImVec2 pos);
+    TopViewer(std::string title);
     void operator()() override;
 
     class FrameSender;
+    class FrameDrawer;
 
  private:
 };
@@ -35,6 +37,17 @@ class TopViewer::FrameSender : public callback::Callback
     std::any operator()(const std::any& src) override;
 
     void SetFrame(const data_structure::Frame& frame);
+
+ private:
+    data_structure::Frame frame_{};
+    std::string title_{};
+};
+
+class TopViewer::FrameDrawer : public callback::Callback
+{
+ public:
+    FrameDrawer() = default;
+    std::any operator()(const std::any& src) override;
 
  private:
     data_structure::Frame frame_{};
